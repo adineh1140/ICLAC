@@ -1,0 +1,227 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="~/Management/Management.Master.vb" Inherits="ICLAC.Management" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>ICLAC</title>
+    <link href="<%$ Resources: resource, Direction %>" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="../Scripts/jquery-3.5.1.min.js"></script>
+    <script src="../Scripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="../Scripts/popper.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/modal.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="../Content/bootstrap-rtl.css" rel="stylesheet" />
+    <script src="../Scripts/kamadatepicker.min.js"></script>
+    <link href="../Content/kamadatepicker.min.css" rel="stylesheet" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <style media="screen">
+        .noPrint {
+            display: block;
+        }
+
+        .yesPrint {
+            display: block !important;
+        }
+    </style>
+
+    <style media="print">
+        .noPrint {
+            display: none;
+        }
+
+        .yesPrint {
+            display: block !important;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div class="container">
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <div class="noPrint">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-inverse navbar-fixed-top ">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="http://www.iranchinalaw.com"></a>
+                                </div>
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <h5>
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a href="iisstart.aspx">خانه</a></li>
+
+
+                                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">موکلین<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="cliententry.aspx">ورود اطلاعات موکلین</a></li>
+                                                    <li><a href="caseentry.aspx">ورود اطلاعات پرونده ها</a></li>
+                                                    <li><a href="documents.aspx">ورود اطلاعات اسناد و مدارک</a></li>
+                                                    <li><a href="messagemanagement.aspx">امور پیام ها</a></li>
+                                                    <li><a href="visitasaclient.aspx">مشاهده رومیزی موکل</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">وکلا <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="WorkType.aspx">ثبت رویدادها و کارها</a></li>
+                                                    <li><a href="accounting.aspx">ثبت هزینه ها</a></li>
+                                                    <li><a href="caseinaglance.aspx">پرونده در یک نگاه</a></li>
+                                                    <li><a href="weeklyplan.aspx">پلان کاری هفتگی</a></li>
+                                                    <li><a href="workplan.aspx">پلان کاری ماهانه</a></li>
+                                                    <li><a href="efficiency.aspx">میزان بهره وری</a></li>
+                                                </ul>
+                                            </li>
+
+
+                                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">مدیریت<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="MoveCase.aspx">جابجایی پرونده</a></li>
+                                                    <li><a href="managemententry.aspx">ورود اطلاعات کارکنان</a></li>
+                                                    <li><a href="monitoring.aspx">نظارت و پیگیری</a></li>
+                                                    <li><a href="holidays.aspx">ایام تعطیل</a></li>
+                                                    <li><a href="newsentry.aspx">اخبار حقوقی</a></li>
+                                                    <li><a href="countriesinfoentry.aspx">ورود اطلاعات کشورها</a></li>
+                                                    <li><a href="linksentry.aspx">ورود اطلاعات لینک ها</a></li>
+                                                    <li><a href="keywordentry.aspx">کلمات کلیدی سایت</a></li>
+                                                    <li><a href="tablesandfields.aspx">جدول ها و فیلدها</a></li>
+                                                    <li><a href="cooperationrequests.aspx">درخواست های همکاری</a></li>
+                                                    <li><a href="sendsms.aspx">ارسال پیامک</a></li>
+                                                </ul>
+                                            </li>
+
+
+                                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">کاربری<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="contacsout.aspx">مشاهده دفترچه تلفن</a></li>
+                                                    <li><a href="phonebook.aspx">ورود اطلاعات دفترچه تلفن</a></li>
+
+                                                    <li><a href="accessdefinition.aspx">تعریف سطوح دسترسی</a></li>
+                                                    <li><a href="changepassadmin.aspx">تغییر رمز عبور</a></li>
+                                                    <li><a href="settings.aspx">تنظیمات</a></li>
+                                                    <li><a href="login.aspx">خروچ</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">قوانین <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="actcat1.aspx">ورود اطلاعات طبقه اول</a></li>
+                                                    <li><a href="actcat2.aspx">ورود اطلاعات طبقه دوم</a></li>
+                                                    <li><a href="actsentry.aspx">ورود اطلاعات متن مقررات</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="reports.aspx">گزارش گیری</a> </li>
+
+                                        </ul>
+                                    </h5>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8" style="text-align: center">
+                    <asp:Image ID="imgTitle" ImageUrl="~/images/header.png" runat="server" Style="width: 80%;" />
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="noPrint" style="text-align: right">
+                        <a href="leavedcasesreport.aspx">پرونده بلاتکلیف <span class="badge" style="background-color: red">
+                            <asp:Label ID="lblLeavedCases" runat="server"></asp:Label></span></a><br />
+                        <a href="iisstart.aspx">کار انجام نیافته <span class="badge" style="background-color: red">
+                            <asp:Label ID="lblWorks" runat="server"></asp:Label></span></a><br />
+                        <a href="chat.aspx">پیام ها <span class="badge" style="background-color: red">
+                            <asp:Label ID="lblMessages" runat="server"></asp:Label></span></a><br />
+                        <a href="cooperationRequests.aspx">تقاضای همکاری <span class="badge" style="background-color: red">
+                            <asp:Label ID="lblRequests" runat="server"></asp:Label></span></a><br />
+                    </div>
+
+                </div>
+                <div class="col-md-6" style="text-align: center">
+                    <h1 style="text-align: center; font-weight: bold">
+                        <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </h1>
+
+                </div>
+                <div class="noPrint">
+                    <div class="col-md-2">
+                        <asp:Image ID="imgstaff" class="rounded" runat="server" Style="width: 50%" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style ="text-align:center ">
+                        <b>شمسی:</b>
+                        <asp:Label ID="lblPersianToday" runat="server" Text="Label"></asp:Label>
+                        <b>میلادی:</b>
+                        <asp:Label ID="lblMiladiDate" runat="server" Text="Label"></asp:Label>
+                        <b>قمری:</b>
+                        <asp:Label ID="lblGhamariDate" runat="server" Text="Label"></asp:Label>
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 " style="background-color: aliceblue">
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+            <div class="noPrint">
+                <div class="row">
+
+                    <div class="col-md-12 " style="background-color: aliceblue">
+                        <div class="bottom" style="background-color: bisque">
+                            <h4 style="text-align: center">تمام حقوق مادی و معنوی این سایت متعلق به مرکز بین المللی داوری و حقوقی ایران و چین است</h4>
+                            <div class="col">
+                                <ul style="text-align: right">
+                                    <li><a href="https://resultcase.adliran.ir/ResultCase/CaseListForLawyer">اطلاع رسانی برای وکلا</a></li>
+                                    <li><a href="https://eblagh.adliran.ir/Dashboard/NoticeIndex">سامانه اصلی ابلاغ قضایی</a></li>
+                                    <li><a href="https://eblagh2.adliran.ir/Dashboard/NoticeIndex">سامانه پشتیبان ابلاغ قضایی</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>

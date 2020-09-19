@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="hplDownloadResource1.Text" xml:space="preserve">
+    <value>دانلود نسخه ی PDF</value>
+  </data>
+  <data name="hplDownloadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2_2Resource1.Text" xml:space="preserve">
+    <value>پس از شناخت انواع مجوزها، شیوه ی گرفتن این مجوز ها و داشتن قابلیت های لازم برای صدور آن ها و نیز هزینه های صدور، مورد مطالعه قرار می گیرد. این که شما بدانید برای شروع  کسب و کارتان چه نیازهایی دارید و برای آنچه می خواهید، باید به کجا مراجعه کنید و چه میزان باید هزینه نمایید، اهمیت بسزایی دارد و مدت زمان طولانی ای از شما صرف خواهد نمود.</value>
+  </data>
+  <data name="Label2_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl0_0Resource1.Text" xml:space="preserve">
+    <value>مقدمه </value>
+  </data>
+  <data name="lbl0_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl0_1Resource1.Text" xml:space="preserve">
+    <value>یکی از دلایل عمده ای که شرکت ها، خود را در فضای بین المللی عرضه نمی کنند، نگرانی از موضوعات و مشکلات ناشناخته ای است که در کشور مقصد، می تواند موجود باشد. به طور مثال، عدم آگاهی کافی از مسائلی چون بیمه ی تأمین اجتماعی، مالیات و ... ممکن است، در قدم های نخستین، یک بازرگان با ضرر و زیان فراوان، عطای تجارت را به لقایش ببخشد. وارد عرصه بین المللی شدن نیز، ورود به یک کشور است که تاجر، هیچ شناختی از آن ندارد و حتی در فضای مربوط به آن نیز، رشد نکرده است و در نتیجه، علاوه بر عدم آگاهی از شرایط فرهنگی و موقعیت های اجتماعی، از قوانین و مقررات نیز اطلاعی در دست ندارد؛ فلذا، کار بسیار سخت تر است.&lt;br/&gt; نا آگاهی از شرایط فرهنگی و موقعیت های اجتماعی، ممکن است زیان های مالی سنگینی وارد آورد. لیکن، بی اطلاعی از قوانین، گاه مشکلات لاینحلی پدید می آورد که اصلاح و بازگشت به گذشته را غیر ممکن می کند و در این راستا، مؤسسه حقوقی مرکز، با توجه به آشنایی با فضای حقوقی و قانونی در سطح بین المللی، می تواند تجار را، در امر جلوگیری از بروز مسائل از این دست، یاری نماید. &lt;br/&gt;در این نوشتار، بر آنیم تا گستره خدمات و نحوه آماده سازی بسته جامع اطلاعاتی تجارت بین الملل و آن چه را که ممکن است، شما در راه اندازی، تداوم و ثمربخشی یک تجارت در کشور مقصد مدنظرتان، با آن مواجه شوید، آن چنان که بایسته است، به عرض برسانیم </value>
+  </data>
+  <data name="lbl0_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1_0Resource1.Text" xml:space="preserve">
+    <value> 1.	امکان یا عدم امکان قانونی یک نوع تجارت در یک کشور </value>
+  </data>
+  <data name="lbl1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1_1_0Resource1.Text" xml:space="preserve">
+    <value>1.1. بیان منظور</value>
+  </data>
+  <data name="lbl1_1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1_1Resource1.Text" xml:space="preserve">
+    <value>منظور از امکان یا عدم امکان قانونی در نوع بخصوصی از تجارت، آن است که آیا کشورهای مبدأ و مقصد در قوانین، آیین نامه ها، تصویب نامه، بخش نامه و سایر مقرراتشان اجازه ی آن نوع بخصوص از تجارت را می دهند یا خیر. به عنوان مثال، کسی ممکن است قصد داشته باشد که در کشور ترکمنستان تجارت کند و اسب ترکمنی که از نژاد برتر اسب در جهان است را به اروپا صادر کند. حال آنکه صدور اسب، طبق قوانین ترکمنستان، ممنوع است.این مسأله در دید بدوی ممکن است ساده به نظر برسد ولی در بسیاری موارد، هزینه هایی توسط یک شرکت انجام می شود ولی در اثنای کار، شخص آگاه می شود که منع قانونی وجود دارد.</value>
+  </data>
+  <data name="lbl1_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1_2_0Resource1.Text" xml:space="preserve">
+    <value>1.2.	وجود یا عدم موانع قانونی در کشور مبدا</value>
+  </data>
+  <data name="lbl1_2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1_2Resource1.Text" xml:space="preserve">
+    <value>دارنده ی کالا یا خدمات در کشور مبدأ، باید بداند که کشور مبدأ در خصوص صدور آن کالا یا خدمات، چه برخوردی دارد. به عنوان مثال ما می دانیم که تولید، نگهداری و مصرف مشروبات الکلی در ایران ممنوع است؛ ولی ممکن است شرکتی بخواهد برای صدور شراب شیراز، به آلمان اندیشه ای داشته باشد. مطالعه ی قوانین و مقررات ایران و آلمان، در این خصوص، قبل از هر اقدامی ضروری است.</value>
+  </data>
+  <data name="lbl1_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1_3_0Resource1.Text" xml:space="preserve">
+    <value>1.3.	وجود یا عدم موانع قانونی در کشور مقصد </value>
+  </data>
+  <data name="lbl1_3_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1_3Resource1.Text" xml:space="preserve">
+    <value>آنچه درباره ی کشور مبدأ گفته شد درباره ی کشور مقصد نیز صادق است.  به عنوان مثال ممکن است کشوری، حضور یا دخالت پیمانکاران خارجی را در صنعتی خاص، ممنوع ساخته یا تابع تشریفات و مقررات خاصی کرده باشد. اطلاع تاجر از این مقررات، پیش از هر هزینه ای، لازم و ضروری است.</value>
+  </data>
+  <data name="lbl1_3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2_0Resource1.Text" xml:space="preserve">
+    <value>2.	مجوزهای لازم</value>
+  </data>
+  <data name="lbl2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2_1_0Resource1.Text" xml:space="preserve">
+    <value>2.1. انواع مجوز های لازم</value>
+  </data>
+  <data name="lbl2_1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2_1Resource1.Text" xml:space="preserve">
+    <value>اینکه تجارت شما، با توجه به الزامات قانونی کشور میزبان، نیاز به اخذ چه مجوزهایی در کشورهای مبدأ و مقصد دارد، در این بخش جا می گیرد. به عنوان نمونه برای صدور کالاهای لبنی، در کشورهای گرمسیر و سردسیر، مجوزهای مختلفی صادر می شود.</value>
+  </data>
+  <data name="lbl2_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2_2_0Resource1.Text" xml:space="preserve">
+    <value>2.2. شیوه ها و هزینه های اخذ مجوزها</value>
+  </data>
+  <data name="lbl2_2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2Resource1.Text" xml:space="preserve">
+    <value> گاهی، تجارتی نیازمند اخذ مجوزهای بخصوصی است؛ مثلاً، صدور مواد دارویی، نیازمند اخذ مجوز از وزارت بهداشت است. یا واردات مواد خوراکی، در بسیاری از کشورها، علاوه بر رویه های معمول، رویه های نظارتی دیگری نیز دارد.</value>
+  </data>
+  <data name="lbl2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_0Resource1.Text" xml:space="preserve">
+    <value>3.	مطالعات پایه مرتبط با نوع کسب و کار در کشور مقصد</value>
+  </data>
+  <data name="lbl3_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_1_0Resource1.Text" xml:space="preserve">
+    <value>3.1.	کسب اطلاعات سیاسی و ساختار های حکومتی</value>
+  </data>
+  <data name="lbl3_1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_1Resource1.Text" xml:space="preserve">
+    <value>شناخت نوع حکومت ها و نحوه ی برخورد حکومت ها با شهروندان و بیگانگان در کشور های بیگانه، بسیار حائز اهمیت است. به عنوان مثال، نوع حکومت کشوری مثل ترکمنستان، به ظاهر، جمهوری است ولی در حقیقت، دیکتاتوری - پلیسی است. کشیدن سیگار، در خیابان ها جرم است و حمل استامینوفن کدئین، حمل مواد مخدر تلقی می شود. به سادگی، ممکن است، در اثر سهل انگاری و عدم آشنایی با موضوعاتی به این سادگی، بازرگان به جای بازرگانی، توسط پلیس، بازداشت شده و حتی مورد محاکمه و مجازات قرار گیرد. این است که کسب  اطلاعات سیاسی و شناخت ساختار حکومتی، اهمیت خود را نمایان می سازد.</value>
+  </data>
+  <data name="lbl3_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_2_0Resource1.Text" xml:space="preserve">
+    <value>3.2.	کسب اطلاعات تجاری و اقتصادی </value>
+  </data>
+  <data name="lbl3_2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_2Resource1.Text" xml:space="preserve">
+    <value>شناخت یک کشور از حیث تجاری و اقتصادی، اثر مستقیم بر روی تجارت شما به عنوان یک خارجی دارد. به عنوان مثال، اینکه بدانید یک کشور دارای نظام یا ذائقه های کمونیستی است یا اینکه نظام سرمایه و آزادی تجاری بر آن حاکم است، مهم است. یادتان باشد که نمی توان برای شناخت یک کشور به اینترنت یا کتاب ها یا روزنامه ها مراجعه کرد؛ زیرا در کتاب های جغرافیایی یا تاریخی یا سیاسی می خوانیم که ترکمنستان دارای حکومت جمهوری، نظام سرمایه، مستقل و بی طرف است و اخیراً، بی طرفی مادام العمر خود را به سازمان ملل نیز، اعلام کرده و آنان نیز پذیرفته اند؛ ولی در حقیقت، این حکومت دیکتاتوری، پلیسی، و دارای نظام کمونیستی و خشک و شکننده است و هر کس باید خودش را با این ساختار منطبق نماید تا بتواند در آن تجارت کند.</value>
+  </data>
+  <data name="lbl3_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_3_0Resource1.Text" xml:space="preserve">
+    <value>3.3.	کسب اطلاعات فرهنگی و شناخت کشور مقصد</value>
+  </data>
+  <data name="lbl3_3_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_3Resource1.Text" xml:space="preserve">
+    <value>شناخت شرایط و موقعیت فرهنگی، زبان، مذهب، آیین ها و ترکیب جمعیتی کشور مقصد، از این حیث، می تواند نقش تعیین کننده ای در تجارت با آن کشور داشته باشد. مثلاً، شاید دانستن این موضوع که مردم کرواسی نوعی حس قرابت به مردم ایران دارند و در زمینه ذهنی شان نوعی تعلق خاطر وجود دارد، می تواند در شرایط برابر، بین کرواسی و صربستان، ترجیحات را معین نماید. یا مثلا،ً دانستن این که 50 درصد مردم اتریش، ترک تبارند، برای تجارت خوراک حلال، دانش ارزشمندی است. </value>
+  </data>
+  <data name="lbl3_3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_4_0Resource1.Text" xml:space="preserve">
+    <value>3.4.	کسب اطلاعات حقوقی و شناخت سیستم قضائی حاکم</value>
+  </data>
+  <data name="lbl3_4_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_4Resource1.Text" xml:space="preserve">
+    <value>بحث قوانین و مقررات و شناخت آن ها، موضوعی است که با سیستم قضائی متفاوت است. این که استقلال قوا در چه حد است و در صورت بروز یک مشکل، چطور می توان از طریق دیپلماتیک و ابزارهای دولتی آن را حل و فصل کرد، موضوعی است که در کشورهای مختلف، تفاوت می کند. علاوه بر آن، شناخت سیستم قضایی، تقسیم بندی محاکم وجود یا عدم دادگاه ویژه ی بازرگانان، نحوه ی برخورد با آراء و متد داوری، نحوه ی مداخله ی وکیل در مرحله ی تحقیقات مقدماتی و ... دید بازرگان را در اقداماتش بازتر می نماید. </value>
+  </data>
+  <data name="lbl3_4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_5_0Resource1.Text" xml:space="preserve">
+    <value>3.5.	نحوه ی ورود و خروج به کشور مقصد و نحوه ی برخورد دولت</value>
+  </data>
+  <data name="lbl3_5_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_5Resource1.Text" xml:space="preserve">
+    <value>. هم تر از هرچیزی، امکان رفت و آمد به محل تجارت است. دانستن این که آیا ایران با کشور مقصد، عهدنامه روادید دارد یا خیر؛ این که آیا نیاز به اخذ ویزا در ایران هست یا مانند کشورهای ارمنستان و گرجستان در فرودگاه مقصد ویزا صادر می شود؛ محدودیت های موجود در این زمینه برای کشور مقصد چیست و حداکثر مدت و امکان صدور ویزای چندبار ورود هست یا خیر؛ اطلاعاتی است که برای تسهیل تجارت شما ضروری است. بخصوص آنجا که ضرورت دارد که بازرگان، نیروی انسانی مورد نیاز خود را از کشورش خودش به کشور مقصد ببرد</value>
+  </data>
+  <data name="lbl3_5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3Resource1.Text" xml:space="preserve">
+    <value>مطالعات پایه در پنج گروه، قابل دسته بندی است که عبارتند از: </value>
+  </data>
+  <data name="lbl3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_0Resource1.Text" xml:space="preserve">
+    <value>4.	راه اندازی شرکت یا شعبه در کشور مقصد</value>
+  </data>
+  <data name="lbl4_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_1_0Resource1.Text" xml:space="preserve">
+    <value>4.1.	مطالعه ی موارد ضروری تشکیل شخص حقوقی با ملیت کشور مقصد</value>
+  </data>
+  <data name="lbl4_1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_1Resource1.Text" xml:space="preserve">
+    <value>می دانیم که در بسیاری از کشورها، فعالیت شرکت های دارای ملیت خارجی، محدود یا ممنوع یا مشروط به شرایطی است. در بسته ی اطلاعاتی مورد نظر نتیجه ی این مطالعات در اختیار شما قرار می گیرد. در بعضی کشورها مانند آلمان، با راه اندازی شرکت تجاری و تأسیس یک تجارت می توان راحت تر تجارت کرد. در بعضی کشورها برای بستن  پیمان مدیریت، اساساً نمی توان شرکت خارجی بود و حتماً باید شرکتی را در آن کشور به ثبت رساند.</value>
+  </data>
+  <data name="lbl4_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_2_0Resource1.Text" xml:space="preserve">
+    <value>4.2.	نحوه ی راه اندازی و هزینه های مرتبط</value>
+  </data>
+  <data name="lbl4_2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_2Resource1.Text" xml:space="preserve">
+    <value>شیوه ی انجام امور ثبت و راه اندازی و هزینه های مربوطه نیز قسمتی از محتویات این بسته ی  اطلاعاتی است. گاهی علیرغم تمکن مالی و مدیریتی، نمی دانیم که از کجا شروع کنیم و یا اینکه از ارائه ی کار به یک مؤسسه ی حقوقی خارجی واهمه داریم، اما اگر شیوه ها و هزینه ها را بدانیم، روشن است که تصمیم گیری ها رنگ و بوی واقعی و متفاوتی خواهند داشت.</value>
+  </data>
+  <data name="lbl4_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_3_0Resource1.Text" xml:space="preserve">
+    <value>4.4.	نحوه ی خاتمه و سقوط مسئولیت ها و تعهدات</value>
+  </data>
+  <data name="lbl4_3_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_3_0Resource2.Text" xml:space="preserve">
+    <value>4.3.	وکالت و تعیین نماینده ی عمده</value>
+  </data>
+  <data name="lbl4_3_0Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_3Resource1.Text" xml:space="preserve">
+    <value>قواعد تسویه شرکت ها، نحوه پرداخت های دولتی، ورشکستگی، اسناد تجاری و ختم قراردادها در کشور مقصد، بسته به نظام حقوقی آن متفاوت است. بسیاری بازرگانان به سبب سنگینی مسئولیت های ناشی از راه اندازی و ثبت یک شرکت، عطایش را به لقایش می بخشند و هرگز به سراغش نمی روند؛ حال آنکه اگر از همان ابتدا نحوه ی برون رفت از مشکلات ناشی از خاتمه و تسویه و سقوط تعهدات و مسئولیت ها را بدانیم، پذیرش یا رد آن به شکل معقول تری انجام می پذیرد.</value>
+  </data>
+  <data name="lbl4_3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_3Resource2.Text" xml:space="preserve">
+    <value>فعالیت شرکت خارجی در بسیاری از کشورها نیازمند تعیین نماینده ی عمده است که در قالب وکالت با ساختار ویژه ای، امکان پذیر می گردد. در این موارد شیوه ی اطای نمایندگی عمده و انعقاد قرارداد وکالت، طبق قوانین کشور مقصد بررسی و تبیین می گردد.</value>
+  </data>
+  <data name="lbl4_3Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4Resource1.Text" xml:space="preserve">
+    <value>فعالیت در کشورهای دیگر با شیوه های مختلفی امکان پذیر است که عبارتند از راه اندازی شرکت، تأسیس نمایندگی، هم پیمانی، مشارکت و تأسیس شعبه.</value>
+  </data>
+  <data name="lbl4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5_0Resource1.Text" xml:space="preserve">
+    <value>5.	بیمه و مالیات در دو کشور مبدأ  و مقصد</value>
+  </data>
+  <data name="lbl5_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5_1_0Resource1.Text" xml:space="preserve">
+    <value>5.1.	مطالعه ی سیستم مالیاتی کشور مبدأ و مقصد</value>
+  </data>
+  <data name="lbl5_1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5_1Resource1.Text" xml:space="preserve">
+    <value>قواعد موجود و تفاهم نامه میان کشورها برای مالیات مضاعف و این که درصدهای مالیاتی به چه صورت تعیین می شود، حداقل حقوق مشمول مالیات کارگران به چه میزان است و چگونگی تنظیم دفاتر حسابداری، می تواند بروز هزینه های بسیار بالایی را که حتی بعضی بازرگانان را به ورشکستگی کشانده بازدارد. به طور مثال، سه سال پیش و در پی تغییر قانون مالیاتی در فرانسه، ژرار دی پاردیو، بازیگر مشهور این کشور، به روسیه نقل مکان کرد و درخواست تابعیت روسی داد. </value>
+  </data>
+  <data name="lbl5_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5_2_0Resource1.Text" xml:space="preserve">
+    <value>5.2.	نحوه ی برخورداری از بیمه ی مسئولیت و بیمه ی تأمین اجتماعی</value>
+  </data>
+  <data name="lbl5_2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5_2Resource1.Text" xml:space="preserve">
+    <value>قواعد بیمه، علیرغم آن که تا حدودی جهانی است، اما گاه در محدوده های سرزمینی، تغییراتی می کند که برای کارفرمایان مشکل آفرین است. به طور خاص، موضوع تأمین اجتماعی، یکی از حساس ترین موضوعات هر حکومت است و آگاهی نسبت به قواعد کارگری از اهمیت بسیار بالایی برخوردار است و بی توجهی به یک قاعده کوچک می تواند خسارات سنگینی را در پی داشته باشد. در این راستا مرکز، شیوه ی برخورداری از بیمه های مسئولیت و تأمین اجتماعی را مطالعه و نتایج را در این بسته ی اطلاعاتی در اختیار شما قرار می دهد.</value>
+  </data>
+  <data name="lbl5_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5_3_0Resource1.Text" xml:space="preserve">
+    <value>5.3.	هزینه های بیمه ای در دو کشور مبدأ و مقصد</value>
+  </data>
+  <data name="lbl5_3_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5_3Resource1.Text" xml:space="preserve">
+    <value>آگاهی از این موضوع و مقایسه آن می تواند شما را یاری نماید تا قراردادها را آگاهانه منعقد نمایید و با دید باز در مناقصات مشارکت کنید. بوده است که شرکت کننده ای در مناقصات بین المللی، میزان مالیات و بیمه ها را دقت نکرده است و نتیجتا زیان دیده است.</value>
+  </data>
+  <data name="lbl5_3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5Resource1.Text" xml:space="preserve">
+    <value>قواعد کار در هر کشوری بسته به نگرش اقتصاد باز یا بسته متفاوت است. در سیستم های سوسیالیستی، قوانین کار شدیداً به نفع کارگر و در سیستم های امپریالیستی، به نفع سرمایه است. این که کشور مقصد، از کدام دسته است، نشانگر راه صحیح برای انتخاب مسیر کار است. قواعد مالیاتی و بیمه و برخوردهای عملی که جزو حقوق نانوشته است، گاهی برای متخصصین امر نیز بغرنج است. در این بسته ی اطلاعاتی، با بهره مندی از وکلا و متخصصین بومی هر کشور، آگاهی های لازم در اختیار بازرگانان قرار می گیرد.</value>
+  </data>
+  <data name="lbl5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6_0Resource1.Text" xml:space="preserve">
+    <value>6.	حمل و نقل (در پنج شاخه ی جاده ای، هوایی، دریایی، ریلی و شهری)</value>
+  </data>
+  <data name="lbl6_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6_1_0Resource1.Text" xml:space="preserve">
+    <value>6.1.	عضویت یا عدم عضویت کشور مبدأ و مقصد در کنوانسیون ها</value>
+  </data>
+  <data name="lbl6_1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6_1Resource1.Text" xml:space="preserve">
+    <value>این که کشور مبدأ و کشورها و بنادر محل عبور و تحویل کالا، مشمول کدام مقررات بین المللی  هستند، در نحوه انجام کار، انتخاب مسیر حمل و نقل، نوع حمل و نقل و حتی اخذ ال سی تأثیرگذار است. مثلاً اگر کشوری، عضو کنوانسیون بیع بین المللی کالا باشد با کشوری که عضو این کنوانسیون نیست، بخواهد با آن کشور مراوده داشته باشد، باید بدانیم که مقررات این کنواسیون، چگونه بر این مراوده حاکم است.</value>
+  </data>
+  <data name="lbl6_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6_2_0Resource1.Text" xml:space="preserve">
+    <value>6.2.	مقررات دو کشور مبدأ و مقصد در خصوص نوع بخصوصی از حمل و نقل</value>
+  </data>
+  <data name="lbl6_2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6_2Resource1.Text" xml:space="preserve">
+    <value>در هر کشوری با توجه به حجم روابط تجاری و نوع آن، قواعد حمل و نقل هم متفاوت است. مثلاً، در کشوری مانند انگلستان، مقررات حمل و نقل دریایی بسیار کامل تر از انواع دیگر حمل و نقل است و اساساً، کشورهایی که دارای مرزهای آبی هستند، مقاصد بهتری برای تجارت دریایی اند.</value>
+  </data>
+  <data name="lbl6_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6_3_0Resource1.Text" xml:space="preserve">
+    <value>6.3.	اینکوتِرمز و نقطه های انتقال ریسک</value>
+  </data>
+  <data name="lbl6_3_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6_3Resource1.Text" xml:space="preserve">
+    <value>علیرغم پرکاربرد بودن FOB و CIF، شناخت مدل های 10 گانه اینکوترمز، برای بهترین مدل تجارتی و تحمل کمترین میزان ریسک، واقعاً ضروری است. این که انتقال مسئولیت از فروشنده به خریدار، در کجا صورت بگیرد و مسئولیت متصدی حمل و بیمه گر نسبت به هریک از خریدار و فروشنده در قبال کالا چیست، مسائلی است که به هیچ وجه نباید از نظر دور داشت.</value>
+  </data>
+  <data name="lbl6_3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6Resource1.Text" xml:space="preserve">
+    <value>موضوع حمل و نقل، یکی از اساسی ترین بخش های تجارت بین الملل است. این که کالا از کدام مسیر، به سمت مقصد حمل شود و آیا با ترکیبی از حمل و نقل های چهارگانه به مقصد برسد یا به یک شیوه باشد، قوانین خاص خود را داراست. میزان خسارات و نحوه پرداخت آن ها توسط بیمه ها، مبالغ حق بیمه و موضوعات از این دست، مواردی است که برای تجارت با کشور بیگانه باید دانست. علاوه بر این، گاه، برای سهولت دسترسی ها و انجام کارها، ممکن است شما نیاز داشته باشید که خودروی شخصی در مقصد داشته باشید. دانستن نحوه خرید خودرو، شیوه ثبت و مسائل مربوطه، نحوه ی حمل خودرو ایرانی به کشور مقصد و ... برای آرامش خاطر شما ضروری است.</value>
+  </data>
+  <data name="lbl6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7_0Resource1.Text" xml:space="preserve">
+    <value>7.	دریافت ها و پرداخت ها</value>
+  </data>
+  <data name="lbl7_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7_1_0Resource1.Text" xml:space="preserve">
+    <value>7.1.	 شناسایی سازمان های تضمین کننده</value>
+  </data>
+  <data name="lbl7_1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7_1Resource1.Text" xml:space="preserve">
+    <value>علاوه بر مطالعه ی زیربنایی انواع و شیوه های تضامین، مرکز، شما را در موضوع استفاده از سازمان ها و نهادهای دولتی ای که در امر صادرات، تضمین کننده دریافت پول برای صادرکننده هستند، یاری می نماید. سازمان هایی مانند صندوق ضمانت صادرات، شرکت های بزرگ دولتی مانند شرکت نفت و گاز که با کشور مقصد مبادله دارند و امثال آن، مواردی است که می تواند در ارتباط با مرکز، برای شما اطمینان بخش باشد. </value>
+  </data>
+  <data name="lbl7_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7_2_0Resource1.Text" xml:space="preserve">
+    <value>7.2.	ضمانت نامه بانکی و LC</value>
+  </data>
+  <data name="lbl7_2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7_2Resource1.Text" xml:space="preserve">
+    <value>دادن و گرفتن تضامین، نیازمند مطالعه ی خاص خود است. امروزه ضمانت نامه های یازده گانه ی بانکی و انواع پیچیده ی ال سی و شیوه های صدور و اخذ آنها بخصوص در شرایط تحریم، مباحث جدی حقوق تجارت بین الملل هستند. گشایش اعتبارات اسنادی و ضمانت نامه های بانکی، به عنوان یک عامل کلیدی، در تجارت بین الملل، نقش ایفا می کند. اینکه بازرسی کالا در بندر مبدأ تعیین شود یا مقصد، و یا اینکه فروشنده در چه مرحله ای بتواند ال سی را برداشت کند، مسائلی است که بسیار دقیق و مهم است.اینکه انتقال پول در شرایط تحریم چگونه صورت بگیرد و مشکلات نقل و انتقال پول به چه نحو رفع و رجوع شود نیز، مسئله ای است که شما می توانید با کمک مرکز از ابتدا موانع و راهکارهای موجود و مربوطه را بدانید و به طور صحیح و با آرامش با آنها مواجه شوید .</value>
+  </data>
+  <data name="lbl7_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7Resource1.Text" xml:space="preserve">
+    <value>مهم ترین بحث تجارت، موضوعات مربوط به پول و مسائل بانکی است. اساساً، مقصد تاجر از تجارت، کسب درآمد مالی است و این مرکز با مطالعه ی دقیق روش های پرداخت و دریافت و ایمن سازی آنها نقش بسزایی در بازرگانی شما بازی می کند. </value>
+  </data>
+  <data name="lbl7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8_0Resource1.Text" xml:space="preserve">
+    <value>8.	سیستم های حل و فصل اختلافات در دو کشور مبدأ و مقصد</value>
+  </data>
+  <data name="lbl8_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8_1_0Resource1.Text" xml:space="preserve">
+    <value>8.1.	ارائه ی شیوه های حل و فصل اختلافات در دو کشور</value>
+  </data>
+  <data name="lbl8_1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8_1Resource1.Text" xml:space="preserve">
+    <value>گاه، رسیدگی به یک دعوا، می تواند به سرعت و با بی طرفی و با استفاده از راهکارهایی که در موافقت نامه های بین کشورها آمده و یا از طریق مذاکره و گفتگوی حقوقی حل و فصل شود. در این جا رسیدن به توافق، نیازمند کار دقیق و مناسب حقوقی است.</value>
+  </data>
+  <data name="lbl8_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8_2_0Resource1.Text" xml:space="preserve">
+    <value>8.2.	امکان یا عدم امکان ارجاع به داوری</value>
+  </data>
+  <data name="lbl8_2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8_2Resource1.Text" xml:space="preserve">
+    <value>در قوانین اساسی برخی کشورها، از جمله کشور خودمان، دولت و شرکت های دولتی، در قراردادهایشان اجازه رجوع به داوری ندارند. یا برخی موضوعات، مثلاً مواردی  مانند کلاهبرداری که همه جا جرم انگاری شده است، نمی توانند موضوع داوری قرار بگیرند. دانستن این موارد برای جلوگیری از بروز مسائل بسیار جدی ضروری و حیاتی است.</value>
+  </data>
+  <data name="lbl8_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8Resource1.Text" xml:space="preserve">
+    <value>در بسیاری از اختلافاتی که در تجارت بین الملل رخ می دهد، موضوع رجوع به داوری و عدم مراجعه به دادگاه های محلی مطرح است. دادگاه های محلی، مهم تر از این که احتمال بی طرف نبودنشان بسیار بالاست، معمولاً از تخصص کافی برای امور تجارت بین الملل نیز، برخوردار نیستند. شناخت قانون مناسب حاکم بر قرارداد، قانون مناسب حاکم بر دعوا، قانون حاکم مناسب برای داوری یا میانجیگری، قانون حاکم مناسب برای آیین دادرسی داوری یا میانجیگری، اینکه چه راه حلی، چه میزان هزینه در بر دارد و کدام راه، ما را سریع تر به نتیجه می رساند، اساس کار حقوقی در دعاوی مربوط به تجارت بین الملل است.</value>
+  </data>
+  <data name="lbl8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9_0Resource1.Text" xml:space="preserve">
+    <value>9.	خدمات حقوقی در کشور مقصد</value>
+  </data>
+  <data name="lbl9_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9_1_0Resource1.Text" xml:space="preserve">
+    <value>9.1.	معرفی هم پیمان مرکز در کشور مقصد</value>
+  </data>
+  <data name="lbl9_1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9_1Resource1.Text" xml:space="preserve">
+    <value>دفتر حقوقی همکار مرکز که برای ارائه هر سرویسی در مقصد در خدمت شما خواهد بود. وکیل همکار، در موضوعات مربوط به قرارداد شما، توانا و مجرب بوده و مشاوره های حقوقی لازم را به شما خواهد داد.</value>
+  </data>
+  <data name="lbl9_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9_2_0Resource1.Text" xml:space="preserve">
+    <value>9.2.	برخورداری از مشاوره ی حقوقی وکلای بومی</value>
+  </data>
+  <data name="lbl9_2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9_2Resource1.Text" xml:space="preserve">
+    <value>مسلماً، در هر کشوری، بخصوص کشورهای کمتر توسعه یافته و در حال توسعه، قوانین نانوشته ای موجود است که وکلای بومی از آنها آگاهند. وکیلی که به عنوان مشاور به شما معرفی خواهد شد، موضوعات مربوط به کار، قرارداد و مسائل مربوطه را بررسی خواهد کرد و بهترین مشاوره را به شما خواهد داد. </value>
+  </data>
+  <data name="lbl9_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9_3_0Resource1.Text" xml:space="preserve">
+    <value>9.3.	در دسترس و در اختیار داشتن وکلای بومی در هر کاری</value>
+  </data>
+  <data name="lbl9_3_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9_3Resource1.Text" xml:space="preserve">
+    <value>ممکن است برای هر کسی مشکلی پدید آید. تصادف خودرو، پلیس فاسد و مسائل ناخوشایند دیگر. برای هر مشکل و مسئله ای شما خواهید توانست روی کمک وکیل بومی مورد اعتمادتان حساب کنید و بیش از هر چیز آرامش خیال داشته باشید که در صورت بروز هر نوع مشکلی «تنها نخواهید بود».</value>
+  </data>
+  <data name="lbl9_3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9Resource1.Text" xml:space="preserve">
+    <value>آن چه مهم است این است که خدمات بتواند در لحظه و با کیفیت و سرعت در اختیار شما قرار گیرد و از این باب، مؤسسه وکلای بین المللی هفت اقلیم، سه سرویس زیر را نیز به شما ارائه خواهد داد:</value>
+  </data>
+  <data name="lbl9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIntroResource1.Text" xml:space="preserve">
+    <value>مقدمه</value>
+  </data>
+  <data name="lblIntroResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSec1Resource1.Text" xml:space="preserve">
+    <value>امکان یا عدم امکان قانونی یک نوع تجارت در یک کشور</value>
+  </data>
+  <data name="lblSec1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSec2Resource1.Text" xml:space="preserve">
+    <value>مجوزهای لازم</value>
+  </data>
+  <data name="lblSec2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSec3Resource1.Text" xml:space="preserve">
+    <value>مطالعات پایه مرتبط با نوع کسب و کار در کشور مقصد</value>
+  </data>
+  <data name="lblSec3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSec4Resource1.Text" xml:space="preserve">
+    <value>راه اندازی شرکت یا شعبه در کشور مقصد</value>
+  </data>
+  <data name="lblSec4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSec5Resource1.Text" xml:space="preserve">
+    <value>بیمه و مالیات در دو کشور مبدأ  و مقصد</value>
+  </data>
+  <data name="lblSec5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSec6Resource1.Text" xml:space="preserve">
+    <value>حمل و نقل (در پنج شاخه ی جاده ای، هوایی، دریایی، ریلی و شهری)</value>
+  </data>
+  <data name="lblSec6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSec7Resource1.Text" xml:space="preserve">
+    <value>دریافت ها و پرداخت ها</value>
+  </data>
+  <data name="lblSec7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSec8Resource1.Text" xml:space="preserve">
+    <value>سیستم های حل و فصل اختلافات در دو کشور مبدأ و مقصد</value>
+  </data>
+  <data name="lblSec8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSec9Resource1.Text" xml:space="preserve">
+    <value>خدمات حقوقی در کشور مقصد</value>
+  </data>
+  <data name="lblSec9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>بسته ی اطلاعاتی تجارت بین الملل</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource2.Text" xml:space="preserve">
+    <value>بسته ی اطلاعاتی جامع تجارت بین الملل</value>
+  </data>
+  <data name="lblTitleResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TOCResource1.Text" xml:space="preserve">
+    <value>فهرست مطالب</value>
+  </data>
+  <data name="TOCResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

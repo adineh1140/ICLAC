@@ -1,0 +1,1280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ICLAC</RootNamespace>
+    <AssemblyName>ICLAC</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.8</TypeScriptToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.bootstrap, Version=4.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\AspNet.ScriptManager.bootstrap.4.5.2\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\AspNet.ScriptManager.jQuery.3.5.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="ActOut.aspx" />
+    <Content Include="Acts.aspx" />
+    <Content Include="Affairs.aspx" />
+    <Content Include="Arbitration.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Claims.aspx" />
+    <Content Include="ClientsLogin.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-rtl.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\kamadatepicker.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Contracts.aspx" />
+    <Content Include="CooperationForm.aspx" />
+    <Content Include="Countries.aspx" />
+    <Content Include="DesktopClient.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Family.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Fonts\Calibri.svg" />
+    <Content Include="Fonts\fontawesome-webfont.svg" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Fonts\HelveticaLight.svg" />
+    <Content Include="Fonts\HelveticaObl-Th.svg" />
+    <Content Include="ForgetPassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\7EQLIMEnglish.png" />
+    <Content Include="Images\7EqlimFarsi.png" />
+    <Content Include="Images\accessDenied.jpg" />
+    <Content Include="Images\ajax_loader_blue_256.gif" />
+    <Content Include="Images\Armenia\1.jpg" />
+    <Content Include="Images\Armenia\2.jpg" />
+    <Content Include="Images\Armenia\3.jpg" />
+    <Content Include="Images\Armenia\4.jpg" />
+    <Content Include="Images\Armenia\5.jpg" />
+    <Content Include="Images\Armenia\Map.jpg" />
+    <Content Include="Images\China\1.jpg" />
+    <Content Include="Images\China\2.jpg" />
+    <Content Include="Images\China\3.jpg" />
+    <Content Include="Images\China\4.jpg" />
+    <Content Include="Images\China\5.jpg" />
+    <Content Include="Images\China\Map.jpg" />
+    <Content Include="Images\EnglishFlag.jpg" />
+    <Content Include="Images\Error.jpg" />
+    <Content Include="Images\facebook.jpg" />
+    <Content Include="Images\Ferdowsi.jpg" />
+    <Content Include="Images\god.png" />
+    <Content Include="Images\google+.jpg" />
+    <Content Include="Images\Header.png" />
+    <Content Include="Images\Hipen1.png" />
+    <Content Include="Images\HipenHeader.png" />
+    <Content Include="Images\Line.jpg" />
+    <Content Include="Images\Line.png" />
+    <Content Include="Images\linkedin.jpg" />
+    <Content Include="Images\linkedin.png" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\PersianFlag.jpg" />
+    <Content Include="Images\Qatar\1.jpg" />
+    <Content Include="Images\Qatar\2.jpg" />
+    <Content Include="Images\Qatar\3.jpg" />
+    <Content Include="Images\Qatar\4.jpg" />
+    <Content Include="Images\Qatar\5.jpg" />
+    <Content Include="Images\Qatar\Map.jpg" />
+    <Content Include="Images\SecureImage.jpg" />
+    <Content Include="Images\Shahnameh.png" />
+    <Content Include="Images\ShTitle.png" />
+    <Content Include="Images\Shtitle2.png" />
+    <Content Include="Images\Slide0.jpg" />
+    <Content Include="Images\slide1.jpg" />
+    <Content Include="Images\slide2.jpg" />
+    <Content Include="Images\slide3.jpg" />
+    <Content Include="Images\slide4.jpg" />
+    <Content Include="Images\slide5.jpg" />
+    <Content Include="Images\Slide6.jpg" />
+    <Content Include="Images\Slide7.jpg" />
+    <Content Include="Images\Slide8.jpg" />
+    <Content Include="Images\Staff\1.JPG" />
+    <Content Include="Images\Staff\6.jpg" />
+    <Content Include="Images\Staff\7.jpg" />
+    <Content Include="Images\Staff\9.jpg" />
+    <Content Include="Images\Subtitle.png" />
+    <Content Include="Images\Switzerland\1.jpg" />
+    <Content Include="Images\Switzerland\2.jpg" />
+    <Content Include="Images\Switzerland\3.jpg" />
+    <Content Include="Images\Switzerland\4.jpg" />
+    <Content Include="Images\Switzerland\5.jpg" />
+    <Content Include="Images\Switzerland\Map.jpg" />
+    <Content Include="Images\telegram.jpg" />
+    <Content Include="Images\Turkey\1.jpg" />
+    <Content Include="Images\Turkey\2.jpg" />
+    <Content Include="Images\Turkey\3.jpg" />
+    <Content Include="Images\Turkey\4.jpg" />
+    <Content Include="Images\Turkey\5.jpg" />
+    <Content Include="Images\Turkey\Map.jpg" />
+    <Content Include="Images\Turkmenistan\06.jpg" />
+    <Content Include="Images\Turkmenistan\07.jpg" />
+    <Content Include="Images\Turkmenistan\1.jpg" />
+    <Content Include="Images\Turkmenistan\2.jpg" />
+    <Content Include="Images\Turkmenistan\3.jpg" />
+    <Content Include="Images\Turkmenistan\4.jpg" />
+    <Content Include="Images\Turkmenistan\5.jpg" />
+    <Content Include="Images\Turkmenistan\8.jpg" />
+    <Content Include="Images\twitter.jpg" />
+    <Content Include="Images\Word.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="infoPackage.aspx" />
+    <Content Include="Information.aspx" />
+    <Content Include="LegalPractices.aspx" />
+    <Content Include="Links.aspx" />
+    <Content Include="LiveChat.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="Management\AccessDefinition.aspx" />
+    <Content Include="Management\Accounting.aspx" />
+    <Content Include="Management\ActCat1.aspx" />
+    <Content Include="Management\ActCat2.aspx" />
+    <Content Include="Management\ActsEntry.aspx" />
+    <Content Include="Management\App_LocalResources\ClientEntry.aspx.resx" />
+    <Content Include="Management\App_LocalResources\NewsEntry.aspx.resx" />
+    <Content Include="Management\CaseDocs.aspx" />
+    <Content Include="Management\CaseDocsEntry.aspx" />
+    <Content Include="Management\CaseEntry.aspx" />
+    <Content Include="Management\CaseInAGlance.aspx" />
+    <Content Include="Management\ChangePassAdmin.aspx" />
+    <Content Include="Management\Chat.aspx" />
+    <Content Include="Management\ClientEntry.aspx" />
+    <Content Include="Management\ClientForm.aspx" />
+    <Content Include="Management\ContacsOut.aspx" />
+    <Content Include="Management\Contract.aspx" />
+    <Content Include="Management\CooperationRequests.aspx" />
+    <Content Include="Management\CountriesInfoEntry.aspx" />
+    <Content Include="Management\CoverPage.aspx" />
+    <Content Include="Management\DateModal.aspx" />
+    <Content Include="Management\DocsPrint.aspx" />
+    <Content Include="Management\Documents.aspx" />
+    <Content Include="Management\EditEmails.aspx" />
+    <Content Include="Management\Efficiency.aspx" />
+    <Content Include="Management\EmailSender.aspx" />
+    <Content Include="Management\Error.htm" />
+    <Content Include="Management\Favicon.ico" />
+    <Content Include="Management\ForgetPasswordAdmin.aspx" />
+    <Content Include="Management\ForTest.aspx" />
+    <Content Include="Management\Holidays.aspx" />
+    <Content Include="Management\iisstart.aspx" />
+    <Content Include="Management\Images\BackGround.jpg" />
+    <Content Include="Management\Images\BackGroundAuthentication.jpg" />
+    <Content Include="Management\Images\CSS\Site.css" />
+    <Content Include="Management\Images\Email\Footer%28BackGround%29-New.png" />
+    <Content Include="Management\Images\Email\Header%28BackGround%29-New.png" />
+    <Content Include="Management\Images\Error.jpg" />
+    <Content Include="Management\Images\Footer%28Print%29.png" />
+    <Content Include="Management\Images\Footer.png" />
+    <Content Include="Management\Images\HTML.jpg" />
+    <Content Include="Management\Images\Logo%28BorhanShahr%29.png" />
+    <Content Include="Management\Images\MenuHeader.png" />
+    <Content Include="Management\Images\PDF.jpg" />
+    <Content Include="Management\Images\PointUp.png" />
+    <Content Include="Management\Images\Print%28Header%29.png" />
+    <Content Include="Management\Images\search.png" />
+    <Content Include="Management\Images\SecureImage.jpg" />
+    <Content Include="Management\Images\shadow_bg.jpg" />
+    <Content Include="Management\Images\Title.jpg" />
+    <Content Include="Management\Images\Word.jpg" />
+    <Content Include="Management\KeywordEntry.aspx" />
+    <Content Include="Management\LeavedCasesReport.aspx" />
+    <Content Include="Management\LinksEntry.aspx" />
+    <Content Include="Management\Login.aspx" />
+    <Content Include="Management\ManagementEntry.aspx" />
+    <Content Include="Management\MessageManagement.aspx" />
+    <Content Include="Management\Monitoring.aspx" />
+    <Content Include="Management\MoveCase.aspx" />
+    <Content Include="Management\NewsEntry.aspx" />
+    <Content Include="Management\not_found.html" />
+    <Content Include="Management\PhoneBook.aspx" />
+    <Content Include="Management\ReportOut.aspx" />
+    <Content Include="Management\Reports.aspx" />
+    <Content Include="Management\Selection.aspx" />
+    <Content Include="Management\SendSMS.aspx" />
+    <Content Include="Management\Settings.aspx" />
+    <Content Include="Management\SQL.aspx" />
+    <Content Include="Management\TablesAndFields.aspx" />
+    <Content Include="Management\tmpEmailEntry.aspx" />
+    <Content Include="Management\VisitAsAClient.aspx" />
+    <Content Include="Management\WebForm1.aspx" />
+    <Content Include="Management\WeeklyPlan.aspx" />
+    <Content Include="Management\WorkForMore.aspx" />
+    <Content Include="Management\WorkForNonCase.aspx" />
+    <Content Include="Management\WorkForOne.aspx" />
+    <Content Include="Management\WorkPlan.aspx" />
+    <Content Include="Management\WorkType.aspx" />
+    <Content Include="Map.aspx" />
+    <Content Include="News.aspx" />
+    <Content Include="Publications.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\index.js.flow" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Fonts\BMitra.ttf" />
+    <Content Include="Fonts\BMitra.woff" />
+    <Content Include="Fonts\BMitraBold.eot" />
+    <Content Include="Fonts\BMitraBold.ttf" />
+    <Content Include="Fonts\BMitraBold.woff" />
+    <Content Include="Fonts\Calibri.eot" />
+    <Content Include="Fonts\Calibri.ttf" />
+    <Content Include="Fonts\Calibri.woff" />
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Fonts\HelveticaLight.eot" />
+    <Content Include="Fonts\HelveticaLight.ttf" />
+    <Content Include="Fonts\HelveticaLight.woff" />
+    <Content Include="Fonts\HelveticaObl-Th.eot" />
+    <Content Include="Fonts\HelveticaObl-Th.ttf" />
+    <Content Include="Fonts\HelveticaObl-Th.woff" />
+    <Content Include="Fonts\Mj_ExtenderX4SuperFit.eot" />
+    <Content Include="Fonts\Mj_ExtenderX4SuperFit.ttf" />
+    <Content Include="Fonts\Mj_ExtenderX4SuperFit.woff" />
+    <Content Include="Fonts\W_yekan.eot" />
+    <Content Include="Fonts\W_yekan.ttf" />
+    <Content Include="Fonts\W_yekan.woff" />
+    <Content Include="Fonts\BZar.ttf" />
+    <Content Include="Fonts\BZarBold.ttf" />
+    <Content Include="Management\1.pdf" />
+    <Content Include="Management\ForPrint.Master" />
+    <Content Include="Management\Management.Master" />
+    <Content Include="Images\China\Thumbs.db" />
+    <Content Include="Fonts\FontAwesome.otf" />
+    <Content Include="Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Fonts\fontawesome-webfont.woff" />
+    <Content Include="Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Fonts\fontawesome-webfont.eot" />
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.5.1.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
+    <Content Include="Scripts\kamadatepicker.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\src\index.js" />
+    <Content Include="Scripts\src\methods\defaults.js" />
+    <Content Include="Scripts\src\methods\destroy.js" />
+    <Content Include="Scripts\src\methods\disableEventListeners.js" />
+    <Content Include="Scripts\src\methods\enableEventListeners.js" />
+    <Content Include="Scripts\src\methods\placements.js" />
+    <Content Include="Scripts\src\methods\update.js" />
+    <Content Include="Scripts\src\modifiers\applyStyle.js" />
+    <Content Include="Scripts\src\modifiers\arrow.js" />
+    <Content Include="Scripts\src\modifiers\computeStyle.js" />
+    <Content Include="Scripts\src\modifiers\flip.js" />
+    <Content Include="Scripts\src\modifiers\hide.js" />
+    <Content Include="Scripts\src\modifiers\index.js" />
+    <Content Include="Scripts\src\modifiers\inner.js" />
+    <Content Include="Scripts\src\modifiers\keepTogether.js" />
+    <Content Include="Scripts\src\modifiers\offset.js" />
+    <Content Include="Scripts\src\modifiers\preventOverflow.js" />
+    <Content Include="Scripts\src\modifiers\shift.js" />
+    <Content Include="Scripts\src\utils\clockwise.js" />
+    <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
+    <Content Include="Scripts\src\utils\debounce.js" />
+    <Content Include="Scripts\src\utils\find.js" />
+    <Content Include="Scripts\src\utils\findCommonOffsetParent.js" />
+    <Content Include="Scripts\src\utils\findIndex.js" />
+    <Content Include="Scripts\src\utils\getBordersSize.js" />
+    <Content Include="Scripts\src\utils\getBoundaries.js" />
+    <Content Include="Scripts\src\utils\getBoundingClientRect.js" />
+    <Content Include="Scripts\src\utils\getClientRect.js" />
+    <Content Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetRect.js" />
+    <Content Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getOppositePlacement.js" />
+    <Content Include="Scripts\src\utils\getOppositeVariation.js" />
+    <Content Include="Scripts\src\utils\getOuterSizes.js" />
+    <Content Include="Scripts\src\utils\getParentNode.js" />
+    <Content Include="Scripts\src\utils\getPopperOffsets.js" />
+    <Content Include="Scripts\src\utils\getReferenceNode.js" />
+    <Content Include="Scripts\src\utils\getReferenceOffsets.js" />
+    <Content Include="Scripts\src\utils\getRoot.js" />
+    <Content Include="Scripts\src\utils\getRoundedOffsets.js" />
+    <Content Include="Scripts\src\utils\getScroll.js" />
+    <Content Include="Scripts\src\utils\getScrollParent.js" />
+    <Content Include="Scripts\src\utils\getStyleComputedProperty.js" />
+    <Content Include="Scripts\src\utils\getSupportedPropertyName.js" />
+    <Content Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getWindow.js" />
+    <Content Include="Scripts\src\utils\getWindowSizes.js" />
+    <Content Include="Scripts\src\utils\includeScroll.js" />
+    <Content Include="Scripts\src\utils\index.js" />
+    <Content Include="Scripts\src\utils\isBrowser.js" />
+    <Content Include="Scripts\src\utils\isFixed.js" />
+    <Content Include="Scripts\src\utils\isFunction.js" />
+    <Content Include="Scripts\src\utils\isIE.js" />
+    <Content Include="Scripts\src\utils\isModifierEnabled.js" />
+    <Content Include="Scripts\src\utils\isModifierRequired.js" />
+    <Content Include="Scripts\src\utils\isNumeric.js" />
+    <Content Include="Scripts\src\utils\isOffsetContainer.js" />
+    <Content Include="Scripts\src\utils\removeEventListeners.js" />
+    <Content Include="Scripts\src\utils\runModifiers.js" />
+    <Content Include="Scripts\src\utils\setAttributes.js" />
+    <Content Include="Scripts\src\utils\setStyles.js" />
+    <Content Include="Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActOut.aspx.designer.vb">
+      <DependentUpon>ActOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActOut.aspx.vb">
+      <DependentUpon>ActOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acts.aspx.designer.vb">
+      <DependentUpon>Acts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acts.aspx.vb">
+      <DependentUpon>Acts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affairs.aspx.designer.vb">
+      <DependentUpon>Affairs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affairs.aspx.vb">
+      <DependentUpon>Affairs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\Core.vb" />
+    <Compile Include="App_GlobalResources\Resource.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.en.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.fa.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.fa.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Arbitration.aspx.designer.vb">
+      <DependentUpon>Arbitration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Arbitration.aspx.vb">
+      <DependentUpon>Arbitration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Claims.aspx.designer.vb">
+      <DependentUpon>Claims.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Claims.aspx.vb">
+      <DependentUpon>Claims.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientsLogin.aspx.designer.vb">
+      <DependentUpon>ClientsLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsLogin.aspx.vb">
+      <DependentUpon>ClientsLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.vb">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.vb">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contracts.aspx.designer.vb">
+      <DependentUpon>Contracts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts.aspx.vb">
+      <DependentUpon>Contracts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CooperationForm.aspx.designer.vb">
+      <DependentUpon>CooperationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CooperationForm.aspx.vb">
+      <DependentUpon>CooperationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Countries.aspx.designer.vb">
+      <DependentUpon>Countries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Countries.aspx.vb">
+      <DependentUpon>Countries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopClient.aspx.designer.vb">
+      <DependentUpon>DesktopClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopClient.aspx.vb">
+      <DependentUpon>DesktopClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family.aspx.designer.vb">
+      <DependentUpon>Family.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Family.aspx.vb">
+      <DependentUpon>Family.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.designer.vb">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.vb">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="infoPackage.aspx.designer.vb">
+      <DependentUpon>infoPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="infoPackage.aspx.vb">
+      <DependentUpon>infoPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Information.aspx.designer.vb">
+      <DependentUpon>Information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Information.aspx.vb">
+      <DependentUpon>Information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LegalPractices.aspx.designer.vb">
+      <DependentUpon>LegalPractices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LegalPractices.aspx.vb">
+      <DependentUpon>LegalPractices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Links.aspx.designer.vb">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Links.aspx.vb">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LiveChat.aspx.designer.vb">
+      <DependentUpon>LiveChat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LiveChat.aspx.vb">
+      <DependentUpon>LiveChat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\AccessDefinition.aspx.designer.vb">
+      <DependentUpon>AccessDefinition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AccessDefinition.aspx.vb">
+      <DependentUpon>AccessDefinition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Accounting.aspx.designer.vb">
+      <DependentUpon>Accounting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Accounting.aspx.vb">
+      <DependentUpon>Accounting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ActCat1.aspx.designer.vb">
+      <DependentUpon>ActCat1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ActCat1.aspx.vb">
+      <DependentUpon>ActCat1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ActCat2.aspx.designer.vb">
+      <DependentUpon>ActCat2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ActCat2.aspx.vb">
+      <DependentUpon>ActCat2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ActsEntry.aspx.designer.vb">
+      <DependentUpon>ActsEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ActsEntry.aspx.vb">
+      <DependentUpon>ActsEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CaseDocs.aspx.designer.vb">
+      <DependentUpon>CaseDocs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CaseDocs.aspx.vb">
+      <DependentUpon>CaseDocs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CaseDocsEntry.aspx.designer.vb">
+      <DependentUpon>CaseDocsEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CaseDocsEntry.aspx.vb">
+      <DependentUpon>CaseDocsEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CaseEntry.aspx.designer.vb">
+      <DependentUpon>CaseEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CaseEntry.aspx.vb">
+      <DependentUpon>CaseEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CaseInAGlance.aspx.designer.vb">
+      <DependentUpon>CaseInAGlance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CaseInAGlance.aspx.vb">
+      <DependentUpon>CaseInAGlance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ChangePassAdmin.aspx.designer.vb">
+      <DependentUpon>ChangePassAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ChangePassAdmin.aspx.vb">
+      <DependentUpon>ChangePassAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Chat.aspx.designer.vb">
+      <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Chat.aspx.vb">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ClientEntry.aspx.designer.vb">
+      <DependentUpon>ClientEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ClientEntry.aspx.vb">
+      <DependentUpon>ClientEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ClientForm.aspx.designer.vb">
+      <DependentUpon>ClientForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ClientForm.aspx.vb">
+      <DependentUpon>ClientForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ContacsOut.aspx.designer.vb">
+      <DependentUpon>ContacsOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ContacsOut.aspx.vb">
+      <DependentUpon>ContacsOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Contract.aspx.designer.vb">
+      <DependentUpon>Contract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Contract.aspx.vb">
+      <DependentUpon>Contract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CooperationRequests.aspx.designer.vb">
+      <DependentUpon>CooperationRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CooperationRequests.aspx.vb">
+      <DependentUpon>CooperationRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CountriesInfoEntry.aspx.designer.vb">
+      <DependentUpon>CountriesInfoEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CountriesInfoEntry.aspx.vb">
+      <DependentUpon>CountriesInfoEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CoverPage.aspx.designer.vb">
+      <DependentUpon>CoverPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CoverPage.aspx.vb">
+      <DependentUpon>CoverPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\DateModal.aspx.designer.vb">
+      <DependentUpon>DateModal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\DateModal.aspx.vb">
+      <DependentUpon>DateModal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\DocsPrint.aspx.designer.vb">
+      <DependentUpon>DocsPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\DocsPrint.aspx.vb">
+      <DependentUpon>DocsPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Documents.aspx.designer.vb">
+      <DependentUpon>Documents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Documents.aspx.vb">
+      <DependentUpon>Documents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\EditEmails.aspx.designer.vb">
+      <DependentUpon>EditEmails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\EditEmails.aspx.vb">
+      <DependentUpon>EditEmails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Efficiency.aspx.designer.vb">
+      <DependentUpon>Efficiency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Efficiency.aspx.vb">
+      <DependentUpon>Efficiency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\EmailSender.aspx.designer.vb">
+      <DependentUpon>EmailSender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\EmailSender.aspx.vb">
+      <DependentUpon>EmailSender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ForgetPasswordAdmin.aspx.designer.vb">
+      <DependentUpon>ForgetPasswordAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ForgetPasswordAdmin.aspx.vb">
+      <DependentUpon>ForgetPasswordAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ForPrint.Master.designer.vb">
+      <DependentUpon>ForPrint.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ForPrint.Master.vb">
+      <DependentUpon>ForPrint.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ForTest.aspx.designer.vb">
+      <DependentUpon>ForTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ForTest.aspx.vb">
+      <DependentUpon>ForTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Holidays.aspx.designer.vb">
+      <DependentUpon>Holidays.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Holidays.aspx.vb">
+      <DependentUpon>Holidays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\iisstart.aspx.designer.vb">
+      <DependentUpon>iisstart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\iisstart.aspx.vb">
+      <DependentUpon>iisstart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\KeywordEntry.aspx.designer.vb">
+      <DependentUpon>KeywordEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\KeywordEntry.aspx.vb">
+      <DependentUpon>KeywordEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\LeavedCasesReport.aspx.designer.vb">
+      <DependentUpon>LeavedCasesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\LeavedCasesReport.aspx.vb">
+      <DependentUpon>LeavedCasesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\LinksEntry.aspx.designer.vb">
+      <DependentUpon>LinksEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\LinksEntry.aspx.vb">
+      <DependentUpon>LinksEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Management.Master.designer.vb">
+      <DependentUpon>Management.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Management.Master.vb">
+      <DependentUpon>Management.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ManagementEntry.aspx.designer.vb">
+      <DependentUpon>ManagementEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ManagementEntry.aspx.vb">
+      <DependentUpon>ManagementEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MessageManagement.aspx.designer.vb">
+      <DependentUpon>MessageManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MessageManagement.aspx.vb">
+      <DependentUpon>MessageManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Monitoring.aspx.designer.vb">
+      <DependentUpon>Monitoring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Monitoring.aspx.vb">
+      <DependentUpon>Monitoring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MoveCase.aspx.designer.vb">
+      <DependentUpon>MoveCase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MoveCase.aspx.vb">
+      <DependentUpon>MoveCase.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Management\NewsEntry.aspx.designer.vb">
+      <DependentUpon>NewsEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\NewsEntry.aspx.vb">
+      <DependentUpon>NewsEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\PhoneBook.aspx.designer.vb">
+      <DependentUpon>PhoneBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\PhoneBook.aspx.vb">
+      <DependentUpon>PhoneBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ReportOut.aspx.designer.vb">
+      <DependentUpon>ReportOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ReportOut.aspx.vb">
+      <DependentUpon>ReportOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Reports.aspx.designer.vb">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Reports.aspx.vb">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Selection.aspx.designer.vb">
+      <DependentUpon>Selection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Selection.aspx.vb">
+      <DependentUpon>Selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SendSMS.aspx.designer.vb">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SendSMS.aspx.vb">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Settings.aspx.designer.vb">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Settings.aspx.vb">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SQL.aspx.designer.vb">
+      <DependentUpon>SQL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SQL.aspx.vb">
+      <DependentUpon>SQL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\TablesAndFields.aspx.designer.vb">
+      <DependentUpon>TablesAndFields.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\TablesAndFields.aspx.vb">
+      <DependentUpon>TablesAndFields.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\tmpEmailEntry.aspx.designer.vb">
+      <DependentUpon>tmpEmailEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\tmpEmailEntry.aspx.vb">
+      <DependentUpon>tmpEmailEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\VisitAsAClient.aspx.designer.vb">
+      <DependentUpon>VisitAsAClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\VisitAsAClient.aspx.vb">
+      <DependentUpon>VisitAsAClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\WeeklyPlan.aspx.designer.vb">
+      <DependentUpon>WeeklyPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\WeeklyPlan.aspx.vb">
+      <DependentUpon>WeeklyPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\WorkForMore.aspx.designer.vb">
+      <DependentUpon>WorkForMore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\WorkForMore.aspx.vb">
+      <DependentUpon>WorkForMore.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Management\WorkForNonCase.aspx.designer.vb">
+      <DependentUpon>WorkForNonCase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\WorkForNonCase.aspx.vb">
+      <DependentUpon>WorkForNonCase.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Management\WorkForOne.aspx.designer.vb">
+      <DependentUpon>WorkForOne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\WorkForOne.aspx.vb">
+      <DependentUpon>WorkForOne.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Management\WorkPlan.aspx.designer.vb">
+      <DependentUpon>WorkPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\WorkPlan.aspx.vb">
+      <DependentUpon>WorkPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\WorkType.aspx.designer.vb">
+      <DependentUpon>WorkType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\WorkType.aspx.vb">
+      <DependentUpon>WorkType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map.aspx.designer.vb">
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map.aspx.vb">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="News.aspx.designer.vb">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.vb">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publications.aspx.designer.vb">
+      <DependentUpon>Publications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Publications.aspx.vb">
+      <DependentUpon>Publications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.en.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Resource.fa.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.fa.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Resource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_LocalResources\About.aspx.en.resx" />
+    <Content Include="App_LocalResources\About.aspx.resx" />
+    <Content Include="App_LocalResources\Abroad.Master.resx" />
+    <Content Include="App_LocalResources\Affairs.aspx.en.resx" />
+    <Content Include="App_LocalResources\Affairs.aspx.resx" />
+    <Content Include="App_LocalResources\Arbitration.aspx.en.resx" />
+    <Content Include="App_LocalResources\Arbitration.aspx.resx" />
+    <Content Include="App_LocalResources\Claims.aspx.en.resx" />
+    <Content Include="App_LocalResources\Claims.aspx.resx" />
+    <Content Include="App_LocalResources\ContactUs.aspx.en.resx" />
+    <Content Include="App_LocalResources\ContactUs.aspx.resx" />
+    <Content Include="App_LocalResources\Contracts.aspx.en.resx" />
+    <Content Include="App_LocalResources\Contracts.aspx.resx" />
+    <Content Include="App_LocalResources\CooperationForm.aspx.en.resx" />
+    <Content Include="App_LocalResources\CooperationForm.aspx.resx" />
+    <Content Include="App_LocalResources\Countries.aspx.en.resx" />
+    <Content Include="App_LocalResources\Countries.aspx.resx" />
+    <Content Include="App_LocalResources\Family.aspx.en.resx" />
+    <Content Include="App_LocalResources\Family.aspx.resx" />
+    <Content Include="App_LocalResources\Index.aspx.en.resx" />
+    <Content Include="App_LocalResources\Index.aspx.resx" />
+    <Content Include="App_LocalResources\infoPackage.aspx.en.resx" />
+    <Content Include="App_LocalResources\infoPackage.aspx.resx" />
+    <Content Include="App_LocalResources\Information.aspx.en.resx" />
+    <Content Include="App_LocalResources\Information.aspx.resx" />
+    <Content Include="App_LocalResources\LegalPractices.aspx.en.resx" />
+    <Content Include="App_LocalResources\LegalPractices.aspx.resx" />
+    <Content Include="App_LocalResources\Links.aspx.en.resx" />
+    <Content Include="App_LocalResources\Links.aspx.resx" />
+    <Content Include="App_LocalResources\Main.aspx.en.resx" />
+    <Content Include="App_LocalResources\Main.aspx.resx" />
+    <Content Include="App_LocalResources\Map.aspx.resx" />
+    <Content Include="App_LocalResources\News.aspx.en.resx" />
+    <Content Include="App_LocalResources\News.aspx.resx" />
+    <Content Include="App_LocalResources\Propperties.aspx.en.resx" />
+    <Content Include="App_LocalResources\Propperties.aspx.resx" />
+    <Content Include="App_LocalResources\Publications.aspx.en.resx" />
+    <Content Include="App_LocalResources\Publications.aspx.resx" />
+    <Content Include="App_LocalResources\RegAffairs.aspx.en.resx" />
+    <Content Include="App_LocalResources\RegAffairs.aspx.resx" />
+    <Content Include="App_LocalResources\Regulations.aspx.en.resx" />
+    <Content Include="App_LocalResources\Regulations.aspx.resx" />
+    <Content Include="App_LocalResources\SendMessage.aspx.en.resx" />
+    <Content Include="App_LocalResources\SendMessage.aspx.resx" />
+    <Content Include="App_LocalResources\Site.Master.en.resx" />
+    <Content Include="App_LocalResources\Site.Master.resx" />
+    <Content Include="App_LocalResources\Transportation.aspx.en.resx" />
+    <Content Include="App_LocalResources\Transportation.aspx.resx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.js.flow" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.5.1.min.map" />
+    <Content Include="Site.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Management\Works\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50081</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50081/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

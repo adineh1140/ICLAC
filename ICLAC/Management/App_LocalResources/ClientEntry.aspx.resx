@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BoundFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="BoundFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.HeaderText" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="BoundFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource3.HeaderText" xml:space="preserve">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="BoundFieldResource4.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource4.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource4.HeaderText" xml:space="preserve">
+    <value>کد ملی</value>
+  </data>
+  <data name="BoundFieldResource5.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource5.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource5.HeaderText" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="btnClientFormResource1.Text" xml:space="preserve">
+    <value>مشاهده فرم موکل</value>
+  </data>
+  <data name="btnClientFormResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchResource1.Text" xml:space="preserve">
+    <value>جستجو کن</value>
+  </data>
+  <data name="btnSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSendSMSResource1.Text" xml:space="preserve">
+    <value>ارسال مجدد</value>
+  </data>
+  <data name="btnSendSMSResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonFieldResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonFieldResource1.Text" xml:space="preserve">
+    <value>انتخاب</value>
+  </data>
+  <data name="chkSMSResource1.Text" xml:space="preserve">
+    <value>برای موکل اس ام اس اولیه ارسال شود؟</value>
+  </data>
+  <data name="chkSMSResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvClientsResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvClientsResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvClientsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IDFromResource1.Text" xml:space="preserve">
+    <value>صادره از:</value>
+  </data>
+  <data name="IDFromResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccessErrResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccessErrResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBornDateResource1.Text" xml:space="preserve">
+    <value>تاریخ تولد:</value>
+  </data>
+  <data name="lblBornDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCellPhoneResource1.Text" xml:space="preserve">
+    <value> همراه:</value>
+  </data>
+  <data name="lblCellPhoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDescResource1.Text" xml:space="preserve">
+    <value>توضیحات:</value>
+  </data>
+  <data name="lblDescResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmail2Resource1.Text" xml:space="preserve">
+    <value>ایمیل 2:</value>
+  </data>
+  <data name="lblEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmailResource1.Text" xml:space="preserve">
+    <value>ایمیل 1:</value>
+  </data>
+  <data name="lblEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFatherNameResource1.Text" xml:space="preserve">
+    <value>نام پدر:</value>
+  </data>
+  <data name="lblFatherNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFaxNoResource1.Text" xml:space="preserve">
+    <value>شماره فکس:</value>
+  </data>
+  <data name="lblFaxNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>نام موکل:</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblHomeAddressResource1.Text" xml:space="preserve">
+    <value>آدرس منزل:</value>
+  </data>
+  <data name="lblHomeAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIDNoResource1.Text" xml:space="preserve">
+    <value>ش.ش.:</value>
+  </data>
+  <data name="lblIDNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLastNameResource1.Text" xml:space="preserve">
+    <value>نام خانوادگی :</value>
+  </data>
+  <data name="lblLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNatinalCodeErrResource1.Text" xml:space="preserve">
+    <value>کد ملی اشتباه است</value>
+  </data>
+  <data name="lblNatinalCodeErrResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNationalCodeResource1.Text" xml:space="preserve">
+    <value>کد ملی:</value>
+  </data>
+  <data name="lblNationalCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPasswordResource1.Text" xml:space="preserve">
+    <value>رمز عبور:</value>
+  </data>
+  <data name="lblPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPositionResource1.Text" xml:space="preserve">
+    <value>حالت ثبت رکورد جدید</value>
+  </data>
+  <data name="lblPositionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResendLabelResource1.Text" xml:space="preserve">
+    <value>ارسال مجدد نام کاربری و رمز برای این موکل</value>
+  </data>
+  <data name="lblResendLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveOKResource1.Text" xml:space="preserve">
+    <value>به درستی ذخیره گردید.</value>
+  </data>
+  <data name="lblSaveOKResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectResource1.Text" xml:space="preserve">
+    <value>برای ویرایش یک موکل از ابتدا آن را انتخاب نمایید.</value>
+  </data>
+  <data name="lblSelectResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSendSMSResource1.Text" xml:space="preserve">
+    <value>ارسال شد.</value>
+  </data>
+  <data name="lblSendSMSResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTelHomeResource1.Text" xml:space="preserve">
+    <value>تلفن منزل:</value>
+  </data>
+  <data name="lblTelHomeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTellBusinessResource1.Text" xml:space="preserve">
+    <value>تلفن محل کار:</value>
+  </data>
+  <data name="lblTellBusinessResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblusererrResource1.Text" xml:space="preserve">
+    <value>این نام کاربری تکراری است</value>
+  </data>
+  <data name="lblusererrResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUserNameResource1.Text" xml:space="preserve">
+    <value>نام کاربری:</value>
+  </data>
+  <data name="lblUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWorkAddressResource1.Text" xml:space="preserve">
+    <value>آدرس محل کار:</value>
+  </data>
+  <data name="lblWorkAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblYahooIDResource1.Text" xml:space="preserve">
+    <value>Yahoo ID:</value>
+  </data>
+  <data name="lblYahooIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>مرکز</value>
+  </data>
+  <data name="pnlSendSMSResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSendSMSResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBornDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBornDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBusinessAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBusinessAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCellPhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCellPhoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFatherNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFatherNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFaxNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFaxNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHomeAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHomeAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtIDFromResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtIDFromResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtIDNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtIDNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNationalCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNationalCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTellBusinessResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTellBusinessResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTellHomeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTellHomeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtYahooIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtYahooIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

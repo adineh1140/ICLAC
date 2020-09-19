@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="hplAnjomanResource1.Text" xml:space="preserve">
+    <value>انجمن شرکت های حمل ونقل بین المللی</value>
+  </data>
+  <data name="hplAnjomanResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hplChicagoResource1.Text" xml:space="preserve">
+    <value>معاهده هواپیمایی کشوری بین‌المللی</value>
+  </data>
+  <data name="hplChicagoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hplCMRResource1.Text" xml:space="preserve">
+    <value>کنوانسیون حمل و نقل بین المللی جاده ای</value>
+  </data>
+  <data name="hplCMRResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hplIATAResource1.Text" xml:space="preserve">
+    <value>یاتا</value>
+  </data>
+  <data name="hplIATAResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hplIRISLResource1.Text" xml:space="preserve">
+    <value>کشتیرانی جمهوری اسلامی</value>
+  </data>
+  <data name="hplIRISLResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hplRailResource1.Text" xml:space="preserve">
+    <value>کنوانسیون حمل و نقل بین المللی ریلی</value>
+  </data>
+  <data name="hplRailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hplTokioResource1.Text" xml:space="preserve">
+    <value>کنوانسیون توکیو</value>
+  </data>
+  <data name="hplTokioResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1Resource1.Text" xml:space="preserve">
+    <value>امروزه گستردگی مسائل حمل و نقل بین الملل و پیچیدگی روابط اشخاص بر کسی پوشیده نیست به خصوص مسائل حقوق تجارت بین الملل تا به حدی گسترده است که سازمانهای بین المللی تلاشهای فراوانی برای ارائه ی زبان مشترک و مقررات یکپارچه و متحدالشکل از قبیل اینکوترمزهای،2000 و 2010 و نیز کنوانسیونهای بین المللی و آنسیترال و نیز کنوانسیون های مختلف حمل و نقل زمینی، هوایی، دریائی، و ریلی بر این اساس پا به عرصه ی وجود گذارده اند.&lt;br/&gt; امور حمل و نقل بین المللی امروزه در بسیاری از دانشگاه های جهان، به عنوان یک شاخه ی تحصیلی در تحصیلات تکمیلی تدریس می شود و نیازمند تخصص و تجربه ی دقیق است.</value>
+  </data>
+  <data name="lbl1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2Resource1.Text" xml:space="preserve">
+    <value> مرکز در مسائل حمل و نقل به شرح ذیل ایفای نقش می نماید:</value>
+  </data>
+  <data name="lbl2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3Resource1.Text" xml:space="preserve">
+    <value>تهیه، تنظیم و اصلاح پیش نویس قراردادهای حمل و نقلی در هر کدام از شاخه های حمل و نقل و یا حمل و نقل های ترکیبی.</value>
+  </data>
+  <data name="lbl3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4Resource1.Text" xml:space="preserve">
+    <value>طرح، تعقیب و دفاع از دعاوی حمل و نقلی در هر مرجع ایرانی.</value>
+  </data>
+  <data name="lbl4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5Resource1.Text" xml:space="preserve">
+    <value>معرفی وکیل در هر کشور خارجی برای طرح دعاوی که باید در خارج از ایران طرح گردد.</value>
+  </data>
+  <data name="lbl5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6Resource1.Text" xml:space="preserve">
+    <value> انجام امور گمرکی و ترخیص کالا در هر کدام از نقاط ایران.</value>
+  </data>
+  <data name="lbl6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7Resource1.Text" xml:space="preserve">
+    <value>بررسی و برآورد خسارات، هزینه ها، دستمزدها و ... محموله ها توسط کارشناسان رسمی دادگستری.</value>
+  </data>
+  <data name="lbl7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8Resource1.Text" xml:space="preserve">
+    <value> ارائه ی مشاوره های مدون به موسسات و شرکت های حمل و نقل بین المللی و برگزاری دوره های آموزشی حقوق حمل و نقل، اینکوترمز 2000 یا 2010 برای متقاضیان.</value>
+  </data>
+  <data name="lbl8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9Resource1.Text" xml:space="preserve">
+    <value>- ارائه ی مشاوره های مدون به موسسات و شرکت های حمل و نقل بین المللی و برگزاری دوره های آموزشی حقوق حمل و نقل، اینکوترمز  2000 یا 2010 برای متقاضیان.</value>
+  </data>
+  <data name="lbl9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIndexIntroResource1.Text" xml:space="preserve">
+    <value>مقدمه</value>
+  </data>
+  <data name="lblIndexIntroResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIndexOurRuleResource1.Text" xml:space="preserve">
+    <value>نقش مرکز در حمل و نقل</value>
+  </data>
+  <data name="lblIndexOurRuleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIndexTitleResource1.Text" xml:space="preserve">
+    <value>فهرست مطالب</value>
+  </data>
+  <data name="lblIndexTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIntroResource1.Text" xml:space="preserve">
+    <value>مقدمه</value>
+  </data>
+  <data name="lblIntroResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLinksResource1.Text" xml:space="preserve">
+    <value>لینک های مرتبط</value>
+  </data>
+  <data name="lblLinksResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOurRuleResource1.Text" xml:space="preserve">
+    <value>نقش ما در امور حمل و نقل</value>
+  </data>
+  <data name="lblOurRuleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRegulationsResource1.Text" xml:space="preserve">
+    <value>قوانین و مقررات مرتبط</value>
+  </data>
+  <data name="lblRegulationsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>حقوق حمل و نقل</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+</root>

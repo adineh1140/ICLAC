@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lbl10Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1Resource1.Text" xml:space="preserve">
+    <value>در مسائل حقوق بین الملل خصوصی یا همان روابط اشخاص در عرصه ی بین المللی، شیوه ی حل و فصل اختلافات از طریق داوری، کارآمدترین، پرکاربردترین، سریعترین، و عملی ترین شیوه است و اغلب قریب به اتفاق اشخاص در مناسبات بازرگانی خود در قراردادهایشان شرط داوری یا ارجاع موضوع به داور را در هنگام بروز اختلافات، پیش بینی می کنند. با وجود فصل داوری در قانون آئین دادرسی مدنی ایران و نیز قانون داوری بین المللی هیچ شبهه ای در اهمیت موضوع داوری در موضوعات بین المللی باقی نمی ماند.</value>
+  </data>
+  <data name="lbl1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2Resource1.Text" xml:space="preserve">
+    <value>شرط داوری، به عنوان یک بند در قرارداد های فیمابین طرفین قرارداد گنجانده می شود یا اینکه طرفین طی توافقی خارج از قرارداد ،متد داوری را برای خود بر می گزینند.</value>
+  </data>
+  <data name="lbl2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3Resource1.Text" xml:space="preserve">
+    <value>این مرکز در امور داوری به شرح ذیل ایفای نقش می نماید:</value>
+  </data>
+  <data name="lbl3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4Resource1.Text" xml:space="preserve">
+    <value>صدور رای داوری در مواردی که طرفین یک قرارداد، مرکز را به عنوان داور مرضی الطرفین انتخاب کرده باشند. در مواردی که گروه داوران باید رای صادر کنند، مرکز به عنوان داور معرفی شده توسط موکلش در گروه داوران حضور می یابد و در صدور رای داوری ایفای نقش می کند. این در مواردی است که طرفین شخصی را به عنوان داور انتخاب نکرده اند و یا به طور کلی شرط داوری را بدون آنکه شخص معینی به عنوان داور تعیین شده باشد در قرارداد گنجانده باشند که در این صورت هر طرف باید داور خود را معرفی کنند تا داوران رأی داوری را صادر نمایند و یکی از طرفین در این هنگام ،مرکز را به عنوان داور خود معرفی می نماید.</value>
+  </data>
+  <data name="lbl4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5Resource1.Text" xml:space="preserve">
+    <value>ارائه ی مشاوره در شرط داوری یا قرارداد داوری که خارج از قراردادها توسط طرفین تنظیم می گردد. توضیح اینکه شرط داوری گاهی در قرارداد فیمابین درج می شود و به عنوان یک ماده یا بند در قرارداد می آید و گاهی بدون درج شرط داوری، طرفین قرارداد بعداً توافق می کنند که اختلافات قراردادی آنان به وسیله ی داور مرضی الطرفین حل و فصل شود که به این توافق اصطلاحاً توافق یا قرارداد داوری گفته می شود. تنظیم و تدوین این قرارداد داوری علیرغم ظاهر ساده ی آن خیلی تخصصی و حرفه ای است و آثار فراوانی می تواند داشته باشد، از قبیل شیوه ی ابلاغ رأی داور، قطعیت یا عدم قطعیت رأی داور، تعیین قانون حاکم برای داوران بین المللی و ... که هر کدام از این مسائل، تخصص حقوقی لازم را می طلبد.</value>
+  </data>
+  <data name="lbl5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6Resource1.Text" xml:space="preserve">
+    <value>تبیین و توضیح سیستم حقوقی ایران جهت ارائه به داوران خارجی در مواردی که قانون ایرانی بر قراردادها حاکم است. گاهی داور یا داورانی باید به اختلافاتی رسیدگی کنند که در آن «قانون ایرانی» بر روابط طرفین یا بر قرارداد حاکم است ولی داور غیر ایرانی یا حتی داور ایرانی غیر حقوقی، سیستم حقوقی ایران را نمی شناسد. در این موارد، مرکز، راهنمائی های لازم را می دهد.</value>
+  </data>
+  <data name="lbl6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7Resource1.Text" xml:space="preserve">
+    <value>حضور در جلسات رسیدگی داوری و راهنمائی داور یا داوران به نفع موکل، بدین معنا که اگر موکل، شخصی غیر از مرکز بین المللی داوری و حقوقی ایران و چین(مرکز) را به عنوان داور خود در قراردادی معین کرده باشد وکلای مرکز با شرکت در جلسات رسیدگی یا ارسال لایحه به داور ایرانی یا خارجی کمک می کند که حقوق موکل را در رای لحاظ و محفوظ نگه دارند.</value>
+  </data>
+  <data name="lbl7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8Resource1.Text" xml:space="preserve">
+    <value>اعتراض یا تقاضای ابطال آراء داوری یا تنفیذ آنها در ایران در مواردی که امکان پذیر است. گاهی اجرای آرای صادر ه از محاکم خارجی یا داوران بین المللی نیاز به تأیید و تنفیذ از سوی دادگاه های ایران دارد که اصطلاحاً به تأیید و صحه گذاشتن دادگاه ایرانی «تنفیذ» می گویند. علاوه بر آن قانون ایرانی در برخی موارد رای داوری را قابل اعتراض یا قابل ابطال می داند، مرکز به عنوان وکیل یک طرف این امور را به انجام می رساند. </value>
+  </data>
+  <data name="lbl8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9Resource1.Text" xml:space="preserve">
+    <value>اجرای آراء قطعیت یافته در ایران یا خارج از ایران</value>
+  </data>
+  <data name="lbl9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIndexIntroResource1.Text" xml:space="preserve">
+    <value>مقدمه</value>
+  </data>
+  <data name="lblIndexIntroResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIndexOurRuleResource1.Text" xml:space="preserve">
+    <value>نقش مرکز در داوری</value>
+  </data>
+  <data name="lblIndexOurRuleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIndexTitleResource1.Text" xml:space="preserve">
+    <value>فهرست مطالب</value>
+  </data>
+  <data name="lblIndexTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIntroResource1.Text" xml:space="preserve">
+    <value>مقدمه</value>
+  </data>
+  <data name="lblIntroResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOurRuleResource1.Text" xml:space="preserve">
+    <value>نقش ما در امور داوری</value>
+  </data>
+  <data name="lblOurRuleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>داوری</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+</root>

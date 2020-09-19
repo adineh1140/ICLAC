@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lbl1Resource1.Text" xml:space="preserve">
+    <value>حفظ و نگهداری اموال فقط محدود به نگهداری و حفظ فیزیکی و جلوگیری از تخریب ناشی از باد و باران نمی شود، بلکه حفظ و نگهداری حقوقی به مراتب مهمتر از حفظ و نگهداری فیزیکی است. به خصوص این موضوع در کشورهائی که قوانین خاص و سختگیرانه ای از قبیل مصادره و سرپرستی در آنها جریان دارد از اهمیت بیشتری برخوردار می شود.</value>
+  </data>
+  <data name="lbl1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2Resource1.Text" xml:space="preserve">
+    <value>   تصاحب و تصرف زمین و اموال و املاک ایرانیانی که در خارج از کشور به سر می برند بوسیله اشخاص حقیقی یا حقوقی  در حالی که صاحبان آن اموال در کشور حضور ندارند و از علت و چگونگی این تصرفات و اقدامات و راهکارهای قانونی مواجهه با آن یا اصلاً مطلع نمی شوند یا بسیار دیر  مطلع می گردند ضرورت حفظ و نگهداری حقوقی مورد نظر مرکز را بیش از پیش واضح نموده است. </value>
+  </data>
+  <data name="lbl2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3Resource1.Text" xml:space="preserve">
+    <value>خدمات و سرویس هایی که در زمینه ی اداره ی اموال توسط مرکز انجام می شود مشتمل بر تمامی مسائل حقوقی و غیر حقوقی است که پاره ای از آنها به عنوان مثال ذیلاً ذکر می گردد:</value>
+  </data>
+  <data name="lbl3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4Resource1.Text" xml:space="preserve">
+    <value>   - اخذ وکالت از مالک و حفظ و نگهداری فیزیکی املاک و جلوگیری از تخریب یا ورود آفت به آنها.«با مراجعات مرتب و بازدیدهای لازم و ایجاد ارتباط با مدیران ساختمان در مواردی که آپارتمان باشد.</value>
+  </data>
+  <data name="lbl4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5Resource1.Text" xml:space="preserve">
+    <value>   - تصرفات وکالتی که مانع از شمول قوانین مصادره و تصاحب و تصرف توسط سازمانها گردد.« در هنگامیکه ملکی مورد تصرفات مالکش باشد مثلاً آن را بازدید، مرمت، و بهره برداری می کند یا آن را اجاره می دهد، بدان معناست که آن ملک در اختیار مالکش می باشد و سازمانهای تملک کننده سخت تر می توانند به آن تعرض نمایند. این امور در غیاب مالکین توسط مرکز انجام می شود.</value>
+  </data>
+  <data name="lbl5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6Resource1.Text" xml:space="preserve">
+    <value>   - دادن اجازه ی اخذ اجاره بها به نام و برای مالکین و واریز وجوه مال الاجاره به حساب مالکین.</value>
+  </data>
+  <data name="lbl6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8Resource1.Text" xml:space="preserve">
+    <value>   - انجام هر گونه معاملات قطعی، رهنی، صلح و ... به نام و برای موکلین.</value>
+  </data>
+  <data name="lbl8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9Resource1.Text" xml:space="preserve">
+    <value>   - انجام و اجرای دعاوی مربوط به اموال، تخلیه ی مستاجر، اخذ مال الاجاره ها از طریق محاکم دادگستری، دعاوی تصرف از قبیل تصرف عدوانی، مزاحمت و ممانعت از حق و به طور کلی هر دعوائی که مربوط به اداره ی اموال شود.</value>
+  </data>
+  <data name="lbl9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>حفظ و نگهداری اموال موکلین</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+</root>

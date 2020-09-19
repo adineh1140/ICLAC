@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="indIntroResource1.Text" xml:space="preserve">
+    <value>مقدمه</value>
+  </data>
+  <data name="indIntroResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1_0Resource1.Text" xml:space="preserve">
+    <value>نقش مرکز در خدمات حقوقی قراردادها</value>
+  </data>
+  <data name="Label1_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>ــ باز پرداخت وام توسط شركت پروژه </value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>ــ انتقال پروژه ، پس از انقضای مدت وام گیرنده</value>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lb2_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد مهندسی و تدارک تجهيزات و کالا</value>
+  </data>
+  <data name="lb2_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl0_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که در آن، با اندازه‌گيری مقدار کار انجام شده، پس از تکميل کار، و قيمتگذاری آن براساس فهرست بهای مورد توافق، از مبلغ قرارداد اطمينان حاصل می‌شود.</value>
+  </data>
+  <data name="lbl0_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl10_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد با تعديل قيمت </value>
+  </data>
+  <data name="lbl10_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl10_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که قيمت يا مبلغ آن با استفاده از فرمول از قبل توافق شده تعديل می‌شود.</value>
+  </data>
+  <data name="lbl10_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl10Resource1.Text" xml:space="preserve">
+    <value>- بررسی قانون حاکم بر قرارداد یا روابط کاری و تجاری طرفین و پیشنهاد شیوه ی حل و فصل اختلافات.</value>
+  </data>
+  <data name="lbl10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl11_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد مختلط مقطوع و فهرست بها </value>
+  </data>
+  <data name="lbl11_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl11_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که قسمتهايی از آن (که دقيقاً مشخص شده است) به صورت مقطوع و بقيه قسمتها (که هنگام عقد قرارداد دقيقاً مشخص نيست) به صورت فهرست‌بها می‌باشد.</value>
+  </data>
+  <data name="lbl11_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl12_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد طرح و اجرا </value>
+  </data>
+  <data name="lbl12_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl12_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که پیمانکار پروژه‌ای را بر اساس اطلاعات ارائه شده به وسيله کارفرما، طراحی و اجرا می‌کند.</value>
+  </data>
+  <data name="lbl12_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl13_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی </value>
+  </data>
+  <data name="lbl13_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl13_1Resource1.Text" xml:space="preserve">
+    <value> قرارداد بر اساس هزينه‌های انجام شده می‌باشد.</value>
+  </data>
+  <data name="lbl13_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl14_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی با سقف هزينه </value>
+  </data>
+  <data name="lbl14_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl14_1Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی است که در آن سقف هزينه اوليه برآورد می‌شود و پس از خاتمه کار تفاوت بين سقف هزينه و هزينه‌ واقعی بر اساس توافق بين کارفرما و پیمانکار سرشکن می‌شود.</value>
+  </data>
+  <data name="lbl14_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl15_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی ذی‌نفع </value>
+  </data>
+  <data name="lbl15_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl15_1Resource1.Text" xml:space="preserve">
+    <value>  قرارداد امانی است که پرداخت به پیمانکار بر اساس هزينه‌های واقعی به علاوه درصدی از هزينه‌ها يا دستمزد انجام می‌شود.</value>
+  </data>
+  <data name="lbl15_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl16_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی ذی‌نفع با مبلغ ثابت </value>
+  </data>
+  <data name="lbl16_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl16_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که مبلغ آن بر اساس توافق در بدو قرارداد تعيين و ثابت می‌باشد، اين قيمت ثابت با هزينه‌های عملی تغيير نمی‌کند مگر اينکه کارهای مورد قرارداد تغيير پيدا کند، اين نوع قرارداد برای پیمانکار انگيزه‌ای برای کنترل هزينه‌ها پديد می‌آورد و در غير اين صورت خسارت زيادی را متحمل خواهد شد.</value>
+  </data>
+  <data name="lbl16_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl17_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی ذی‌نفع با درصد سود </value>
+  </data>
+  <data name="lbl17_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl17_1Resource1.Text" xml:space="preserve">
+    <value>  - قراردادی است که قيمت کار پیمانکار مقطوع نيست، اما معادل درصد تعيين شده (به عنوان سود) علاوه بر هزينه‌های مستند به پیمانکار پرداخت می‌شود. &lt;br/&gt;  - قراردادی است که هزينه‌‌های مستند پیمانکار به علاوه درصدی به عنوان سود به وی پرداخت می‌‌شود.</value>
+  </data>
+  <data name="lbl17_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl18_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی ذی‌نفع با قيمت ثابت و پاداش </value>
+  </data>
+  <data name="lbl18_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl18_1Resource1.Text" xml:space="preserve">
+    <value>  قرارداد بر مبنای پرداخت هزينه‌ها که شامل دو قسمت می‌باشد: 1- قيمت مبنای ثابت اوليه 2- مبلغی به عنوان پاداش، که تمام يا قسمتی از آن در طول کار به پیمانکار پرداخت می‌شود. اين پاداش انگيزه‌ای است که پیمانکار در منابع مالی و زمان صرفه‌جويی کند و کيفيت فنی کار را نيز مد نظر قرار دهد و ميزان پرداخت پاداش بر مبنای قضاوت و ارزيابی کار پیمانکار از طرف کارفرما بر اساس قرارداد تعيين می‌شود.</value>
+  </data>
+  <data name="lbl18_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl19_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد دستمزدی </value>
+  </data>
+  <data name="lbl19_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl19_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که تنها برای تأمين نيروی کار منعقد می‌شود.</value>
+  </data>
+  <data name="lbl19_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1Resource1.Text" xml:space="preserve">
+    <value>امور حقوقی مربوط به قراردادها بسیار دقیق و پر اهمیت است. همه می دانند که در موارد بسیاری  به سبب شیوه نوشتن یک مطلب و حتی به کار بردن یک کلمه به جای کلمه ی  دیگر آثار و معانی مختلف و بعضاً متضادی  بوجود می آید و تعهدات یا حقوقی خلاف قصد و اراده ی طرفین یا یک طرف ایجاد می کند. </value>
+  </data>
+  <data name="lbl1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1Resource2.Text" xml:space="preserve">
+    <value>مرکز ی مرکز به شرح ذیل در امور قراردادها ایفای نقش می کند</value>
+  </data>
+  <data name="lbl1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که در آن مجموعه خدمات طراحی، مهندسی و تأمين مصالح و تجهيزات و نظارت بر نصب و راه‌اندازی توسط يک پیمانکار انجام می‌شود.</value>
+  </data>
+  <data name="lbl2_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl20_0Resource1.Text" xml:space="preserve">
+    <value>(قرارداد مذاکره‌ای (توافق يا قرارداد بدون مناقصه</value>
+  </data>
+  <data name="lbl20_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl20_1Resource1.Text" xml:space="preserve">
+    <value>  - قراردادی که بر اساس بررسی صلاحيت و قدرت اجرايی و سوابق و تجهيزات يک يا چند پیمانکار بدون مناقصه منعقد می‌شود. مبلغ و شرايط قرارداد نيز بر اساس مذاکره تعيين می‌شود. &lt;br/&gt;- قراردادی است که بر اساس شروط مالی و شروط ديگر بين کارفرما و يک پیمانکار واحد مذاکره و توافق شده است.</value>
+  </data>
+  <data name="lbl20_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl21_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد مناقصه ای  </value>
+  </data>
+  <data name="lbl21_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl21_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که از طريق مناقصه و دعوت از تمام آنهايی که خواهان و دارای توان انجام آن هستند، برنده مناقصه مشخص و با وی قرارداد بسته می‌شود. </value>
+  </data>
+  <data name="lbl21_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl22_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد مديريت </value>
+  </data>
+  <data name="lbl22_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl22_1Resource1.Text" xml:space="preserve">
+    <value>قراردادی است که به موجب آن پیمانکار در مرحله طراحی، خدمات مشاوره‌ای ارائه می‌کند و پس از عقد قرارداد، در کارگاه مسئول برنامه‌ريزی و مديريت تمام امور و اجرای کامل قرارداد می‌با‌شد.</value>
+  </data>
+  <data name="lbl22_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl23_0Resource1.Text" xml:space="preserve">
+    <value>اجرای کار به روش قرارداد مديريت</value>
+  </data>
+  <data name="lbl23_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl23_1Resource1.Text" xml:space="preserve">
+    <value>  در اين روش اجرای کار از طريق ترک تشريفات مناقصه به يک پیمانکار مديريت واگذار می‌شود و پیمانکار مديريت در ازای مديريت فنی و اجرايی حق‌الزحمه مقطوعی دريافت می‌کند. هزينه اجرای عمليات (به استثنای حق‌الزحمه مديريت) از وجهی که کارفرما به حساب مشترک واريز می‌کند پرداخت می‌شود (حساب مشترک با امضای نماينده کارفرما و رئيس کارگاه است). حداکثر هزينه اجرای عمليات بر مبنای فهرست‌بهای مربوط و ضرايب آن به اضافه 20 درصد به عنوان صعوبت نيمه کاره بودن آن محاسبه می‌شود. اين روش برای کارهايی که از پیمانکار خلع يد شده يا قسمتی از طرح که قبلاً انجام شده است، به کار می‌رود. (موضوع بخشنامه شماره 66900 مورخ 15/11/61 سازمان مديريت و برنامه‌ريزی کشور) </value>
+  </data>
+  <data name="lbl23_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl24_0Resource1.Text" xml:space="preserve">
+    <value>متمم قرارداد  </value>
+  </data>
+  <data name="lbl24_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl24_1Resource1.Text" xml:space="preserve">
+    <value>  - قراردادی است مستقل که در ادامه کار قرارداد قبلی به منظور تکميل آن منعقد می‌شود. &lt;br/&gt; - متمم قرارداد، قراردادی است که در ادامه قرارداد قبلی برای ادامه کار مشابه منعقد می‌شود.</value>
+  </data>
+  <data name="lbl24_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl25_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد دست دوم</value>
+  </data>
+  <data name="lbl25_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl25_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که به منظور انجام قسمتی از کار يا بخشی از خدمات توسط شخص ثالثی با پیمانکار اصلی بسته می‌شود.</value>
+  </data>
+  <data name="lbl25_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl26_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد اندازه‌گيری مجدد</value>
+  </data>
+  <data name="lbl26_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl26_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که برای انجام کار بر اساس حجم عمليات و واحد بهای مربوط تنظيم شده است و پرداخت بر مبنای مقادير اقلام کار انجام شده و قيمت واحد آنها صورت می‌گيرد.</value>
+  </data>
+  <data name="lbl26_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl27_0Resource1.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="lbl27_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl27_1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl27_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl28_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد همسان</value>
+  </data>
+  <data name="lbl28_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl28_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که موافقتنامه، شرايط عمومی، شرح خدمات و حق‌الزحمه مصوب داشته باشد.</value>
+  </data>
+  <data name="lbl28_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl29_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد ناهمسان</value>
+  </data>
+  <data name="lbl29_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl29_1Resource1.Text" xml:space="preserve">
+    <value>  قرارداد ناهمسان قراردادی است که موافقتنامه، شرايط عمومی، شرح خدمات يا حق‌الزحمه مصوب نداشته باشد و يا هر يک از مدارک مصوب ياد شده در آنها قابل استفاده نباشد.</value>
+  </data>
+  <data name="lbl29_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2Resource1.Text" xml:space="preserve">
+    <value>- تهیه و تنظیم پیش نویس ها بر اساس خواسته های موکل.</value>
+  </data>
+  <data name="lbl2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد تدارک تجهيزات و کالا و ساختمان و نصب </value>
+  </data>
+  <data name="lbl3_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3_1Resource1.Text" xml:space="preserve">
+    <value>قراردادی است که در آن مجموعه خدمات تأمين، مصالح و تجهيزات و عمليات ساختمان و نصب و راه‌اندازی توسط يک پیمانکار انجام می‌شود.</value>
+  </data>
+  <data name="lbl3_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl30_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد پژوهشی</value>
+  </data>
+  <data name="lbl30_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl30_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که برای انجام دادن خدمات يا کارهای پژوهشی و تحقيقاتی مورد استفاده قرار می‌گيرد</value>
+  </data>
+  <data name="lbl30_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl31_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد همکاری</value>
+  </data>
+  <data name="lbl31_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl31_1Resource1.Text" xml:space="preserve">
+    <value>  قرارداد همکاری عبارت است از توافقی که بين دو يا چند شرکت مشاور يا پیمانکار برای انجام يک طرح مشخص يا يک کار به عمل می‌آيد. در اين توافق، حدود وظايف و مسئوليت هر کدام از شرکتها مشخص شده است.</value>
+  </data>
+  <data name="lbl31_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl32_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد کار</value>
+  </data>
+  <data name="lbl32_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl32_1Resource1.Text" xml:space="preserve">
+    <value>  قرارداد کار عبارتست از قرارداد کتبی يا شفاهی که به موجب آن کارگر در قبال دريافت حق‌السعی، کاری را برای مدت موقت يا مدت غير موقت برای کارفرما انجام می‌دهد. &lt;br/&gt;  تبصره 1- حداکثر مدت موقت برای کارهايی که طبيعت آنها جنبه غير مستمر دارد توسط وزارت کار و امور اجتماعی تهيه و به تصويب هيئت وزيران خواهد رسيد. &lt;br/&gt;  تبصره 2 - در کارهايی که طبيعت آنها جنبه مستمر دارد، در صورتی که مدتی در قرارداد ذکر نشود، قرارداد دائمی تلقی می‌شود.</value>
+  </data>
+  <data name="lbl32_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl33_0Resource1.Text" xml:space="preserve">
+    <value>موافقتنامه ليسانس</value>
+  </data>
+  <data name="lbl33_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl33_1Resource1.Text" xml:space="preserve">
+    <value>  عبارت است از يک قرارداد که به وسيله آن صاحب ليسانس حق استفاده قانونی از ليسانس را به ديگری می‌دهد.</value>
+  </data>
+  <data name="lbl33_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl33_1Resource2.Text" xml:space="preserve">
+    <value>  عبارت است از يک قرارداد که به وسيله آن صاحب ليسانس حق استفاده قانونی از ليسانس را به ديگری می‌دهد.</value>
+  </data>
+  <data name="lbl33_1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl34_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد احداث ، اجاره ، انتقال</value>
+  </data>
+  <data name="lbl34_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl34_1Resource1.Text" xml:space="preserve">
+    <value>در این نوع قرارداد ، كارفرما ( یا دولت ) مبلغ پیمان را به پیمانكار یا سرمایه گذار خصوصی از طریق اجاره دادن پروژه تحت یك شرایط و برنامه توافق شده پرداخت می كند . مالكیت پروژه پس از انقضای دوره اجاره به دولت بر می گردد .</value>
+  </data>
+  <data name="lbl34_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl35_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد احداث ، انتقال ، بهره برداری</value>
+  </data>
+  <data name="lbl35_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl35_1Resource1.Text" xml:space="preserve">
+    <value>در این نوع قرارداد سرمایه گذار خصوصی ، نسبت به ساخت پروژه اقدام نموده و دولت هرینه های سرمایه گذاری بخش خصوصی ، با احتساب مخاطرات ناشی از افزایش هزینه ، تاخیر و عملكردهای خاص ، پروژه را می پردازد . پس از راه اندازی پروژه ، بهره برداری از آن به یك مرکز اجرایی ( نمایندگی ) منتقل می شود . ( بعد از تحویل ، دولت به ظاهر مالك پروژه است ) .</value>
+  </data>
+  <data name="lbl35_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد ساخت ، بهره برداری و انتقال</value>
+  </data>
+  <data name="lbl36_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_1Resource1.Text" xml:space="preserve">
+    <value>تعریف:</value>
+  </data>
+  <data name="lbl36_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_2Resource1.Text" xml:space="preserve">
+    <value> یكی از جدیدترین نوع قراردادهای تامین مالی است كه از اوایل دهه 1980 به رسانه های مالی راه یافت . استفاده از این روش ، به ویژه در مورد موسسات زیربنایی به تدریجی توسعه یافت . در این روش ، ساخت و بهره برداری پروژه به مدت معینی ، توسط شركتی كه اصطلاحاً ، شركت پروژه نام می گیرد . انجام می شود . انتقال پروژه به كار فرما پس از طی مدتی معین و بعد از تحصیل در آمد لازم ، تحقق می یابد . در این شیوه ، سرمایه گذاری مستقیماً از بودجه دولتی نیست . بنابراین روش B.O.T درواقع یك روش مستقل قراردادهای اجرایی نبوده بلكه بیشتر روشی است برای تامین مالی پروژه . </value>
+  </data>
+  <data name="lbl36_2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_3Resource1.Text" xml:space="preserve">
+    <value>مراحل انجام شیوه ی B.O.T :</value>
+  </data>
+  <data name="lbl36_3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_4Resource1.Text" xml:space="preserve">
+    <value>ــ تشكیل شركت پروژه به صورت خصوصی و با مسئولیت محدود توسط مجریان پروژه . </value>
+  </data>
+  <data name="lbl36_4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_5Resource1.Text" xml:space="preserve">
+    <value> ــ تنظیم سندمالی ، جمع آوری منابع مالی از طریق استقراض ، اوراق قرضه ، تعهد تامین مالی</value>
+  </data>
+  <data name="lbl36_5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_6Resource1.Text" xml:space="preserve">
+    <value>ــ فروش سهام شركت پروژه</value>
+  </data>
+  <data name="lbl36_6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_7Resource1.Text" xml:space="preserve">
+    <value>ــ شركت پروژه خریدار ، مالك و بهره بردار واحد مروبط خواهد بود . ( مثلاً ، واحد نیروگاه برق ) .</value>
+  </data>
+  <data name="lbl36_7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_8Resource1.Text" xml:space="preserve">
+    <value>ــ ریسك پذیری سهامداران </value>
+  </data>
+  <data name="lbl36_8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl36_9Resource1.Text" xml:space="preserve">
+    <value>ــ بهره برداری </value>
+  </data>
+  <data name="lbl36_9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl37_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد ساخت ، تملك ، بهره برداری</value>
+  </data>
+  <data name="lbl37_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl37_1Resource1.Text" xml:space="preserve">
+    <value>در این نوع قرارداد ، سرمایه گذار خصوصی نیست به ساخت ، تملك ، راه اندازی و نگهداری پروژه برای همیشه اقدام می كند و عوارض ، اجاره ها و سایر مخارج و درَآمدهای ناشی از اجرای پروژه را به منظور بازگرداندن سرمایه به سود تحصیلی جمع آوری می كند . در این نوع قرارداد ، دولت ممكن است بهره برداری و نگهداری پروژه را به یك دستگاه سومی محول نماید . و نیز دولت مختار است نسبت به خرید محصول و یا خدمات ناشی از قرارداد B.O.O اقدام نماید . ( ساخت /تملك / بهره برداری ) .</value>
+  </data>
+  <data name="lbl37_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl38_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد ساخت ، انتقال</value>
+  </data>
+  <data name="lbl38_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl38_1Resource1.Text" xml:space="preserve">
+    <value>قراردادی است برای ساخت و انتقال ( واگذاری ) پروژه ای ، كه بهره برداری را كشور میزبان انجام می دهد و نسبت به پرداخت اصل و فروع سرمایع به كشور پیمانكار اقدام می نماید . ( ساخت / انتقال ) .</value>
+  </data>
+  <data name="lbl38_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl38Resource1.Text" xml:space="preserve">
+    <value>قرارداد ساخت ، انتقال</value>
+  </data>
+  <data name="lbl38Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl39_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد ساخت ،تملك ، بهره برداری و انتقال‌</value>
+  </data>
+  <data name="lbl39_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl39_1Resource1.Text" xml:space="preserve">
+    <value>در این نوع قرارداد ، پروژه‌ پس از بهره برداری به كشور میزبان منتقل می شود . </value>
+  </data>
+  <data name="lbl39_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl39Resource1.Text" xml:space="preserve">
+    <value>قرارداد ساخت ،تملك ، بهره برداری و انتقال‌</value>
+  </data>
+  <data name="lbl39Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3Resource1.Text" xml:space="preserve">
+    <value>- حضور در جلسات، مذاکرات و سپس تنظیم پیش نویس ها.</value>
+  </data>
+  <data name="lbl3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد مهندسی، تدارک تجهيزات و کالا و ساختمان و نصب </value>
+  </data>
+  <data name="lbl4_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4_1Resource1.Text" xml:space="preserve">
+    <value>يک نوع قرارداد طرح و ساخت است که در آن مجموعه خدمات مهندسی و طراحی و تهيه و تأمين تجهيزات و مصالح و عمليات ساختمان و نصب و راه‌اندازی، تماماً توسط يک پیمانکار انجام می‌شود.</value>
+  </data>
+  <data name="lbl4_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl40_0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl40_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl40_1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl40_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4Resource1.Text" xml:space="preserve">
+    <value>- اظهار نظر در پیش نویس هائی که توسط طرف مقابل تهیه و پیشنهاد شده است.</value>
+  </data>
+  <data name="lbl4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد کليدگردان </value>
+  </data>
+  <data name="lbl5_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5_1Resource1.Text" xml:space="preserve">
+    <value>- قرارداد کليدگردان قراردادی است که پیمانکار مسئوليت طراحی، تهيه و تدارک مصالح و تجهيزات، ساخت و نصب و ساير کارها برای تکميل طرح را به عهده ‌دارد و طرح را در وضعيت عمليات و آماده بهره‌برداری تحويل کارفرما می‌دهد و کارفرما فقط مسئوليت بهره‌برداری را به عهده ‌دارد. و همچنين تأمين موقت منابع مالی نيز به عهده پیمانکار می‌باشد و پس از تکميل، هزينه‌ها به وی پرداخت می‌شود.&lt;br/&gt;
+  - يکی از روشهای اجرای طرح و ساخت می‌باشد که پیمانکار تأمين مالی، طراحی و ساخت را برمبنای مشخصات تعيين شده و قيمت مورد توافق انجام می‌دهد. بعد از تکميل کار و راه‌اندازی، کارفرما تمام هزينه‌ها را پرداخت می‌کند</value>
+  </data>
+  <data name="lbl5_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5Resource1.Text" xml:space="preserve">
+    <value>- مذاکره و دفاع از ایده ها یا تنظیم و تغییرات در صورتجلسه ها با طرف مقابل و توجیه پیشنهاداتی که در تغییر قراردادها و صورتجلسات به موکل و به طرف مقابل ارائه می شود.</value>
+  </data>
+  <data name="lbl5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد با مبلغ ثابت </value>
+  </data>
+  <data name="lbl6_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6_1Resource1.Text" xml:space="preserve">
+    <value>قراردادی است که مبلغ آن در مناقصه اعلام و يا بر اساس فهرست‌بها تعيين می‌شود.&lt;br/&gt;
+  يادآوری- در صورت تغيير در شرايط اقتصادی مبلغ نهايی قابل تعديل است.</value>
+  </data>
+  <data name="lbl6_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6Resource1.Text" xml:space="preserve">
+    <value>- ارائه ی مشاوره به موکلین در خصوص تنظیم قراردادها و توضیح و تشریح پیش نویس ها برای موکلین.</value>
+  </data>
+  <data name="lbl6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد با مبلغ مقطوع </value>
+  </data>
+  <data name="lbl7_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7_1Resource1.Text" xml:space="preserve">
+    <value>  قراردادی است که مبلغ آن ثابت بوده و هيچ‌گونه تعديل قيمت به آن تعلق نمی‌گيرد.&lt;br/&gt;
+  اين نوع قرارداد با پیمانکاری منعقد می‌شود که تجربه اجرايی اين قبيل کارها را داشته باشد و تمام مسئوليت قيمت متوجه وی می‌باشد و ضمناً بيشترين انگيزه را برای کنترل هزينه‌ها و کارايی بيشتر پیمانکار دارد.</value>
+  </data>
+  <data name="lbl7_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7Resource1.Text" xml:space="preserve">
+    <value>- برگزاری کلاس های آموزشی در تنظیم قراردادها برای اشخاص حقیقی و حقوقی در زمینه های مختلف.</value>
+  </data>
+  <data name="lbl7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد يک قلم </value>
+  </data>
+  <data name="lbl8_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8_1Resource1.Text" xml:space="preserve">
+    <value>قرارداد با مبلغ ثابت که بر اساس مناقصه تک قيمتی منعقد شده است.&lt;br/&gt; قراردادی است با مبلغ ثابت برای انجام يک طرح و يا کار مشخص، کار يا طرح، با محدوده مشخص و شرايط از پيش تعيين شده و با توافق اوليه انجام می‌شود. مبلغ قرارداد قابل تغيير نمی‌باشد مگر اينکه حجم کار تغيير کند و دو طرف با مبلغ آن به توافق برسند.</value>
+  </data>
+  <data name="lbl8_1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8Resource1.Text" xml:space="preserve">
+    <value>- اظهار نظر در قراردادهای تخصصی به خصوص در مسائل قراردادهای نفتی، گازی، حمل و نقل بین الملل، Joint Venture، انتقال تکنولوژی، واردات و صادرات، پیمانکاری های مختلف.</value>
+  </data>
+  <data name="lbl8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9_0Resource1.Text" xml:space="preserve">
+    <value>قرارداد متره </value>
+  </data>
+  <data name="lbl9_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9Resource1.Text" xml:space="preserve">
+    <value>- تنظیم قراردادهای دو یا چند زبانه .</value>
+  </data>
+  <data name="lbl9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd10Resource1.Text" xml:space="preserve">
+    <value>قرارداد با تعديل قيمت</value>
+  </data>
+  <data name="lblInd10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd11Resource1.Text" xml:space="preserve">
+    <value>قرارداد مختلط مقطوع و فهرست بها</value>
+  </data>
+  <data name="lblInd11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd12Resource1.Text" xml:space="preserve">
+    <value>قرارداد طرح و اجرا </value>
+  </data>
+  <data name="lblInd12Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd13Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی</value>
+  </data>
+  <data name="lblInd13Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd14Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی با سقف هزينه</value>
+  </data>
+  <data name="lblInd14Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd15Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی ذی‌نفع </value>
+  </data>
+  <data name="lblInd15Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd16Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی ذی‌نفع با مبلغ ثابت</value>
+  </data>
+  <data name="lblInd16Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd17Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی ذی‌نفع با درصد سود</value>
+  </data>
+  <data name="lblInd17Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd18Resource1.Text" xml:space="preserve">
+    <value>قرارداد امانی ذی‌نفع با قيمت ثابت و پاداش</value>
+  </data>
+  <data name="lblInd18Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd19Resource1.Text" xml:space="preserve">
+    <value>قرارداد دستمزدی</value>
+  </data>
+  <data name="lblInd19Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd1Resource1.Text" xml:space="preserve">
+    <value>نقش ما، در خدمات حقوقی قراردادها</value>
+  </data>
+  <data name="lblInd1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd20Resource1.Text" xml:space="preserve">
+    <value>قرارداد مذاکره ای</value>
+  </data>
+  <data name="lblInd20Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd21Resource1.Text" xml:space="preserve">
+    <value>قرارداد مناقصه ای</value>
+  </data>
+  <data name="lblInd21Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd22Resource1.Text" xml:space="preserve">
+    <value>قرارداد مدیریت</value>
+  </data>
+  <data name="lblInd22Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd23Resource1.Text" xml:space="preserve">
+    <value>اجرای کار به روش قرارداد مديريت</value>
+  </data>
+  <data name="lblInd23Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd24Resource1.Text" xml:space="preserve">
+    <value>متمم قرارداد</value>
+  </data>
+  <data name="lblInd24Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd25Resource1.Text" xml:space="preserve">
+    <value>قرارداد دست دوم</value>
+  </data>
+  <data name="lblInd25Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd26Resource1.Text" xml:space="preserve">
+    <value>قرارداد اندازه‌گيری مجدد</value>
+  </data>
+  <data name="lblInd26Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd27Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd27Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd28Resource1.Text" xml:space="preserve">
+    <value>قرارداد همسان</value>
+  </data>
+  <data name="lblInd28Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd29Resource1.Text" xml:space="preserve">
+    <value>قرارداد ناهمسان</value>
+  </data>
+  <data name="lblInd29Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd2Resource1.Text" xml:space="preserve">
+    <value>قرارداد مهندسی و تدارک تجهيزات و کالا</value>
+  </data>
+  <data name="lblInd2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd30Resource1.Text" xml:space="preserve">
+    <value>قرارداد پژوهشی</value>
+  </data>
+  <data name="lblInd30Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd31Resource1.Text" xml:space="preserve">
+    <value>قرارداد همکاری</value>
+  </data>
+  <data name="lblInd31Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd32Resource1.Text" xml:space="preserve">
+    <value>قرارداد کار</value>
+  </data>
+  <data name="lblInd32Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd33Resource1.Text" xml:space="preserve">
+    <value>موافقتنامه ليسانس</value>
+  </data>
+  <data name="lblInd33Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd34Resource1.Text" xml:space="preserve">
+    <value>قرارداد احداث ، اجاره ، انتقال</value>
+  </data>
+  <data name="lblInd34Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd35Resource1.Text" xml:space="preserve">
+    <value>قرارداد احداث ، انتقال ، بهره برداری</value>
+  </data>
+  <data name="lblInd35Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd36Resource1.Text" xml:space="preserve">
+    <value>قرارداد ساخت ، بهره برداری و انتقال</value>
+  </data>
+  <data name="lblInd36Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblINd37Resource1.Text" xml:space="preserve">
+    <value>قرارداد ساخت ، تملك ، بهره برداری</value>
+  </data>
+  <data name="lblINd37Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd3Resource1.Text" xml:space="preserve">
+    <value>قرارداد تدارک تجهيزات و کالا و ساختمان و نصب</value>
+  </data>
+  <data name="lblInd3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd4Resource1.Text" xml:space="preserve">
+    <value>قرارداد مهندسی، تدارک تجهيزات و کالا و ساختمان و نصب</value>
+  </data>
+  <data name="lblInd4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd5Resource1.Text" xml:space="preserve">
+    <value>قرارداد کليدگردان</value>
+  </data>
+  <data name="lblInd5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd6Resource1.Text" xml:space="preserve">
+    <value>قرارداد با مبلغ ثابت</value>
+  </data>
+  <data name="lblInd6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd7Resource1.Text" xml:space="preserve">
+    <value>قرارداد با مبلغ مقطوع</value>
+  </data>
+  <data name="lblInd7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd8Resource1.Text" xml:space="preserve">
+    <value>قرارداد يک قلم</value>
+  </data>
+  <data name="lblInd8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInd9Resource1.Text" xml:space="preserve">
+    <value>قرارداد متره</value>
+  </data>
+  <data name="lblInd9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIntro_0Resource1.Text" xml:space="preserve">
+    <value>مقدمه</value>
+  </data>
+  <data name="lblIntro_0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIntroResource1.Text" xml:space="preserve">
+    <value>امور حقوقی مربوط به قراردادها بسیار دقیق و پر اهمیت است. همه می دانند که در موارد بسیاری  به سبب شیوه نوشتن یک مطلب و حتی به کار بردن یک کلمه به جای کلمه ی  دیگر آثار و معانی مختلف و بعضاً متضادی  بوجود می آید و تعهدات یا حقوقی خلاف قصد و اراده ی طرفین یا یک طرف ایجاد می کند. </value>
+  </data>
+  <data name="lblIntroResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>قراردادها</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource2.Text" xml:space="preserve">
+    <value>امور قراردادها</value>
+  </data>
+  <data name="lblTitleResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTypes2Resource1.Text" xml:space="preserve">
+    <value>انواع قراردادها</value>
+  </data>
+  <data name="lblTypes2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTypesResource1.Text" xml:space="preserve">
+    <value>انواع قراردادها</value>
+  </data>
+  <data name="lblTypesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>مرکز| حقوق قراردادها</value>
+  </data>
+</root>

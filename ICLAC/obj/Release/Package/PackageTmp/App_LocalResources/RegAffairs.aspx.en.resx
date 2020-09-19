@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lbl10Resource1.Text" xml:space="preserve">
+    <value>Just like any person who is born is issued a national Identification (ID), a Corporation or company is also recognized and registered on a national and issued an (ID). On behalf of the corporation and by having a POWER OF ATTORNEY,  ICLAC will register and pursue the legal issues as explained below:</value>
+  </data>
+  <data name="lbl10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl1Resource1.Text" xml:space="preserve">
+    <value>Based on REGISTRATION law, the Iranian Government only recognizes the owner of property /assets with the “property deed “officially registered to the person’s name. BORHANSHAR offers the services of obtaining a replacement deed in cases where the owner has lost the “deed”. In case of selling the property to a new owner and change of title of the DEED, there are certain specific laws regarding the issue as explained below:</value>
+  </data>
+  <data name="lbl1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl2Resource1.Text" xml:space="preserve">
+    <value>-Stop or halt order on “change of Title “of property.</value>
+  </data>
+  <data name="lbl2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl3Resource1.Text" xml:space="preserve">
+    <value>-The existence of third party rights as in a “ lease “ contract.</value>
+  </data>
+  <data name="lbl3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl4Resource1.Text" xml:space="preserve">
+    <value>-The existence of “  TRESSPASSING “ documents and also the existence of any legal claim as a third party and …</value>
+  </data>
+  <data name="lbl4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl5Resource1.Text" xml:space="preserve">
+    <value>-To implement maps.</value>
+  </data>
+  <data name="lbl5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl6Resource1.Text" xml:space="preserve">
+    <value>-To eliminate the third parties as “ TRESSPASSERS “.</value>
+  </data>
+  <data name="lbl6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl7Resource1.Text" xml:space="preserve">
+    <value>- breakdown report  or separation list of related reports</value>
+  </data>
+  <data name="lbl7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl8Resource1.Text" xml:space="preserve">
+    <value>- Partitioning or separation report of shared items  of property or assets…  which could each be    separately explained in legal registration format.</value>
+  </data>
+  <data name="lbl8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl9Resource1.Text" xml:space="preserve">
+    <value>Corporate REGISTRATION issues:</value>
+  </data>
+  <data name="lbl9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>Registration Affairs</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>SELf/Registration Affairs</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl11Resource1.Text" xml:space="preserve">
+    <value>-To officially register a non-commercial/private company from the very beginning stages.</value>
+  </data>
+  <data name="lbl12Resource1.Text" xml:space="preserve">
+    <value>- To register a branch of company or organization.</value>
+  </data>
+  <data name="lbl13Resource1.Text" xml:space="preserve">
+    <value>-To register the Managing Director, the managers, and the judges in cases where they need to be registered.</value>
+  </data>
+  <data name="lbl14Resource1.Text" xml:space="preserve">
+    <value>-To register any changes in company’s address or statute.</value>
+  </data>
+  <data name="lbl15Resource1.Text" xml:space="preserve">
+    <value>-To officially SEAL the accounting books.</value>
+  </data>
+  <data name="lbl16Resource1.Text" xml:space="preserve">
+    <value>-To officially register the Balance sheets and income statements.</value>
+  </data>
+  <data name="lbl17Resource1.Text" xml:space="preserve">
+    <value>Company LOGO and TRADE MARK  registration</value>
+  </data>
+  <data name="lbl18Resource1.Text" xml:space="preserve">
+    <value>In order to be lawfully protected, any company logo or company trademarks must be officially registered. ICLAC offers the following services regarding this issue:</value>
+  </data>
+  <data name="lbl19Resource1.Text" xml:space="preserve">
+    <value>-To register the Trademark or Commercial corporate name.</value>
+  </data>
+  <data name="lbl20Resource1.Text" xml:space="preserve">
+    <value>-To protest or object to any other similar registration logo or trademarks.</value>
+  </data>
+  <data name="lbl21Resource1.Text" xml:space="preserve">
+    <value>-To object or pursue the case in court of law in regards to misuse of name/logo/trade mark used by a third party and to claim any damages caused.</value>
+  </data>
+  <data name="lbl22Resource1.Text" xml:space="preserve">
+    <value>-To transfer or change the corporate name/ logo or trade mark.</value>
+  </data>
+  <data name="lbl23Resource1.Text" xml:space="preserve">
+    <value>- To register the company logo or trademarks in other countries.</value>
+  </data>
+</root>

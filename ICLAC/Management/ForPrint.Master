@@ -1,0 +1,46 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="ForPrint.master.vb" Inherits="ICLAC.ForPrint" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Content/css/bootstrap-rtl.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <img src="../Images/Header.png" class="img-responsive" runat="server" />
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="reports.aspx" runat="server">بازگشت به گزارش ها</a></li>
+                        <li><a href="iisstart.aspx" runat="server">بازگشت به میز کار</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <br />
+            <div class="row">
+                <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="row ">
+                <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
