@@ -15,7 +15,8 @@
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     <script src="Scripts/tooltip.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
+
+
     <asp:ContentPlaceHolder ID="cphHead" runat="server">
     </asp:ContentPlaceHolder>
     <style>
@@ -65,156 +66,156 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-        <div class="row">
-            <div class="col-md-12 column">
-                <nav class="navbar navbar-inverse navbar-fixed-top ">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="http://www.iranchinalaw.com"></a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="myNavbar">
-                            <h5>
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <asp:HyperLink NavigateUrl="legalpractices.aspx" Text=" خدمات حقوقی" ID="HyperLink1" runat="server" meta:resourcekey="HyperLink1Resource2" /></li>
-                                    <li>
-                                        <asp:HyperLink NavigateUrl="countries.aspx" Text="کشورهای تحت پوشش" ID="hplCountries" Visible="false" runat="server" meta:resourcekey="hplCountriesResource2" /></li>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 column">
+                    <nav class="navbar navbar-inverse navbar-fixed-top ">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="http://www.iranchinalaw.com"></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <h5>
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <asp:HyperLink NavigateUrl="legalpractices.aspx" Text=" خدمات حقوقی" ID="HyperLink1" runat="server" meta:resourcekey="HyperLink1Resource2" /></li>
+                                        <li>
+                                            <asp:HyperLink NavigateUrl="countries.aspx" Text="کشورهای تحت پوشش" ID="hplCountries" Visible="false" runat="server" meta:resourcekey="hplCountriesResource2" /></li>
 
-                                    <li>
-                                        <asp:HyperLink Text="تماس با ما" ID="hplContactUs" NavigateUrl="~/ContactUs.aspx" runat="server" meta:resourcekey="lblMnuContactUsResource1" /></li>
-                                    <li>
-                                        <asp:HyperLink NavigateUrl="publications.aspx" Text="انتشارات" ID="hplPublications" runat="server" meta:resourcekey="hplPublicationsResource1" /></li>
-                                    <li>
-                                        <asp:HyperLink NavigateUrl="about.aspx" Text="مختصری در باره مرکز" ID="hplMnuAboutSELF" runat="server" meta:resourcekey="hplMnuAboutSELFResource1" /></li>
-                                    <li>
-                                        <asp:HyperLink NavigateUrl="Links.aspx" Text="مراجع قضایی" ID="hplLinks" runat="server" meta:resourcekey="hplLinksResource1" /></li>
-                                    <li>
-                                        <asp:HyperLink NavigateUrl="Clientslogin.aspx" Text="ورود موکلین" ID="hplMnuLogin" runat="server" meta:resourcekey="hplMnuLoginResource1" /></li>
-                                </ul>
-                                <div class="<%$ Resources: Resource, MenuDirection %>" role="search" runat="server">
-                                    <div class="form-group">
-                                        <asp:TextBox runat="server" ID="txtSearch" class="form-control" />
+                                        <li>
+                                            <asp:HyperLink Text="تماس با ما" ID="hplContactUs" NavigateUrl="~/ContactUs.aspx" runat="server" meta:resourcekey="lblMnuContactUsResource1" /></li>
+<%--                                        <li>
+                                            <asp:HyperLink NavigateUrl="publications.aspx" Text="انتشارات" ID="hplPublications" runat="server" meta:resourcekey="hplPublicationsResource1" /></li>--%>
+                                        <li>
+                                            <asp:HyperLink NavigateUrl="about.aspx" Text="مختصری در باره مرکز" ID="hplMnuAboutSELF" runat="server" meta:resourcekey="hplMnuAboutSELFResource1" /></li>
+                                        <li>
+                                            <asp:HyperLink NavigateUrl="Links.aspx" Text="مراجع قضایی" ID="hplLinks" runat="server" meta:resourcekey="hplLinksResource1" /></li>
+                                        <li>
+                                            <asp:HyperLink NavigateUrl="Clientslogin.aspx" Text="ورود موکلین" ID="hplMnuLogin" runat="server" meta:resourcekey="hplMnuLoginResource1" /></li>
+                                    </ul>
+                                    <div class="<%$ Resources: Resource, MenuDirection %>" role="search" runat="server">
+                                        <div class="form-group">
+                                            <asp:TextBox runat="server" ID="txtSearch" class="form-control" />
+                                        </div>
+                                        <asp:Button runat="server" ID="btnSearch" Text="جستجو" class="btn btn-info" OnClick="btnSearch_Click" />
                                     </div>
-                                    <asp:Button runat="server" ID="btnSearch" Text="جستجو" class="btn btn-info" OnClick="btnSearch_Click" />
-                                </div>
-                            </h5>
+                                </h5>
+                            </div>
                         </div>
-                    </div>
-                </nav>
-                <br />
-                <br />
-                <br />
+                    </nav>
+                    <br />
+                    <br />
+                    <br />
 
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <asp:ContentPlaceHolder ID="cphCarousel" runat="server">
-                    <div class="row" style="text-align: center">
-                        <div class="col-md-12 column">
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
-                                    <li data-slide-to="1" data-target="#carousel-example-generic"></li>
-                                    <li data-slide-to="2" data-target="#carousel-example-generic"></li>
-                                    <li data-slide-to="3" data-target="#carousel-example-generic"></li>
-                                    <li data-slide-to="4" data-target="#carousel-example-generic"></li>
-                                    <li data-slide-to="5" data-target="#carousel-example-generic"></li>
-                                    <li data-slide-to="6" data-target="#carousel-example-generic"></li>
-                                    <li data-slide-to="7" data-target="#carousel-example-generic"></li>
-                                    <li data-slide-to="8" data-target="#carousel-example-generic"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <asp:Image ID="Image1" ImageUrl="~/images/slide0.jpg" class="img-responsive" Width="1200px" Height="250px" runat="server" meta:resourcekey="Image1Resource1" />
-                                    </div>
-                                    <div class="item">
-                                        <a href="contracts.aspx">
-                                            <asp:Image ID="image7" ImageUrl="~/images/slide1.jpg" class="img-responsive" Width="1200px" Height="250px" runat="server" meta:resourcekey="image7Resource1" />
+            <div class="row">
+                <div class="col">
+                    <asp:ContentPlaceHolder ID="cphCarousel" runat="server">
+                        <div class="row" style="text-align: center">
+                            <div class="col-md-12 column">
+                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+                                        <li data-slide-to="1" data-target="#carousel-example-generic"></li>
+                                        <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+                                        <li data-slide-to="3" data-target="#carousel-example-generic"></li>
+                                        <li data-slide-to="4" data-target="#carousel-example-generic"></li>
+                                        <li data-slide-to="5" data-target="#carousel-example-generic"></li>
+                                        <li data-slide-to="6" data-target="#carousel-example-generic"></li>
+                                        <li data-slide-to="7" data-target="#carousel-example-generic"></li>
+                                        <li data-slide-to="8" data-target="#carousel-example-generic"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <asp:Image ID="Image1" ImageUrl="~/images/slide0.jpg" class="img-responsive" Width="1200px" Height="250px" runat="server" meta:resourcekey="Image1Resource1" />
+                                        </div>
+                                        <div class="item">
+                                            <a href="contracts.aspx">
+                                                <asp:Image ID="image7" ImageUrl="~/images/slide1.jpg" class="img-responsive" Width="1200px" Height="250px" runat="server" meta:resourcekey="image7Resource1" />
+                                                <div class="carousel-caption">
+                                                    <h4></h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="Claims.aspx">
+                                                <asp:Image ID="image2" ImageUrl="~/images/slide2.jpg" class="img-responsive" Width="1200px" Height="250px" runat="server" meta:resourcekey="image2Resource1" />
+                                                <div class="carousel-caption">
+                                                    <h4>Litigation
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <asp:Image ID="image3" ImageUrl="~/images/slide3.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image3Resource1" />
                                             <div class="carousel-caption">
-                                                <h4></h4>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="Claims.aspx">
-                                            <asp:Image ID="image2" ImageUrl="~/images/slide2.jpg" class="img-responsive" Width="1200px" Height="250px" runat="server" meta:resourcekey="image2Resource1" />
-                                            <div class="carousel-caption">
-                                                <h4>Litigation
+                                                <h4>International Transportion Law
                                                 </h4>
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <asp:Image ID="image3" ImageUrl="~/images/slide3.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image3Resource1" />
-                                        <div class="carousel-caption">
-                                            <h4>International Transportion Law
-                                            </h4>
+                                        </div>
+                                        <div class="item">
+                                            <a href="Arbitration.aspx">
+                                                <asp:Image ID="image4" ImageUrl="~/images/slide4.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image4Resource1" />
+                                                <div class="carousel-caption">
+                                                    <h4>Arbitration
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <asp:Image ID="image5" ImageUrl="~/images/slide5.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image5Resource1" />
+                                                <div class="carousel-caption">
+                                                    <h4>International Trade Law
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="regAffairs.aspx">
+                                                <asp:Image ID="image6" ImageUrl="~/images/slide6.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image6Resource1" />
+                                                <div class="carousel-caption">
+                                                    <h4>Registration affairs
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="affairs.aspx">
+                                                <asp:Image ID="image8" ImageUrl="~/images/slide7.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image8Resource1" />
+                                                <div class="carousel-caption">
+                                                    <h4>Legal Managing of person's affairs
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="properties.aspx">
+                                                <asp:Image ID="image9" ImageUrl="~/images/slide8.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image9Resource1" />
+                                                <div class="carousel-caption">
+                                                    <h4>Real Estates
+                                                    </h4>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <a href="Arbitration.aspx">
-                                            <asp:Image ID="image4" ImageUrl="~/images/slide4.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image4Resource1" />
-                                            <div class="carousel-caption">
-                                                <h4>Arbitration
-                                                </h4>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <asp:Image ID="image5" ImageUrl="~/images/slide5.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image5Resource1" />
-                                            <div class="carousel-caption">
-                                                <h4>International Trade Law
-                                                </h4>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="regAffairs.aspx">
-                                            <asp:Image ID="image6" ImageUrl="~/images/slide6.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image6Resource1" />
-                                            <div class="carousel-caption">
-                                                <h4>Registration affairs
-                                                </h4>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="affairs.aspx">
-                                            <asp:Image ID="image8" ImageUrl="~/images/slide7.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image8Resource1" />
-                                            <div class="carousel-caption">
-                                                <h4>Legal Managing of person's affairs
-                                                </h4>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="properties.aspx">
-                                            <asp:Image ID="image9" ImageUrl="~/images/slide8.jpg" class="img-responsive" runat="server" Width="1200px" Height="250px" meta:resourcekey="image9Resource1" />
-                                            <div class="carousel-caption">
-                                                <h4>Real Estates
-                                                </h4>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <%-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                    <%-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span></a>
                         <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span></a>--%>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </asp:ContentPlaceHolder>
+                    </asp:ContentPlaceHolder>
+                </div>
             </div>
-        </div>
 
-        <div class="container">
             <div class="row">
                 <div class="col-md-2" style="text-align: right">
                     <img src="Images/Logo.png" class="img-responsive" />
@@ -330,8 +331,8 @@
                             <li>
                                 <asp:HyperLink ID="hplFooterLitigation" NavigateUrl="claims.aspx" Text="امور دعاوی" runat="server" meta:resourcekey="hplFooterLitigationResource1" />
                             </li>
-                            <li>
-                                <asp:HyperLink ID="hplFooterInfoPackage" NavigateUrl="infopackage.aspx" Text="بسته اطلاعاتی راه اندازی تجارت بین الملل" runat="server" meta:resourcekey="hplFooterInfoPackageResource1" />
+<%--                            <li>
+                                <asp:HyperLink ID="hplFooterInfoPackage" NavigateUrl="infopackage.aspx" Text="بسته اطلاعاتی راه اندازی تجارت بین الملل" runat="server" meta:resourcekey="hplFooterInfoPackageResource1" />--%>
                             </li>
                             <li>
                                 <asp:HyperLink ID="hplFooterTransportation" NavigateUrl="Transportation.aspx" Text="حقوق حمل و نقل" runat="server" meta:resourcekey="hplFooterTransportationResource1" />
@@ -356,14 +357,6 @@
                             </li>
                             <li>
                                 <asp:HyperLink ID="hplFooterVokala" NavigateUrl="http://iranbar.com" Text="کانون وکلای دادگستری" Target="_blank" runat="server" meta:resourcekey="hplFooterVokalaResource1" />
-                            </li>
-                            <li><a href="https://www.facebook.com/7Eqlim" target="_blank">
-                                <asp:Image ID="imgFacebook" ImageUrl="http://www.7eqlim.com/images/facebook.jpg" runat="server" Height="55px" Width="183px" />
-                            </a>
-                            </li>
-                            <li><a href="https://ir.linkedin.com/in/7eqlim" target="_blank">
-                                <asp:Image ID="imgLinkedin" ImageUrl="http://www.7eqlim.com/images/Linkedin.jpg" runat="server" Height="58px" Width="184px" />
-                            </a>
                             </li>
                         </ul>
                     </h6>

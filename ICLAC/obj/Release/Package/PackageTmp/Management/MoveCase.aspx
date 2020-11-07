@@ -49,14 +49,14 @@
             </asp:Panel>
         </div>
         <div class=" col-md-4">
-            <label for="gvMyCases">چه پرونده هایی نزد من است؟</label>
-            <asp:GridView ID="gvMyCases" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False">
+            <label for="gvHistory">تاریخچه ی انتقال پرونده</label>
+            <asp:GridView ID="gvHistory" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
-                    <asp:BoundField DataField="ID" HeaderText="شماره پرونده"/>
                     <asp:BoundField DataField="movedate" HeaderText="تاریخ تحویل" />
                     <asp:BoundField DataField="movetime" HeaderText="ساعت تحویل" />
-                    <asp:BoundField DataField="moverid" HeaderText="تحویل دهنده" />
+                    <asp:BoundField DataField="moverfullname" HeaderText="تحویل دهنده" />
+                    <asp:BoundField DataField="receiveranswer" HeaderText="وضعیت تحویل" />
                 </Columns>
                 <EditRowStyle BackColor="#7C6F57" />
                 <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />

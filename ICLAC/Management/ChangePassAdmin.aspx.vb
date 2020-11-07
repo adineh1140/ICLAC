@@ -8,31 +8,23 @@
             Response.Redirect("~/Management/Login.aspx")
         End If
     End Sub
-    Protected Sub btnChangePass_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnChangePass.Click
-        If txtOldPass.Text = "" Then
-            lblErr.Text = "رمز  پیشین خود را وارد نمایید."
-            lblErr.Visible = True
+    Protected Sub ChangePassSubmit(ByVal sender As Object, ByVal e As EventArgs)
+        If NewPass.Value <> RePass.Value Then
+            XX.ShowAllert("توجه", "رمز جدید وتکرار آن یکسان نیستند.")
             Exit Sub
         End If
-        If Len(txtNewPass.Text) < 6 Then
-            lblErr.Text = "طول رمز جدید باید بیشتر از 5 حرف یا عدد باشد."
-            lblErr.Visible = True
-            Exit Sub
-        End If
-        If txtNewPass.Text <> txtRePass.Text Then
-            lblErr.Text = "رمز جدید با تکرار آن یکسان نیست."
-            lblErr.Visible = True
-            Exit Sub
-        End If
-
-        Dim DS As New DataSet
-        Dim strOldPass As String
-        DS = XX.GetDataSet("SELECT * FROM tblStaff WHERE ID = '" & Session("ID") & "' ")
-        strOldPass = DS.Tables(0).Rows(0).Item("Password")
-        XX.ExecuteQuery("UPDATE tblStaff SET Password = '" &
-                txtNewPass.Text & "' WHERE ID = '" &
-                Session("ID") & "' AND Password = '" &
-                strOldPass & "' ")
-        lblOK.Visible = True
+        Try
+            Dim DS As New DataSet
+            Dim strOldPass As String
+            DS = XX.GetDataSet("SELECT * FROM tblStaff WHERE ID = '" & Session("ID") & "' ")
+            strOldPass = DS.Tables(0).Rows(0).Item("Password")
+            XX.ExecuteQuery("UPDATE tblStaff SET Password = '" &
+                    NewPass.Value & "' WHERE ID = '" &
+                    Session("ID") & "' AND Password = '" &
+                    strOldPass & "' ")
+            XX.ShowAllert("اطمینان بخشی", "تغییر رمز عبور به درستی انجام شد.")
+        Catch ex As Exception
+            XX.ShowAllert("خطا", "حین عملیات خطا رخ داد.", True)
+        End Try
     End Sub
 End Class

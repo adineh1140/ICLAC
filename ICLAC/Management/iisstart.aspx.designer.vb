@@ -50,22 +50,22 @@ Partial Public Class iisstart
     Protected WithEvents lblLastLogTime As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''pnlMoveCase control.
+    '''btnToday control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pnlMoveCase As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents btnToday As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''rptMoveCase control.
+    '''btnWorksOK control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rptMoveCase As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents btnWorksOK As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''pnlLeavedWorks control.
@@ -167,22 +167,22 @@ Partial Public Class iisstart
     Protected WithEvents gvCooperationRequests As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''btnToday control.
+    '''pnlMoveCase control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnToday As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents pnlMoveCase As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''btnWorksOK control.
+    '''rptMoveCase control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnWorksOK As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents rptMoveCase As Global.System.Web.UI.WebControls.Repeater
 
     '''<summary>
     '''pnlAllow control.

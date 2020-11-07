@@ -20,7 +20,7 @@
         strSql &= " And id in (SELECT caseid FROM tblstaffincases WHERE lawyerid =" & Val(Session("id")) & ")"
         DS = Sami.GetDataSet(strSql)
         If DS.Tables(0).Rows.Count < 1 Then
-            lblErr.Visible = True
+            Sami.ShowAllert("توجه", "هیچ پرونده ی بلاتکلیفی وجود ندارد.")
         End If
         gvCases.DataSource = DS
         gvCases.DataBind()

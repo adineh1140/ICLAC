@@ -68,7 +68,6 @@ D:\Programming\ICLAC\ICLAC\bin\Newtonsoft.Json.xml
 D:\Programming\ICLAC\ICLAC\bin\Antlr3.Runtime.pdb
 D:\Programming\ICLAC\ICLAC\bin\Microsoft.AspNet.FriendlyUrls.xml
 D:\Programming\ICLAC\ICLAC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Programming\ICLAC\ICLAC\obj\Debug\ICLAC.vbprojAssemblyReference.cache
 D:\Programming\ICLAC\ICLAC\obj\Debug\ICLAC.Resources.resources
 D:\Programming\ICLAC\ICLAC\obj\Debug\ICLAC.vbproj.GenerateResource.cache
 D:\Programming\ICLAC\ICLAC\obj\Debug\ICLAC.vbproj.CoreCompileInputs.cache
@@ -76,3 +75,5 @@ D:\Programming\ICLAC\ICLAC\obj\Debug\ICLAC.vbproj.CopyComplete
 D:\Programming\ICLAC\ICLAC\obj\Debug\ICLAC.dll
 D:\Programming\ICLAC\ICLAC\obj\Debug\WebForms_Basic.xml
 D:\Programming\ICLAC\ICLAC\obj\Debug\ICLAC.pdb
+D:\Programming\ICLAC\ICLAC\obj\Debug\ICLAC.vbprojAssemblyReference.cache
+D:\Programming\ICLAC\ICLAC\bin\CarouselView.FormsPlugin.Abstractions.dll

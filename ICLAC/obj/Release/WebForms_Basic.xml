@@ -895,42 +895,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ClientLogin._lblPicture">
-<summary>
-lblPicture control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ClientLogin._img">
-<summary>
-img control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ClientLogin._txtPic">
-<summary>
-txtPic control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ClientLogin._btnNewPic">
-<summary>
-btnNewPic control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:ICLAC.ClientLogin._btnLogin">
 <summary>
 btnLogin control.
@@ -5827,54 +5791,36 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ChangePassAdmin._txtOldPass">
+<member name="F:ICLAC.ChangePassAdmin._OldPass">
 <summary>
-txtOldPass control.
+OldPass control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ChangePassAdmin._txtNewPass">
+<member name="F:ICLAC.ChangePassAdmin._NewPass">
 <summary>
-txtNewPass control.
+NewPass control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ChangePassAdmin._txtRePass">
+<member name="F:ICLAC.ChangePassAdmin._RePass">
 <summary>
-txtRePass control.
+RePass control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ChangePassAdmin._btnChangePass">
+<member name="F:ICLAC.ChangePassAdmin._ChangePass">
 <summary>
-btnChangePass control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ChangePassAdmin._lblOK">
-<summary>
-lblOK control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ChangePassAdmin._lblErr">
-<summary>
-lblErr control.
+ChangePass control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -7888,6 +7834,24 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ICLAC.iisstart._btnToday">
+<summary>
+btnToday control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.iisstart._btnWorksOK">
+<summary>
+btnWorksOK control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ICLAC.iisstart._pnlLeavedWorks">
 <summary>
 pnlLeavedWorks control.
@@ -7987,18 +7951,18 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.iisstart._btnToday">
+<member name="F:ICLAC.iisstart._pnlMoveCase">
 <summary>
-btnToday control.
+pnlMoveCase control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.iisstart._btnWorksOK">
+<member name="F:ICLAC.iisstart._rptMoveCase">
 <summary>
-btnWorksOK control.
+rptMoveCase control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -8116,15 +8080,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ICLAC.LeavedCasesReport._gvCases">
 <summary>
 gvCases control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.LeavedCasesReport._lblErr">
-<summary>
-lblErr control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -8455,70 +8410,79 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._txtName">
+<member name="F:ICLAC.StaffEntry._rblSelect">
 <summary>
-txtName control.
+rblSelect control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._RequiredFieldValidator1">
+<member name="F:ICLAC.StaffEntry._pnlEdit">
 <summary>
-RequiredFieldValidator1 control.
+pnlEdit control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._txtFamily">
+<member name="F:ICLAC.StaffEntry._gvManagers">
 <summary>
-txtFamily control.
+gvManagers control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._RequiredFieldValidator2">
+<member name="F:ICLAC.StaffEntry._pnlDetails">
 <summary>
-RequiredFieldValidator2 control.
+pnlDetails control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._txtEmail">
+<member name="F:ICLAC.StaffEntry._Firstname">
 <summary>
-txtEmail control.
+Firstname control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._txtCellphone">
+<member name="F:ICLAC.StaffEntry._Lastname">
 <summary>
-txtCellphone control.
+Lastname control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._lblCellphoneErr">
+<member name="F:ICLAC.StaffEntry._Email">
 <summary>
-lblCellphoneErr control.
+Email control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._ddlCareer">
+<member name="F:ICLAC.StaffEntry._CellPhone">
+<summary>
+CellPhone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.StaffEntry._ddlCareer">
 <summary>
 ddlCareer control.
 </summary>
@@ -8527,99 +8491,54 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._txtUser">
+<member name="F:ICLAC.StaffEntry._UserName">
 <summary>
-txtUser control.
+UserName control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._lblUserErr">
+<member name="F:ICLAC.StaffEntry._Password">
 <summary>
-lblUserErr control.
+Password control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._txtPass">
+<member name="F:ICLAC.StaffEntry._RePassword">
 <summary>
-txtPass control.
+RePassword control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._lblPassErr">
+<member name="F:ICLAC.StaffEntry._fuPicture">
 <summary>
-lblPassErr control.
+fuPicture control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._txtRePass">
+<member name="F:ICLAC.StaffEntry._Submit">
 <summary>
-txtRePass control.
+Submit control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ManagementEntry._fuPic">
+<member name="F:ICLAC.StaffEntry._Delete">
 <summary>
-fuPic control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ManagementEntry._lblSave">
-<summary>
-lblSave control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ManagementEntry._btnSave">
-<summary>
-btnSave control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ManagementEntry._btnDelete">
-<summary>
-btnDelete control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ManagementEntry._lblMessage">
-<summary>
-lblMessage control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ManagementEntry._gvManagers">
-<summary>
-gvManagers control.
+Delete control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -8878,9 +8797,9 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.MoveCase._gvMyCases">
+<member name="F:ICLAC.MoveCase._gvHistory">
 <summary>
-gvMyCases control.
+gvHistory control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -10705,15 +10624,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.Site._hplPublications">
-<summary>
-hplPublications control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:ICLAC.Site._hplMnuAboutSELF">
 <summary>
 hplMnuAboutSELF control.
@@ -11065,15 +10975,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.Site._hplFooterInfoPackage">
-<summary>
-hplFooterInfoPackage control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:ICLAC.Site._hplFooterTransportation">
 <summary>
 hplFooterTransportation control.
@@ -11128,18 +11029,207 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.Site._imgFacebook">
+<member name="F:ICLAC.Transportation._lblIndexTitle">
 <summary>
-imgFacebook control.
+lblIndexTitle control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.Site._imgLinkedin">
+<member name="F:ICLAC.Transportation._lblIndexIntro">
 <summary>
-imgLinkedin control.
+lblIndexIntro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lblIndexOurRule">
+<summary>
+lblIndexOurRule control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lblTitle">
+<summary>
+lblTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lblIntro">
+<summary>
+lblIntro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lbl1">
+<summary>
+lbl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lblOurRule">
+<summary>
+lblOurRule control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lbl2">
+<summary>
+lbl2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lbl3">
+<summary>
+lbl3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lbl4">
+<summary>
+lbl4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lbl5">
+<summary>
+lbl5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lbl6">
+<summary>
+lbl6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lbl7">
+<summary>
+lbl7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lbl8">
+<summary>
+lbl8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lblRegulations">
+<summary>
+lblRegulations control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._hplCMR">
+<summary>
+hplCMR control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._hplRail">
+<summary>
+hplRail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._hplTokio">
+<summary>
+hplTokio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._hplChicago">
+<summary>
+hplChicago control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._lblLinks">
+<summary>
+lblLinks control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._hplAnjoman">
+<summary>
+hplAnjoman control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._hplIRISL">
+<summary>
+hplIRISL control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.Transportation._hplIATA">
+<summary>
+hplIATA control.
 </summary>
 <remarks>
 Auto-generated field.

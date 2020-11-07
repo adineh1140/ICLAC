@@ -90,7 +90,7 @@
                                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">مدیریت<span class="caret"></span></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="MoveCase.aspx">جابجایی پرونده</a></li>
-                                                    <li><a href="managemententry.aspx">ورود اطلاعات کارکنان</a></li>
+                                                    <li><a href="StaffEntry.aspx">ورود اطلاعات کارکنان</a></li>
                                                     <li><a href="monitoring.aspx">نظارت و پیگیری</a></li>
                                                     <li><a href="holidays.aspx">ایام تعطیل</a></li>
                                                     <li><a href="newsentry.aspx">اخبار حقوقی</a></li>

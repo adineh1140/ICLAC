@@ -4,7 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphTitle" runat="server">
         <label>پرونده های بلاتکلیف</label>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
     <div class="row">
@@ -34,7 +33,6 @@
                 <SortedDescendingCellStyle BackColor="#D4DFE1" />
                 <SortedDescendingHeaderStyle BackColor="#15524A" />
             </asp:GridView>
-            <asp:Label ID="lblErr" Text="هیچ پرونده بلاتکلیفی وجود ندارد." ForeColor="Red" Visible="false" runat="server"></asp:Label>
         </div>
     </div>
 </asp:Content>

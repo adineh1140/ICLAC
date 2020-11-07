@@ -25,6 +25,11 @@
         Session("CaseID") = gvCases.Rows(e.CommandArgument).Cells(0).Text
         pnlDetails.Visible = True
         txtDescription.Value = ""
+
+        strSQL = "SELECT * From vwmovecase WHERE caseid=" & Session("caseid") & " ORDER BY Movedate DESC"
+        DS = Sami.GetDataSet(strSQL)
+        gvHistory.DataSource = DS.Tables(0)
+        gvHistory.DataBind()
     End Sub
 
     Protected Sub MoveCaseSave_click()

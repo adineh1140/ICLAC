@@ -40,49 +40,56 @@
     End Sub
 
     Protected Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
-        lblErr.Visible = False
-        lblOK.Visible = False
-        If txtFirstName.Text = "" And txtLastName.Text = "" Then
-            lblErr.Text = "ابتدا فیلدهای ضروری را پر کنید"
-            lblErr.Visible = True
-            Exit Sub
-        End If
-        Dim strSQL As String
-        If btnSave.Text = "ثبت" Then
-            If XX.isARecord("SELECT id FROM tblcontacts WHERE firstname ='" & txtFirstName.Text & "' AND lastname ='" & txtLastName.Text & "'") = True Then
-                lblErr.Text = "این نام و نام خانوادگی قبلا ثبت شده است."
+        Try
+
+            lblErr.Visible = False
+            lblOK.Visible = False
+            If txtFirstName.Text = "" And txtLastName.Text = "" Then
+                lblErr.Text = "ابتدا فیلدهای ضروری را پر کنید"
                 lblErr.Visible = True
                 Exit Sub
             End If
-            Session("contactid") = XX.NewID("tblcontacts")
-            strSQL = "INSERT INTO tblcontacts VALUES("
-            strSQL &= Session("contactid") & ",'"
-            strSQL &= XX.PureString(txtFirstName.Text) & "','"
-            strSQL &= XX.PureString(txtLastName.Text) & "','"
-            strSQL &= XX.PureString(txtHomeTell.Text) & "','"
-            strSQL &= XX.PureString(txtWorkTell.Text) & "','"
-            strSQL &= XX.PureString(txtCellPhone.Text) & "','"
-            strSQL &= XX.PureString(txtFax.Text) & "','"
-            strSQL &= XX.PureString(txtDescription.Text) & "')"
-            XX.ExecuteQuery(strSQL)
-        Else
-            strSQL = "UPDATE tblcontacts SET "
-            strSQL &= "firstname ='" & XX.PureString(txtFirstName.Text)
-            strSQL &= "',lastname = '" & XX.PureString(txtLastName.Text)
-            strSQL &= "',hometell ='" & XX.PureString(txtHomeTell.Text)
-            strSQL &= "',worktell ='" & XX.PureString(txtWorkTell.Text)
-            strSQL &= "',cellphone ='" & XX.PureString(txtCellPhone.Text)
-            strSQL &= "',fax ='" & XX.PureString(txtFax.Text)
-            strSQL &= "',description ='" & XX.PureString(txtDescription.Text)
-            strSQL &= "' WHERE id =" & Session("contactid")
-            XX.ExecuteQuery(strSQL)
-            btnSave.Text = "ثبت"
-        End If
-        DS = XX.GetDataSet("SELECT * FROM tblcontacts ORDER BY lastname,firstname")
-        gvContacts.DataSource = DS.Tables(0)
-        gvContacts.DataBind()
-        lblOK.Text = "شماره مورد نظر با موفقیت ذخیره شد."
-        lblOK.Visible = True
+            Dim strSQL As String
+            If btnSave.Text = "ثبت" Then
+                If XX.isARecord("SELECT id FROM tblcontacts WHERE firstname ='" & txtFirstName.Text & "' AND lastname ='" & txtLastName.Text & "'") = True Then
+                    lblErr.Text = "این نام و نام خانوادگی قبلا ثبت شده است."
+                    lblErr.Visible = True
+                    Exit Sub
+                End If
+                Session("contactid") = XX.NewID("tblcontacts")
+                strSQL = "INSERT INTO tblcontacts VALUES("
+                strSQL &= Session("contactid") & ",'"
+                strSQL &= XX.PureString(txtFirstName.Text) & "','"
+                strSQL &= XX.PureString(txtLastName.Text) & "','"
+                strSQL &= XX.PureString(txtHomeTell.Text) & "','"
+                strSQL &= XX.PureString(txtWorkTell.Text) & "','"
+                strSQL &= XX.PureString(txtCellPhone.Text) & "','"
+                strSQL &= XX.PureString(txtFax.Text) & "','"
+                strSQL &= XX.PureString(txtDescription.Text) & "')"
+                XX.ExecuteQuery(strSQL)
+                XX.ShowAllert("اطمینان بخشی", "شماره مورد نظر با موفقیت ذخیره شد.")
+
+            Else
+                strSQL = "UPDATE tblcontacts SET "
+                strSQL &= "firstname ='" & XX.PureString(txtFirstName.Text)
+                strSQL &= "',lastname = '" & XX.PureString(txtLastName.Text)
+                strSQL &= "',hometell ='" & XX.PureString(txtHomeTell.Text)
+                strSQL &= "',worktell ='" & XX.PureString(txtWorkTell.Text)
+                strSQL &= "',cellphone ='" & XX.PureString(txtCellPhone.Text)
+                strSQL &= "',fax ='" & XX.PureString(txtFax.Text)
+                strSQL &= "',description ='" & XX.PureString(txtDescription.Text)
+                strSQL &= "' WHERE id =" & Session("contactid")
+                XX.ExecuteQuery(strSQL)
+                btnSave.Text = "ثبت"
+                XX.ShowAllert("اطمینان بخشی", "شماره مورد نظر با موفقیت ویرایش  شد.")
+
+            End If
+            DS = XX.GetDataSet("SELECT * FROM tblcontacts ORDER BY lastname,firstname")
+            gvContacts.DataSource = DS.Tables(0)
+            gvContacts.DataBind()
+        Catch ex As Exception
+            XX.ShowAllert("خطا", "حین عملیات ذخیره سازی خطا رخ داد.")
+        End Try
 
     End Sub
 

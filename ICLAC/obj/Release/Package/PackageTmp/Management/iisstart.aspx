@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Management/Management.Master" CodeBehind="iisstart.aspx.vb" Inherits="ICLAC.iisstart" %>
+﻿<%@ Page Title="میز کار مدیریت" Language="vb" AutoEventWireup="false" MasterPageFile="~/Management/Management.Master" CodeBehind="iisstart.aspx.vb" Inherits="ICLAC.iisstart" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphTitle" runat="server">
     میز مدیریت
@@ -11,21 +11,29 @@
                 <asp:Label ID="lblName" runat="server" Text="lblName"></asp:Label>
                 <asp:Label ID="lblFamily" runat="server" Text="lblFamily"></asp:Label>
             </h3>
-            <b>آخرین ورود به سایت</b>
+            <h6 style="text-align: center">آخرین ورود به سایت
             <asp:Label ID="lblLastLogDate" runat="server" Text="lblLastLogDate"></asp:Label>
-            <b>ساعت</b>
-            <asp:Label ID="lblLastLogTime" runat="server" Text="lblLastLogTime"></asp:Label><br />
+                ساعت
+            <asp:Label ID="lblLastLogTime" runat="server" Text="lblLastLogTime"></asp:Label></h6>
+            <br />
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 ">
+        <div class="col-md-4 ">
+            <asp:Button ID="btnToday" runat="server" CssClass="form-control " BackColor="LightGreen" Text="گزارش کارهای امروز" />
+
+            <input type="text" id="txtWorkDate" name="txtWorkDate" autocomplete="off" class="form-control" placeholder ="یک تاریخ را انتخاب کنید." />
+            <asp:Button ID="btnWorksOK" CssClass="form-control" BackColor="LightGreen" runat="server" Text="گزارش کارهای این تاریخ" />
+
+        </div>
+        <div class="col-md-4 ">
             <asp:Panel ID="pnlLeavedWorks" runat="server" Visible="False">
-                <h2>شما تعداد
+                <h4>شما تعداد
                         <asp:Label ID="lblLeavedWorksCount" runat="server" Style="color: #CC0000"></asp:Label>
                     کار انجام نشده دارید.
                 <asp:LinkButton ID="lbShowWorks" runat="server" Visible="False">مشاهده کارهای انجام نیافته</asp:LinkButton>
-                </h2>
-                <h5>
+                </h4>
+                <h6>
                     <asp:GridView ID="gvWorks" runat="server" CellPadding="2" ForeColor="Black" GridLines="None" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" Width="100%">
                         <AlternatingRowStyle BackColor="PaleGoldenrod" />
                         <Columns>
@@ -52,10 +60,11 @@
                         <SortedDescendingCellStyle BackColor="#E1DB9C" />
                         <SortedDescendingHeaderStyle BackColor="#C2A47B" />
                     </asp:GridView>
-                </h5>
+                </h6>
             </asp:Panel>
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-4 ">
+
             <asp:Panel ID="pnlLeavedCases" runat="server" Visible="False">
                 <h3>
                     <a href="LeavedCasesReport.aspx" runat="server">شما تعداد
@@ -87,10 +96,20 @@
                 </asp:GridView>
 
             </asp:Panel>
-            <asp:Button ID="btnToday" runat="server" CssClass="form-control " BackColor="LightGreen" Text="گزارش کارهای امروز" />
-            
-            <input type="text" id="txtWorkDate" name="txtWorkDate" autocomplete ="off"  class="form-control" />
-            <asp:Button ID="btnWorksOK" CssClass="form-control" BackColor="LightGreen" runat="server" Text="گزارش کارهای این تاریخ" />
+            <asp:Panel ID="pnlMoveCase" runat="server" Visible="false">
+                <asp:Repeater ID="rptMoveCase" runat="server">
+                    <HeaderTemplate>
+                        <h3>پرونده های تحویلی به من</h3>
+                        <br />
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        شماره پرونده:<%#Eval("caseid") %>
+                        <asp:LinkButton CssClass="btn-group-lg btn-primary " Text="Accept" ID="btnMoveCaseAccept" OnClick='MoveCaseAccept_click' CommandArgument='<%#Eval("ID")%>' runat="server" />
+                        <asp:LinkButton CssClass="btn-group-lg btn-primary " Text="Reject" ID="btnMoveCaseReject" OnClick='MoveCaseReject_click' CommandArgument='<%#Eval("ID")%>' runat="server" /><br />
+                    </ItemTemplate>
+                </asp:Repeater>
+            </asp:Panel>
+
         </div>
     </div>
     <div class="row">
@@ -102,7 +121,7 @@
             </asp:Panel>
         </div>
     </div>
-        <script>
+    <script>
         kamaDatepicker('txtWorkDate', { buttonsColor: "red" });
 
         var customOptions = {
@@ -118,7 +137,7 @@
             , highlightSelectedDay: false
             , sync: true
             , gotoToday: true
-            
+
         }
     </script>
 

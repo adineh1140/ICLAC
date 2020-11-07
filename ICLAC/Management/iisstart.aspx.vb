@@ -119,9 +119,17 @@
         Response.Redirect("~/management/reportout.aspx")
     End Sub
     Protected Sub MoveCaseAccept_click(ByVal sender As Object, ByVal e As EventArgs)
-
+        Dim BTN As LinkButton = sender
+        Dim strSQL As String
+        strSQL = "UPDATE tblmovecase SET ReceiverAnswer ='Accept' WHERE id=" & BTN.CommandArgument
+        XX.ExecuteQuery(strSQL)
+        MoveCaseCheck()
     End Sub
     Protected Sub MoveCaseReject_click(ByVal sender As Object, ByVal e As EventArgs)
-
+        Dim BTN As LinkButton = sender
+        Dim strSQL As String
+        strSQL = "UPDATE tblmovecase SET ReceiverAnswer ='Reject' WHERE id=" & BTN.CommandArgument
+        XX.ExecuteQuery(strSQL)
+        MoveCaseCheck()
     End Sub
 End Class

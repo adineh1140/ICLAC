@@ -82,7 +82,7 @@
             Sami.ShowAllert(strMSGTitle, strMSGBody)
             Exit Sub
         End If
-        If chkAttach.Checked = True And FU.FileName Is Nothing Then
+        If chkAttach.Checked = True And FU Is Nothing Then
             strMSGTitle = "اخطار رفع نقص"
             strMSGBody = "فایل ضمیمه را وارد نمایید."
             Sami.ShowAllert(strMSGTitle, strMSGBody)

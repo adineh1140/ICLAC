@@ -59,15 +59,6 @@ Partial Public Class Site
     Protected WithEvents hplContactUs As Global.System.Web.UI.WebControls.HyperLink
 
     '''<summary>
-    '''hplPublications control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents hplPublications As Global.System.Web.UI.WebControls.HyperLink
-
-    '''<summary>
     '''hplMnuAboutSELF control.
     '''</summary>
     '''<remarks>
@@ -419,15 +410,6 @@ Partial Public Class Site
     Protected WithEvents hplFooterLitigation As Global.System.Web.UI.WebControls.HyperLink
 
     '''<summary>
-    '''hplFooterInfoPackage control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents hplFooterInfoPackage As Global.System.Web.UI.WebControls.HyperLink
-
-    '''<summary>
     '''hplFooterTransportation control.
     '''</summary>
     '''<remarks>
@@ -480,22 +462,4 @@ Partial Public Class Site
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents hplFooterVokala As Global.System.Web.UI.WebControls.HyperLink
-
-    '''<summary>
-    '''imgFacebook control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents imgFacebook As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
-    '''imgLinkedin control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents imgLinkedin As Global.System.Web.UI.WebControls.Image
 End Class

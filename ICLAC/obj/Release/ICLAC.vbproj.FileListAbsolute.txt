@@ -76,3 +76,4 @@ D:\Programming\ICLAC\ICLAC\obj\Release\ICLAC.vbproj.CopyComplete
 D:\Programming\ICLAC\ICLAC\obj\Release\ICLAC.dll
 D:\Programming\ICLAC\ICLAC\obj\Release\WebForms_Basic.xml
 D:\Programming\ICLAC\ICLAC\obj\Release\ICLAC.pdb
+D:\Programming\ICLAC\ICLAC\bin\CarouselView.FormsPlugin.Abstractions.dll

@@ -157,7 +157,7 @@
                 Return "چهار شنبه"
             Case 5
                 Return "پنج شنبه"
-            Case 6
+            Case Else
                 Return "جمعه"
         End Select
     End Function

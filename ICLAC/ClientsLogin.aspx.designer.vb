@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class ClientLogin
-    
+
     '''<summary>
     '''lblTitle control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class ClientLogin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblTitle As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''lblUsername control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class ClientLogin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblUsername As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''txtUserName control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class ClientLogin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtUserName As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''lblPassword control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class ClientLogin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblPassword As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''txtPassword control.
     '''</summary>
@@ -57,43 +57,7 @@ Partial Public Class ClientLogin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''lblPicture control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblPicture As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''img control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents img As Global.System.Web.UI.WebControls.Image
-    
-    '''<summary>
-    '''txtPic control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtPic As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''btnNewPic control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnNewPic As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''btnLogin control.
     '''</summary>
@@ -102,7 +66,7 @@ Partial Public Class ClientLogin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnLogin As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''lblErr control.
     '''</summary>
@@ -111,7 +75,7 @@ Partial Public Class ClientLogin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblErr As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''btnForget control.
     '''</summary>

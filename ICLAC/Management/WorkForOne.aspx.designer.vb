@@ -149,13 +149,13 @@ Partial Public Class WorkForOne
     Protected WithEvents txtResult As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
-    '''chkAttach control.
+    '''Attach control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents chkAttach As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents Attach As Global.System.Web.UI.HtmlControls.HtmlInputCheckBox
 
     '''<summary>
     '''pnlAttach control.

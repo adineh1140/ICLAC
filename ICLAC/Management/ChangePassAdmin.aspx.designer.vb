@@ -12,58 +12,40 @@ Option Explicit On
 
 
 Partial Public Class ChangePassAdmin
-    
+
     '''<summary>
-    '''txtOldPass control.
+    '''OldPass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtOldPass As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents OldPass As Global.System.Web.UI.HtmlControls.HtmlInputPassword
+
     '''<summary>
-    '''txtNewPass control.
+    '''NewPass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtNewPass As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents NewPass As Global.System.Web.UI.HtmlControls.HtmlInputPassword
+
     '''<summary>
-    '''txtRePass control.
+    '''RePass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtRePass As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents RePass As Global.System.Web.UI.HtmlControls.HtmlInputPassword
+
     '''<summary>
-    '''btnChangePass control.
+    '''ChangePass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnChangePass As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
-    '''lblOK control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblOK As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''lblErr control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblErr As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ChangePass As Global.System.Web.UI.HtmlControls.HtmlInputSubmit
 End Class

@@ -1,21 +1,21 @@
 ﻿Public Class CaseEntry
     Inherits System.Web.UI.Page
-    Dim XX As New Core
+    Dim Sami As New Core
     Dim DS As New DataSet
     Dim blnAdd, blnEdit, blnDelete, blnReport, blnLogin As Boolean
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        If session("id") < 1 Then
+        If Session("id") < 1 Then
             Session("Page") = "CaseEntry.aspx"
             Response.Redirect("Login.aspx")
         End If
-        XX.isAccess(Session("id"), "cases", blnAdd, blnEdit, blnDelete, blnReport, blnLogin)
+        Sami.isAccess(Session("id"), "cases", blnAdd, blnEdit, blnDelete, blnReport, blnLogin)
         If blnLogin = False Then
             Session("allow") = "no"
             Response.Redirect("iisstart.aspx")
         End If
         If ddlClient.Items.Count = 0 Then
-            DS = XX.GetDataSet("SELECT ID , lastname + ' ' + firstname as clientFullname FROM tblClients ORDER BY clientfullname")
+            DS = Sami.GetDataSet("SELECT ID , lastname + ' ' + firstname as clientFullname FROM tblClients ORDER BY clientfullname")
             ddlSelectedClient.DataSource = DS.Tables(0)
             ddlSelectedClient.DataBind()
             ddlClient.DataSource = DS.Tables(0)
@@ -24,7 +24,7 @@
 
         'ddStaff.Items.Clear()
         If Page.IsPostBack = False Then
-            DS = XX.GetDataSet("SELECT id , lastname + ' ' + firstname as StaffFullName FROM tblstaff")
+            DS = Sami.GetDataSet("SELECT id , lastname + ' ' + firstname as StaffFullName FROM tblstaff")
             ddStaff.DataSource = DS.Tables(0)
             ddStaff.DataBind()
         End If
@@ -32,89 +32,106 @@
     End Sub
     Protected Sub btnSave_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnSave.Click
 
-        Dim strSql As String
-        'If Trim(txtOtherPartyFullName.Text) = "" Or Trim(txtSubject.Text) = "" Or txtNewCaseNo.Text = "" Then
-        '    lblFillErr.Text = "نخست فیلدهای خالی را پر کنید."
-        '    lblFillErr.Visible = True
-        '    Exit Sub
-        'End If
-        If btnSave.Text = "ویرایش" Then
-            If blnEdit = False Then
-                lblAccessErr.Visible = True
-                Exit Sub
-            End If
-            strSql = "UPDATE tblCases SET clientid =" & ddlSelectedClient.SelectedValue
-            strSql &= ",subject = '" & txtSubject.Text
-            strSql &= "',otherpartyfullname = '" & txtOtherPartyFullName.Text
-            strSql &= "',LawyerID= " & ddStaff.SelectedValue
-            strSql &= ",courtname = '" & txtCourtName.Text
-            strSql &= "',courtbranch = '" & txtCourtBranch.Text
-            strSql &= "',courtcaseid = '" & txtCourtCaseID.Text
-            strSql &= "',description = '" & txtDescription.Text
-            strSql &= "',terminated ="
-            If chkTerminated.Checked = True Then
-                strSql &= "1"
-            Else
-                strSql &= "0"
-            End If
-            strSql &= ", terminationDate = '" & txtTerminationDate.Text
-            strSql &= "',result = '" & txtResult.Text
-            strSql &= "',userid =" & Session("id")
-            strSql &= " WHERE ID = " & Session("CaseID")
-            XX.ExecuteQuery(strSql)
-            btnSave.Text = "ثبت"
+        If Session("CaseID") > 0 Then
+            EditARecord(Session("caseid"))
         Else
+            AddARecord()
+        End If
+        DS = Sami.GetDataSet("SELECT * FROM vwcases WHERE clientid = " & ddlClient.SelectedValue)
+        gvCases.DataSource = DS.Tables(0)
+        gvCases.DataBind()
+        Session.Remove("caseid")
+
+        'If chkSMS.Checked = True Then
+        '    Dim strBody As String
+        '    DS = Sami.GetDataSet("SELECT * FROM vwcases WHERE clientid =" & ddlClient.SelectedValue)
+        '    strBody = "موکل گرامی!"
+        '    strBody &= "پرونده ی شما به طرفیت " & DS.Tables(0).Rows(0).Item("otherpartyFullname") & vbCrLf
+        '    strBody &= " با موضوع:" & txtSubject.Text & vbCrLf
+        '    strBody &= " تحت کلاسه ی " & Session("caseid") & "ثبت گردید. از این پس با ارجاع به این شماره تمامی رخدادهای پرونده برای شما پیامک می شود."
+        '    Sami.SendSMS(Trim(DS.Tables(0).Rows(0).Item("cellphone")), strBody, ddlClient.SelectedValue, Session("ID"))
+        'End If
+    End Sub
+    Protected Sub AddARecord()
+        Try
+
+            Dim strSQL As String
             If blnAdd = False Then
                 lblAccessErr.Visible = True
                 Exit Sub
             End If
             'بعدا این خط را باید تغییر دهم به اینکه شماره را اتوماتیک بسازد.
             Session("caseid") = Val(txtNewCaseNo.Text)
-            If XX.isARecord("SELECT id FROM tblcases WHERE id=" & Session("caseid")) = True Then
-                lblFillErr.Text = "شماره پرونده تکراری است"
-                lblSaveOK.Visible = False
-                lblFillErr.Visible = True
+            If Sami.isARecord("SELECT id FROM tblcases WHERE id=" & Session("caseid")) = True Then
+                Sami.ShowAllert("توجه", "شماره پرونده تکراری است.")
                 Exit Sub
             End If
-            strSql = "INSERT INTO tblCases Values(" & Session("caseid") & ","
-            strSql &= ddlSelectedClient.SelectedValue & ",'"
-            strSql &= txtSubject.Text & "','"
-            strSql &= txtOtherPartyFullName.Text & "',"
-            strSql &= ddStaff.SelectedValue & ",'"
-            strSql &= txtCourtName.Text & "','"
-            strSql &= txtCourtBranch.Text & "','"
-            strSql &= txtCourtCaseID.Text & "','"
-            strSql &= txtDescription.Text & "',"
+            strSQL = "INSERT INTO tblCases Values(" & Session("caseid") & ","
+            strSQL &= ddlSelectedClient.SelectedValue & ",'"
+            strSQL &= txtSubject.Text & "','"
+            strSQL &= txtOtherPartyFullName.Text & "',"
+            strSQL &= ddStaff.SelectedValue & ",'"
+            strSQL &= txtCourtName.Text & "','"
+            strSQL &= txtCourtBranch.Text & "','"
+            strSQL &= txtCourtCaseID.Text & "','"
+            strSQL &= txtDescription.Text & "',"
             If chkTerminated.Checked = True Then
-                strSql &= "1,'"
+                strSQL &= "1,'"
             Else
-                strSql &= "0,'"
+                strSQL &= "0,'"
             End If
-            strSql &= txtTerminationDate.Text & "','"
-            strSql &= txtResult.Text & "','"
-            strSql &= XX.PersianDate(Today) & "','"
-            strSql &= Format(TimeOfDay, "hh:mm") & "',"
-            strSql &= Session("id") & ")"
-            XX.ExecuteQuery(strSql)
-        End If
-        DS = XX.GetDataSet("SELECT * FROM vwcases WHERE clientid = " & ddlClient.SelectedValue)
-        gvCases.DataSource = DS.Tables(0)
-        gvCases.DataBind()
-        lblFillErr.Visible = False
+            strSQL &= txtTerminationDate.Text & "','"
+            strSQL &= txtResult.Text & "','"
+            strSQL &= Sami.PersianDate(Today) & "','"
+            strSQL &= Format(TimeOfDay, "hh:mm") & "',"
+            strSQL &= Session("id") & ")"
+            Sami.ExecuteQuery(strSQL)
+            Sami.ShowAllert("اطمینان بخشی", "عملیات ذخیره سازی به درستی انجام شد.")
+        Catch ex As Exception
+            Sami.ShowAllert("خطا", "حین عملیات ذخیره سازی خطا رخ داد.")
+        End Try
 
-        If chkSMS.Checked = True Then
-            Dim strBody As String
-            DS = XX.GetDataSet("SELECT * FROM vwcases WHERE clientid =" & ddlClient.SelectedValue)
-            strBody = "موکل گرامی!"
-            strBody &= "پرونده ی شما به طرفیت " & DS.Tables(0).Rows(0).Item("otherpartyFullname") & vbCrLf
-            strBody &= " با موضوع:" & txtSubject.Text & vbCrLf
-            strBody &= " تحت کلاسه ی " & Session("caseid") & "ثبت گردید. از این پس با ارجاع به این شماره تمامی رخدادهای پرونده برای شما پیامک می شود."
-            XX.SendSMS(Trim(DS.Tables(0).Rows(0).Item("cellphone")), strBody, ddlClient.SelectedValue, Session("ID"))
-        End If
-        lblSaveOK.Visible = True
+    End Sub
+    Protected Sub EditARecord(ByVal intID As Integer)
+        Try
+
+            Dim strSQL As String
+            If blnEdit = False Then
+                Sami.ShowAllert("توجه", "شما دسترسی به ویرایش پرونده ها ندارید.")
+                Exit Sub
+            End If
+            strSQL = "UPDATE tblCases SET clientid =" & ddlSelectedClient.SelectedValue
+            strSQL &= ",subject = '" & txtSubject.Text
+            strSQL &= "',otherpartyfullname = '" & txtOtherPartyFullName.Text
+            strSQL &= "',LawyerID= " & ddStaff.SelectedValue
+            strSQL &= ",courtname = '" & txtCourtName.Text
+            strSQL &= "',courtbranch = '" & txtCourtBranch.Text
+            strSQL &= "',courtcaseid = '" & txtCourtCaseID.Text
+            strSQL &= "',description = '" & txtDescription.Text
+            strSQL &= "',terminated ="
+            If chkTerminated.Checked = True Then
+                strSQL &= "1"
+            Else
+                strSQL &= "0"
+            End If
+            strSQL &= ", terminationDate = '" & txtTerminationDate.Text
+            strSQL &= "',result = '" & txtResult.Text
+            strSQL &= "',userid =" & Session("id")
+            strSQL &= " WHERE ID = " & intID
+            Sami.ExecuteQuery(strSQL)
+
+            If chkTerminated.Checked = True Then
+                strSQL = "UPDATE tblworks SET done = 1,result ='پرونده مختومه شد.' WHERE caseid=" & intID & " AND done = 0"
+                Sami.ExecuteQuery(strSQL)
+            End If
+            Sami.ShowAllert("اطمینان بخشی", "عملیات ویرایش به درستی انجام شد.")
+        Catch ex As Exception
+            Sami.ShowAllert("خطا", "حین عملیات ویرایش پرونده خطا رخ داد.", True)
+        End Try
+
     End Sub
     Private Sub gvstaffincase_RowCommand(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs) Handles gvStaffInCase.RowCommand
-        XX.isAccess(Session("id"), "cases", blnAdd, blnEdit, blnDelete, blnReport, blnLogin)
+        Sami.isAccess(Session("id"), "cases", blnAdd, blnEdit, blnDelete, blnReport, blnLogin)
         If blnEdit = False Then
             lblFillErr.Text = "شما دسترسی به این بخش را ندارید."
             lblFillErr.Visible = True
@@ -122,8 +139,8 @@
         End If
         Dim intID As Integer
         intID = Val(gvStaffInCase.Rows(e.CommandArgument).Cells(0).Text)
-        XX.ExecuteQuery("DELETE FROM tblstaffincases WHERE id =" & intID)
-        DS = XX.GetDataSet("SELECT id,stafffullname ,career from vwstaffincases WHERE caseid=" & Session("caseid"))
+        Sami.ExecuteQuery("DELETE FROM tblstaffincases WHERE id =" & intID)
+        DS = Sami.GetDataSet("SELECT id,stafffullname ,career from vwstaffincases WHERE caseid=" & Session("caseid"))
         gvStaffInCase.DataSource = DS.Tables(0)
         gvStaffInCase.DataBind()
 
@@ -131,7 +148,7 @@
     Private Sub gvCases_RowCommand(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs) Handles gvCases.RowCommand
         btnSave.Text = "ویرایش"
         Session("CaseID") = gvCases.Rows(e.CommandArgument).Cells(0).Text
-        DS = XX.GetDataSet("SELECT * FROM tblcases WHERE id =" & Session("caseid"))
+        DS = Sami.GetDataSet("SELECT * FROM tblcases WHERE id =" & Session("caseid"))
         On Error Resume Next  'تا اگر فیلدی خالی باشد خطا ندهد
         txtCaseNo.Text = Session("caseID")
         txtNewCaseNo.Text = txtCaseNo.Text
@@ -152,7 +169,7 @@
         btnDelete.Visible = False
         pnlDesc.Visible = True
 
-        DS = XX.GetDataSet("SELECT id,stafffullname , career from vwstaffincases WHERE caseid=" & Session("caseid"))
+        DS = Sami.GetDataSet("SELECT id,stafffullname , career from vwstaffincases WHERE caseid=" & Session("caseid"))
         gvStaffInCase.DataSource = DS.Tables(0)
         gvStaffInCase.DataBind()
     End Sub
@@ -161,7 +178,7 @@
         If txtLastNameSearch.Text = "" Then
             Exit Sub
         End If
-        DS = XX.GetDataSet("SELECT * FROM vwcases WHERE parties like '%" & txtLastNameSearch.Text & "%'")
+        DS = Sami.GetDataSet("SELECT * FROM vwcases WHERE parties like '%" & txtLastNameSearch.Text & "%'")
         'ddlClient.SelectedValue = DS.Tables(0).Rows(0).Item("id")
         'ddlClient_SelectedIndexChanged(sender, e)
         gvCases.DataSource = DS.Tables(0)
@@ -183,7 +200,7 @@
         If txtCaseNo.Text = "" Then
             Exit Sub
         End If
-        DS = XX.GetDataSet("SELECT * FROM vwcases WHERE id =" & Val(txtCaseNo.Text))
+        DS = Sami.GetDataSet("SELECT * FROM vwcases WHERE id =" & Val(txtCaseNo.Text))
         If DS.Tables(0).Rows.Count = 0 Then
             lblCaseNoErr.Visible = True
             Exit Sub
@@ -199,16 +216,16 @@
 
 
     Protected Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        XX.isAccess(Session("id"), "cases", blnAdd, blnEdit, blnDelete, blnReport, blnLogin)
+        Sami.isAccess(Session("id"), "cases", blnAdd, blnEdit, blnDelete, blnReport, blnLogin)
         If blnDelete = False Then
             lblFillErr.Text = "شما دسترسی به حذف پرونده ندارید."
             Exit Sub
         End If
         Dim strX As String
         strX = "DELETE FROM tblCases WHERE id=" & Session("CaseID")
-        XX.ExecuteQuery(strX)
+        Sami.ExecuteQuery(strX)
         strX = "DELETE FROM tblstaffincases WHERE caseid=" & Session("CaseID")
-        XX.ExecuteQuery(strX)
+        Sami.ExecuteQuery(strX)
     End Sub
 
     Protected Sub chkTerminated_CheckedChanged(sender As Object, e As EventArgs) Handles chkTerminated.CheckedChanged
@@ -247,7 +264,7 @@
                 Dim DSX As New DataTable
                 gvStaffInCase.DataSource = DSX
                 gvStaffInCase.DataBind()
-                txtNewCaseNo.Text = XX.NewID("tblcases")
+                txtNewCaseNo.Text = Sami.NewID("tblcases")
 
             Case 1
                 pnlDesc.Visible = False
@@ -257,14 +274,14 @@
     End Sub
 
     Protected Sub btnAddStaff_Click(sender As Object, e As EventArgs) Handles btnAddStaff.Click
-        XX.ExecuteQuery("DELETE FROM tblStaffincases WHERE caseid =" & Val(txtNewCaseNo.Text) & " AND lawyerid=" & ddStaff.SelectedValue)
+        Sami.ExecuteQuery("DELETE FROM tblStaffincases WHERE caseid =" & Val(txtNewCaseNo.Text) & " AND lawyerid=" & ddStaff.SelectedValue)
         Dim strSQL As String
         strSQL = "INSERT INTO tblstaffincases VALUES( "
-        strSQL &= XX.NewID("tblstaffincases")
+        strSQL &= Sami.NewID("tblstaffincases")
         strSQL &= "," & txtNewCaseNo.Text
         strSQL &= "," & ddStaff.SelectedValue & ")"
-        XX.ExecuteQuery(strSQL)
-        DS = XX.GetDataSet("SELECT id,stafffullname , career from vwstaffincases WHERE caseid=" & txtNewCaseNo.Text)
+        Sami.ExecuteQuery(strSQL)
+        DS = Sami.GetDataSet("SELECT id,stafffullname , career from vwstaffincases WHERE caseid=" & txtNewCaseNo.Text)
         gvStaffInCase.DataSource = DS.Tables(0)
         gvStaffInCase.DataBind()
 
@@ -283,7 +300,7 @@
 
 
     Protected Sub btnClientOK_Click(sender As Object, e As EventArgs) Handles btnClientOK.Click
-        DS = XX.GetDataSet("SELECT id,clientfullname,subject,otherpartyfullname,stafffullname FROM vwCases WHERE clientid = " & ddlClient.SelectedValue)
+        DS = Sami.GetDataSet("SELECT id,clientfullname,subject,otherpartyfullname,stafffullname FROM vwCases WHERE clientid = " & ddlClient.SelectedValue)
         gvCases.DataSource = DS.Tables(0)
         gvCases.DataBind()
         pnlCases.Visible = True

@@ -59,11 +59,11 @@ Partial Public Class MoveCase
     Protected WithEvents txtDescription As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
-    '''gvMyCases control.
+    '''gvHistory control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents gvMyCases As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents gvHistory As Global.System.Web.UI.WebControls.GridView
 End Class

@@ -55,6 +55,9 @@
     <Reference Include="AspNet.ScriptManager.jQuery, Version=3.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\AspNet.ScriptManager.jQuery.3.5.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
     </Reference>
+    <Reference Include="CarouselView.FormsPlugin.Abstractions, Version=1.0.6591.24917, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CarouselView.FormsPlugin.5.2.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10\CarouselView.FormsPlugin.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -306,7 +309,7 @@
     <Content Include="Management\LeavedCasesReport.aspx" />
     <Content Include="Management\LinksEntry.aspx" />
     <Content Include="Management\Login.aspx" />
-    <Content Include="Management\ManagementEntry.aspx" />
+    <Content Include="Management\StaffEntry.aspx" />
     <Content Include="Management\MessageManagement.aspx" />
     <Content Include="Management\Monitoring.aspx" />
     <Content Include="Management\MoveCase.aspx" />
@@ -490,6 +493,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Transportation.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -914,11 +918,11 @@
       <DependentUpon>Management.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Management\ManagementEntry.aspx.designer.vb">
-      <DependentUpon>ManagementEntry.aspx</DependentUpon>
+    <Compile Include="Management\StaffEntry.aspx.designer.vb">
+      <DependentUpon>StaffEntry.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Management\ManagementEntry.aspx.vb">
-      <DependentUpon>ManagementEntry.aspx</DependentUpon>
+    <Compile Include="Management\StaffEntry.aspx.vb">
+      <DependentUpon>StaffEntry.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Management\MessageManagement.aspx.designer.vb">
@@ -1114,6 +1118,13 @@
     </Compile>
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transportation.aspx.designer.vb">
+      <DependentUpon>Transportation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transportation.aspx.vb">
+      <DependentUpon>Transportation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>

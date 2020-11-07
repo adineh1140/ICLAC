@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class LeavedCasesReport
-    
+
     '''<summary>
     '''gvCases control.
     '''</summary>
@@ -21,13 +21,4 @@ Partial Public Class LeavedCasesReport
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gvCases As Global.System.Web.UI.WebControls.GridView
-    
-    '''<summary>
-    '''lblErr control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblErr As Global.System.Web.UI.WebControls.Label
 End Class

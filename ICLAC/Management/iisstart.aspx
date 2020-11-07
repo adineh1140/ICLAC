@@ -10,27 +10,21 @@
             <h3 style="text-align: center">
                 <asp:Label ID="lblName" runat="server" Text="lblName"></asp:Label>
                 <asp:Label ID="lblFamily" runat="server" Text="lblFamily"></asp:Label>
-            </h3 >
-            <h6 style ="text-align:center ">آخرین ورود به سایت
+            </h3>
+            <h6 style="text-align: center">آخرین ورود به سایت
             <asp:Label ID="lblLastLogDate" runat="server" Text="lblLastLogDate"></asp:Label>
-            ساعت
-            <asp:Label ID="lblLastLogTime" runat="server" Text="lblLastLogTime"></asp:Label></h6><br />
+                ساعت
+            <asp:Label ID="lblLastLogTime" runat="server" Text="lblLastLogTime"></asp:Label></h6>
+            <br />
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 ">
-            <asp:Panel ID="pnlMoveCase" runat ="server" Visible ="false" >
-                <asp:Repeater ID="rptMoveCase" runat ="server" >
-                    <HeaderTemplate >
-                       <h3> پرونده های تحویلی به من</h3><br />
-                    </HeaderTemplate>
-                    <ItemTemplate >
-                       شماره پرونده:<%#Eval("caseid") %>
-                        <asp:LinkButton CssClass ="btn-group-lg btn-primary "  text="Accept" id="btnMoveCaseAccept" OnClick ='MoveCaseAccept_click'<%#Eval("caseid") %>' CommandArgument ='<%#Eval("caseid")%>' runat ="server" />
-                        <asp:LinkButton CssClass ="btn-group-lg btn-primary "  text="Reject" id="btnMoveCaseReject" OnClick ='MoveCaseReject_click'<%#Eval("caseid") %>' CommandArgument ='<%#Eval("caseid")%>' runat ="server" />
-                    </ItemTemplate>
-                </asp:Repeater>
-            </asp:Panel>
+            <asp:Button ID="btnToday" runat="server" CssClass="form-control " BackColor="LightGreen" Text="گزارش کارهای امروز" />
+
+            <input type="text" id="txtWorkDate" name="txtWorkDate" autocomplete="off" class="form-control" placeholder ="یک تاریخ را انتخاب کنید." />
+            <asp:Button ID="btnWorksOK" CssClass="form-control" BackColor="LightGreen" runat="server" Text="گزارش کارهای این تاریخ" />
+
         </div>
         <div class="col-md-4 ">
             <asp:Panel ID="pnlLeavedWorks" runat="server" Visible="False">
@@ -70,6 +64,7 @@
             </asp:Panel>
         </div>
         <div class="col-md-4 ">
+
             <asp:Panel ID="pnlLeavedCases" runat="server" Visible="False">
                 <h3>
                     <a href="LeavedCasesReport.aspx" runat="server">شما تعداد
@@ -101,10 +96,20 @@
                 </asp:GridView>
 
             </asp:Panel>
-            <asp:Button ID="btnToday" runat="server" CssClass="form-control " BackColor="LightGreen" Text="گزارش کارهای امروز" />
+            <asp:Panel ID="pnlMoveCase" runat="server" Visible="false">
+                <asp:Repeater ID="rptMoveCase" runat="server">
+                    <HeaderTemplate>
+                        <h3>پرونده های تحویلی به من</h3>
+                        <br />
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        شماره پرونده:<%#Eval("caseid") %>
+                        <asp:LinkButton CssClass="btn-group-lg btn-primary " Text="Accept" ID="btnMoveCaseAccept" OnClick='MoveCaseAccept_click' CommandArgument='<%#Eval("ID")%>' runat="server" />
+                        <asp:LinkButton CssClass="btn-group-lg btn-primary " Text="Reject" ID="btnMoveCaseReject" OnClick='MoveCaseReject_click' CommandArgument='<%#Eval("ID")%>' runat="server" /><br />
+                    </ItemTemplate>
+                </asp:Repeater>
+            </asp:Panel>
 
-            <input type="text" id="txtWorkDate" name="txtWorkDate" autocomplete="off" class="form-control" />
-            <asp:Button ID="btnWorksOK" CssClass="form-control" BackColor="LightGreen" runat="server" Text="گزارش کارهای این تاریخ" />
         </div>
     </div>
     <div class="row">

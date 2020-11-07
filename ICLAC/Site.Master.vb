@@ -54,14 +54,14 @@ Public Class Site
     '        Response.Redirect("main.aspx")
     '    End If
     'End Sub
-    Protected Sub btnEnglish_Click(sender As Object, e As EventArgs) Handles btnEnglish.Click
+    Protected Sub English_Click(sender As Object, e As EventArgs)
         Dim cookie As New HttpCookie("CultureInfo")
         cookie.Value = "en"
         Response.Cookies.Add(cookie)
         Thread.CurrentThread.CurrentCulture = New CultureInfo("en")
         Thread.CurrentThread.CurrentUICulture = New CultureInfo("en")
     End Sub
-    Protected Sub btnPersian_Click(sender As Object, e As EventArgs) Handles btnPersian.Click
+    Protected Sub Persian_Click(sender As Object, e As EventArgs)
         Dim cookie As New HttpCookie("CultureInfo")
         cookie.Value = "fa"
         Response.Cookies.Add(cookie)

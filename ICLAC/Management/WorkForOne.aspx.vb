@@ -11,12 +11,17 @@ Public Class WorkForOne
     Dim FU As HttpPostedFile
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        If session("id") < 1 Then
+        If Session("id") < 1 Then
             Session("Page") = "WorkForOne.aspx"
             Response.Redirect("Login.aspx")
         End If
         If Page.IsPostBack = False Then
             Sami.isAccess(Session("ID"), "works", blnAdd, blnEdit, blnDelete, blnReport)
+            If Not IsNothing(Session("CaseID")) Then
+                txtCaseNo.Value = Session("CaseID")
+                pnlDetails.Visible = True
+                btnCaseNo_Click(sender, e)
+            End If
             If Not IsNothing(Session("WorkID")) Then
                 DS = Sami.GetDataSet("SELECT * From tblworks WHERE id=" & Session("workid"))
                 txtCaseNo.Value = DS.Tables(0).Rows(0).Item("CaseID")
@@ -103,8 +108,8 @@ Public Class WorkForOne
         pnlWorkEnd.Visible = chkisDone.Checked
         If txtResult.Value = "" Then txtResult.Value = "انجام شد."
     End Sub
-    Protected Sub chkAttach_CheckedChanged(sender As Object, e As EventArgs) Handles chkAttach.CheckedChanged
-        pnlAttach.Visible = chkAttach.Checked
+    Protected Sub AttachCheckedChanged(sender As Object, e As EventArgs)
+        pnlAttach.Visible = Attach.Checked
     End Sub
     Private Sub ddlCases_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlCases.SelectedIndexChanged
         txtCaseNo.Value = ddlCases.SelectedValue
@@ -116,7 +121,7 @@ Public Class WorkForOne
             Sami.ShowAllert(strMSGTitle, strMSGBody)
             Exit Sub
         End If
-        If chkAttach.Checked = True And FU Is Nothing Then
+        If Attach.Checked = True And FU Is Nothing Then
             strMSGTitle = "اخطار رفع نقص"
             strMSGBody = "فایل ضمیمه را وارد نمایید."
             Sami.ShowAllert(strMSGTitle, strMSGBody)
@@ -148,7 +153,7 @@ Public Class WorkForOne
         chkisDone.Checked = False
         pnlWorkEnd.Visible = False
         chkSMS.Checked = False
-        chkAttach.Checked = False
+        Attach.Checked = False
         Page.ClientScript.RegisterStartupScript(Me.GetType(), "clientscript", "document.getElementById('txtDoneDate').value='" + Sami.PersianDate(Today) + "';", True)
         txtDoneTime.Value = ""
         txtTitle.Value = ""
@@ -179,7 +184,7 @@ Public Class WorkForOne
             strSQL &= Sami.PureString(txtDescription.Value) & "')"
             Sami.ExecuteQuery(strSQL)
 
-            If chkAttach.Checked = True Then
+            If Attach.Checked = True Then
                 UploadMyFile(FU, intWorkID)
             End If
             strMSGTitle = "اطمینان بخشی"
@@ -224,7 +229,7 @@ Public Class WorkForOne
             strSQL &= "',Description = '" & Sami.PureString(txtDescription.Value) & "' WHERE ID =" & intWorkID
             Sami.ExecuteQuery(strSQL)
 
-            If chkAttach.Checked = True Then
+            If Attach.Checked = True Then
                 UploadMyFile(FU, intWorkID)
             End If
 

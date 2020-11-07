@@ -18,6 +18,7 @@
     <script src="../Scripts/kamadatepicker.min.js"></script>
     <link href="../Content/kamadatepicker.min.css" rel="stylesheet" />
     <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+
     <style media="screen">
         .noPrint {
             display: block;
@@ -36,6 +37,7 @@
         .yesPrint {
             display: block !important;
         }
+
     </style>
 
     <asp:ContentPlaceHolder ID="cphHead" runat="server">
@@ -90,7 +92,7 @@
                                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">مدیریت<span class="caret"></span></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="MoveCase.aspx">جابجایی پرونده</a></li>
-                                                    <li><a href="managemententry.aspx">ورود اطلاعات کارکنان</a></li>
+                                                    <li><a href="StaffEntry.aspx">ورود اطلاعات کارکنان</a></li>
                                                     <li><a href="monitoring.aspx">نظارت و پیگیری</a></li>
                                                     <li><a href="holidays.aspx">ایام تعطیل</a></li>
                                                     <li><a href="newsentry.aspx">اخبار حقوقی</a></li>
@@ -147,13 +149,13 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="noPrint" style="text-align: right">
-                        <a href="leavedcasesreport.aspx">پرونده بلاتکلیف <span class="badge" style="background-color: red">
+                        <a href="leavedcasesreport.aspx"><span class="glyphicon glyphicon-file"></span>پرونده بلاتکلیف <span class="badge" style="background-color: red">
                             <asp:Label ID="lblLeavedCases" runat="server"></asp:Label></span></a><br />
-                        <a href="iisstart.aspx">کار انجام نیافته <span class="badge" style="background-color: red">
+                        <a href="iisstart.aspx"><span class="glyphicon glyphicon-briefcase"></span>کار انجام نیافته <span class="badge" style="background-color: red">
                             <asp:Label ID="lblWorks" runat="server"></asp:Label></span></a><br />
-                        <a href="chat.aspx">پیام ها <span class="badge" style="background-color: red">
+                        <a href="chat.aspx"><span class="glyphicon glyphicon-book "></span>پیام ها <span class="badge" style="background-color: red">
                             <asp:Label ID="lblMessages" runat="server"></asp:Label></span></a><br />
-                        <a href="cooperationRequests.aspx">تقاضای همکاری <span class="badge" style="background-color: red">
+                        <a href="cooperationRequests.aspx"><span class="glyphicon glyphicon-user  "></span>تقاضای همکاری <span class="badge" style="background-color: red">
                             <asp:Label ID="lblRequests" runat="server"></asp:Label></span></a><br />
                     </div>
 
@@ -173,7 +175,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h4 style ="text-align:center ">
+                    <h4 style="text-align: center">
                         <b>شمسی:</b>
                         <asp:Label ID="lblPersianToday" runat="server" Text="Label"></asp:Label>
                         <b>میلادی:</b>
