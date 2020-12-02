@@ -9,7 +9,10 @@
     <div class="row">
         <div class=" col-md-5 " style ="background-color :aquamarine">
             <label for="lststaff" runat="server">مخاطب</label><br />
-            <asp:GridView ID="gvStaff" runat="server" Width="100%" AutoGenerateColumns="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal">
+            <asp:GridView ID="gvStaff" runat="server" Width="100%" AutoGenerateColumns="False"
+                BackColor="White" BorderColor="#E7E7FF"
+                BorderStyle="None" BorderWidth="1px"
+                CssClass ="grid " CellPadding="3" GridLines="Horizontal">
                 <AlternatingRowStyle BackColor="#F7F7F7" />
                 <Columns>
                     <asp:BoundField DataField="ID" HeaderText="ID" />

@@ -11,8 +11,10 @@
                 <h3 style ="text-align :center ">
                     <asp:Label ID="lblErr" runat="server" ForeColor="Red" Visible="False"></asp:Label>
                     <asp:Label ID="lblStatus" Text ="" runat ="server"></asp:Label></h3>
-                <asp:GridView ID="gvMessages" runat="server" AutoGenerateColumns="False"
-                    CellPadding="4" ForeColor="#333333" GridLines="None" Width="544px">
+                <asp:GridView ID="gvMessages" runat="server"
+                    AutoGenerateColumns="False"
+                    CellPadding="4" ForeColor="#333333"
+                    CssClass ="grid" GridLines="None" Width="544px">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:BoundField DataField="ID" HeaderText="ID">

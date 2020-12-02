@@ -12,7 +12,10 @@
         <div class="col-md-8 columns">
             <label for="ddlCases" runat="server">انتخاب پرونده</label>
             <asp:ListBox ID="lstCases" runat="server" AutoPostBack="true" DataTextField="parties" DataValueField="id"></asp:ListBox>
-            <asp:GridView ID="gvDocs" runat="server" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None" Width="100%">
+            <asp:GridView ID="gvDocs" runat="server" AutoGenerateColumns="False"
+                BackColor="LightGoldenrodYellow" BorderColor="Tan"
+                BorderWidth="1px" CellPadding="2"
+                CssClass ="grid" ForeColor="Black" GridLines="None" Width="100%">
                 <AlternatingRowStyle BackColor="PaleGoldenrod" />
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="ردیف" ItemStyle-Width="5%">

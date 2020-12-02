@@ -14,7 +14,7 @@
                 <asp:Label ID="Label11" runat="server" Text="تعطیل رسمی" Style="background-color: #FF99FF"></asp:Label>
             </h4>
             <h6>
-                <asp:GridView ID="gvPlan" runat="server" AutoGenerateColumns="false" CellPadding="4" Width="100%">
+                <asp:GridView ID="gvPlan" runat="server" AutoGenerateColumns="false" CssClass="grid " CellPadding="4" Width="100%">
                     <Columns>
                         <asp:BoundField HeaderText="تاریخ" ItemStyle-Width="8%" DataField="sdate" />
                         <asp:TemplateField HeaderText="روز" ItemStyle-Width="8%" />

@@ -12,7 +12,9 @@
             </asp:RadioButtonList>
             <asp:Panel ID="pnlEdit" runat="server" Visible="false">
                 <h4>
-                    <asp:GridView ID="gvManagers" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" Width="100%">
+                    <asp:GridView ID="gvManagers" runat="server" CellPadding="4" 
+                        CssClass ="grid " ForeColor="#333333" GridLines="None"
+                        AutoGenerateColumns="False" Width="100%">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
                             <asp:BoundField DataField="ID" HeaderText="ID" />

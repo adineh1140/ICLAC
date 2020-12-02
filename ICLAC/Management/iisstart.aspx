@@ -77,7 +77,10 @@
             </asp:Panel>
             <asp:Panel ID="pnlCooperation" runat="server" Visible="False">
                 <a href="CooperationRequests.aspx" runat="server">شما تعداد<asp:Label ID="lblCooperation" runat="server" Style="color: #CC0000; font-weight: 700; font-size: small"></asp:Label>تقاضای همکاری دارید. </a>
-                <asp:GridView ID="gvCooperationRequests" runat="server" CellPadding="2" ForeColor="Black" GridLines="None" Width="100%" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px">
+                <asp:GridView ID="gvCooperationRequests" runat="server" CellPadding="2"
+                    ForeColor="Black" GridLines="None" Width="100%"
+                    AutoGenerateColumns="False" BackColor="LightGoldenrodYellow"
+                    BorderColor="Tan" BorderWidth="1px">
                     <AlternatingRowStyle BackColor="PaleGoldenrod" />
                     <Columns>
                         <asp:BoundField DataField="firstname" HeaderText="نام" />

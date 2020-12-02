@@ -28,7 +28,9 @@
                 <asp:Button ID="btnClientOK" runat="server" Text="OK" CssClass="form-control" BackColor="LightGreen" /><br />
                 <label runat="server">از میان این لیست انتخاب کنید</label>
                 <h6>
-                    <asp:GridView ID="gvCases" runat="server" AutoGenerateColumns="False" CellPadding="4" Font-Size="X-Small" ForeColor="#333333" GridLines="None" Width="100%">
+                    <asp:GridView ID="gvCases" runat="server" AutoGenerateColumns="False"
+                        CellPadding="4" Font-Size="X-Small" ForeColor="#333333" 
+                        CssClass ="grid " GridLines="None" Width="100%">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
                             <asp:BoundField DataField="ID" HeaderText="ID" />

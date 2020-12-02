@@ -7,10 +7,6 @@
     <div class="row">
         <div class="col-sm-12 ">
 
-            <h3 style="text-align: center">
-                <asp:Label ID="lblName" runat="server" Text="lblName"></asp:Label>
-                <asp:Label ID="lblFamily" runat="server" Text="lblFamily"></asp:Label>
-            </h3>
             <h6 style="text-align: center">آخرین ورود به سایت
             <asp:Label ID="lblLastLogDate" runat="server" Text="lblLastLogDate"></asp:Label>
                 ساعت
@@ -34,7 +30,10 @@
                 <asp:LinkButton ID="lbShowWorks" runat="server" Visible="False">مشاهده کارهای انجام نیافته</asp:LinkButton>
                 </h4>
                 <h6>
-                    <asp:GridView ID="gvWorks" runat="server" CellPadding="2" ForeColor="Black" GridLines="None" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" Width="100%">
+                    <asp:GridView ID="gvWorks" runat="server" CellPadding="2"
+                        ForeColor="Black" GridLines="None" AutoGenerateColumns="False"
+                        BackColor="LightGoldenrodYellow" BorderColor="Tan" 
+                        CssClass ="grid " BorderWidth="1px" Width="100%">
                         <AlternatingRowStyle BackColor="PaleGoldenrod" />
                         <Columns>
                             <asp:BoundField DataField="id" HeaderText="ردیف">
@@ -78,7 +77,10 @@
             </asp:Panel>
             <asp:Panel ID="pnlCooperation" runat="server" Visible="False">
                 <a href="CooperationRequests.aspx" runat="server">شما تعداد<asp:Label ID="lblCooperation" runat="server" Style="color: #CC0000; font-weight: 700; font-size: small"></asp:Label>تقاضای همکاری دارید. </a>
-                <asp:GridView ID="gvCooperationRequests" runat="server" CellPadding="2" ForeColor="Black" GridLines="None" Width="100%" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px">
+                <asp:GridView ID="gvCooperationRequests" runat="server" CellPadding="2"
+                    ForeColor="Black" GridLines="None" Width="100%"
+                    AutoGenerateColumns="False" BackColor="LightGoldenrodYellow"
+                    BorderColor="Tan" BorderWidth="1px">
                     <AlternatingRowStyle BackColor="PaleGoldenrod" />
                     <Columns>
                         <asp:BoundField DataField="firstname" HeaderText="نام" />

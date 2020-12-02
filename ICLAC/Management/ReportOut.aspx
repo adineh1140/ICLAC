@@ -22,7 +22,11 @@
                 <asp:CheckBox ID="chkShowID" runat="server" AutoPostBack="True" Checked="false"  Text="نمایش ردیف؟" />
             </asp:HyperLink><br />
             <h5>
-                <asp:GridView ID="gvReport" runat="server" CellPadding="3" GridLines="Horizontal" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" Width ="100%">
+                <asp:GridView ID="gvReport" runat="server" 
+                    CellPadding="3" GridLines="Horizontal"
+                    BackColor="White" BorderColor="#E7E7FF"
+                    BorderStyle="None" BorderWidth="1px" Width ="100%"
+                    CssClass ="grid" >
                     <Columns>
                         <asp:BoundField HeaderText="ردیف" Visible="False">
                             <ItemStyle Width="2%" />

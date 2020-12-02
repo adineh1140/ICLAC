@@ -10,6 +10,7 @@
         <div class="col-md-3 columns" style="background-color: aquamarine">
             <label for="ddlcounties" runat="server">کشور: </label>
             <asp:DropDownList ID="ddlCountries" runat="server" CssClass="form-control" DataTextField="namefa" DataValueField="id" AutoPostBack ="true" ></asp:DropDownList>
+
             <label runat="server">نوع مصوبه </label>
             <asp:DropDownList ID="ddlTypes" runat="server" AutoPostBack="True" CssClass="form-control">
                 <asp:ListItem>قانون</asp:ListItem>
@@ -18,12 +19,17 @@
                 <asp:ListItem>بخشنامه</asp:ListItem>
                 <asp:ListItem>آراء وحدت رویه</asp:ListItem>
             </asp:DropDownList>
+
             <label runat="server" for="ddlcat1">طبقه اول: </label>
             <asp:DropDownList ID="ddlCat1" runat="server" AutoPostBack="True" DataTextField="CatName" DataValueField="ID" CssClass="form-control"></asp:DropDownList>
+
             <label runat="server" for="ddlcat2">طبقه دوم: </label>
-            <asp:DropDownList ID="ddlCat2" runat="server" DataTextField="CatName" DataValueField="ID" CssClass="form-control"></asp:DropDownList>
+            <asp:DropDownList ID="ddlCat2" runat="server" DataTextField="CatName" DataValueField="ID" CssClass="form-control" AutoPostBack ="true" ></asp:DropDownList>
+
             <label runat="server">برای ویرایش یک مصوبه، آن را از لیست زیر انتخاب نمایید </label>
-            <asp:GridView ID="gvActs" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Style="font-size: x-small" Width="100%">
+            <asp:GridView ID="gvActs" runat="server" AutoGenerateColumns="False" CellPadding="4"
+                ForeColor="#333333" GridLines="None" 
+                CssClass ="grid" Width="100%" AllowPaging ="true" >
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:BoundField DataField="ID" HeaderText="ردیف">
@@ -50,20 +56,15 @@
         </div>
         <div class="col-md-9 columns">
             <label runat="server" for="txtdate">تاریخ تصویب:</label>
-            <asp:RequiredFieldValidator ControlToValidate="txtdate" Text="تاریخ مصوبه ضروری است" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="txtDate" runat="server" placeholder="تاریخ مصوبه را وارد کنید" CssClass="form-control"></asp:TextBox>
+            <input ID="txtDate" runat="server" placeholder="تاریخ مصوبه را وارد کنید" Class="w3-input " required />
+            
             <label runat="server">عنوان: </label>
-            <asp:RequiredFieldValidator ControlToValidate="txttitle" Text="عنوان مصوبه ضروری است" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="txtTitle" runat="server" placeholder="عنوان مصوبه را وارد کنید" CssClass="form-control"></asp:TextBox>
+            <input ID="txtTitle" runat="server" placeholder="عنوان مصوبه را وارد کنید" Class="w3-input" required  />
+            
             <label runat="server" for="txttext">متن مصوبه: </label>
-            <asp:RequiredFieldValidator ControlToValidate="txttext" Text="متن مصوبه ضروری است" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="txtText" runat="server" CssClass="form-control" placeholder="متن مصوبه را واردکنید." TextMode="MultiLine"></asp:TextBox>
-            <label runat="server">فایل ضمیمه:</label>
-            <asp:FileUpload ID="fuAct" runat="server" />
-            <asp:Button ID="btnNew" Text ="مصوبه ی جدید" CssClass ="form-control" BackColor ="LightGreen" runat ="server" />
-            <asp:Button ID="btnSave" runat="server" CssClass="form-control" BackColor="LightBlue" Text="ثبت" />
-            <asp:Label ID="lblSaveOK" runat="server" Text="با موفقیت ذخیره شد." Visible="False"></asp:Label>
-            <asp:Label ID="lblErr" runat="server" Style="color: #FF0000; font-weight: 700" Text="ابتدا همه ی فیلدها را پر کنید." Visible="False"></asp:Label>
+            <textarea ID="txtText" runat="server" Class="w3-input" placeholder="متن مصوبه را واردکنید." rows ="15" required ></textarea>
+
+            <input type ="submit" id="btnSave" runat="server" CssClass="btn btn-primary btn-lg"  onserverclick ="Save_Click" value="ثبت" />
 
         </div>
     </div>

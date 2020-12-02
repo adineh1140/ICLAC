@@ -9,7 +9,9 @@
             <label for="ddlcat1" runat="server">انتخاب یک مورد از طبقه اول: </label>
             <asp:DropDownList ID="ddlCat1" runat="server" DataTextField="CatName" DataValueField="ID" CssClass="form-control" AutoPostBack="True"></asp:DropDownList>
             <label runat="server">برای ویرایش یا حذف یک عنوان، ابتدا آن را از لیس زیر انتخاب نمایید.</label>
-            <asp:GridView ID="gvCat2" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
+            <asp:GridView ID="gvCat2" runat="server" AutoGenerateColumns="False"
+                CellPadding="4" ForeColor="#333333"
+                CssClass ="grid " GridLines="None" Width="100%">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:BoundField DataField="ID" HeaderText="ردیف">

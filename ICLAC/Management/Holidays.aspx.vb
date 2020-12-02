@@ -14,11 +14,11 @@
             Session("allow") = "no"
             Response.Redirect("iisstart.aspx")
         End If
-
-        DS = XX.GetDataSet("SELECT * FROM tblholidays WHERE day LIKE '" & ddlYears.Text & "%'" & " ORDER BY day")
-        gvHolidays.DataSource = DS.Tables(0)
-        gvHolidays.DataBind()
-
+        If Page.IsPostBack = False Then
+            DS = XX.GetDataSet("SELECT * FROM tblholidays WHERE day LIKE '" & ddlYears.Text & "%'" & " ORDER BY day")
+            gvHolidays.DataSource = DS.Tables(0)
+            gvHolidays.DataBind()
+        End If
     End Sub
 
     Protected Sub btnNew_Click(sender As Object, e As EventArgs) Handles btnNew.Click
@@ -87,6 +87,14 @@
         btnDelete.Enabled = False
         DS = XX.GetDataSet("SELECT * FROM tblholidays WHERE day LIKE '" & ddlYears.Text & "%'" & " ORDER BY day")
         gvHolidays.DataSource = DS.Tables(0)
+        gvHolidays.DataBind()
+
+    End Sub
+
+    Private Sub gvHolidays_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles gvHolidays.PageIndexChanging
+        DS = XX.GetDataSet("SELECT * FROM tblholidays WHERE day LIKE '" & ddlYears.Text & "%'" & " ORDER BY day")
+        gvHolidays.DataSource = DS.Tables(0)
+        gvHolidays.PageIndex = e.NewPageIndex
         gvHolidays.DataBind()
 
     End Sub

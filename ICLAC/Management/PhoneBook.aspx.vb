@@ -149,4 +149,12 @@
         gvContacts.DataBind()
 
     End Sub
+
+    Private Sub gvContacts_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles gvContacts.PageIndexChanging
+        DS = XX.GetDataSet("SELECT * FROM tblcontacts ORDER BY lastname,firstname")
+        gvContacts.DataSource = DS.Tables(0)
+        gvContacts.PageIndex = e.NewPageIndex
+        gvContacts.DataBind()
+
+    End Sub
 End Class

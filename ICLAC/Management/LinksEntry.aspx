@@ -70,7 +70,10 @@
         </tr>
         <tr>
             <td style="font-size: small">
-                <asp:GridView ID="gvLinks" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="579px">
+                <asp:GridView ID="gvLinks" runat="server" AutoGenerateColumns="False"
+                    CellPadding="4" ForeColor="#333333"
+                    GridLines="None" Width="579px"
+                    AllowPaging ="true" >
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:BoundField DataField="ID" HeaderText="ID">

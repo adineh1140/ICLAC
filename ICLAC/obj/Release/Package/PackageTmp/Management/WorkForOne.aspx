@@ -96,7 +96,10 @@
             </asp:Panel>
             <asp:Panel ID="pnlEdit" runat="server" Visible="false">
                 <label for="gvWorks">برای ویرایش از میان لیست ذیل انتخاب کنید</label>
-                <asp:GridView ID="gvWorks" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" HorizontalAlign="Center" Width="100%">
+                <asp:GridView ID="gvWorks" runat="server" AutoGenerateColumns="False"
+                    CellPadding="4" ForeColor="#333333"
+                    GridLines="None" HorizontalAlign="Center" Width="100%"
+                     CssClass ="grid " >
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>
                         <asp:BoundField DataField="ID" HeaderText="ID">

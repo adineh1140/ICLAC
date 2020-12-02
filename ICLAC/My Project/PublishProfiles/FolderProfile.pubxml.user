@@ -196,10 +196,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/17/2018 13:55:20</publishTime>
     </File>
     <File Include="bin/ICLAC.dll">
-      <publishTime>11/29/2020 10:46:40</publishTime>
+      <publishTime>12/02/2020 08:57:17</publishTime>
     </File>
     <File Include="bin/ICLAC.pdb">
-      <publishTime>11/29/2020 10:46:40</publishTime>
+      <publishTime>12/02/2020 08:57:17</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
       <publishTime>07/30/2013 16:57:30</publishTime>
@@ -373,7 +373,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/22/2636 14:26:04</publishTime>
     </File>
     <File Include="bin/WebForms_Basic.xml">
-      <publishTime>11/29/2020 10:46:40</publishTime>
+      <publishTime>12/02/2020 08:57:17</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 12:57:34</publishTime>
@@ -437,6 +437,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/font-awesome.min.css">
       <publishTime>09/05/2020 17:35:32</publishTime>
+    </File>
+    <File Include="Content/irfonts.css">
+      <publishTime>12/01/2020 17:42:33</publishTime>
     </File>
     <File Include="Content/kamadatepicker.min.css">
       <publishTime>09/05/2020 11:11:47</publishTime>
@@ -557,6 +560,201 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Fonts/HelveticaObl-Th.woff">
       <publishTime>08/31/2020 10:28:02</publishTime>
+    </File>
+    <File Include="Fonts/irbadrbold.eot">
+      <publishTime>12/01/2020 17:42:33</publishTime>
+    </File>
+    <File Include="Fonts/irbadrbold.svg">
+      <publishTime>12/01/2020 17:42:32</publishTime>
+    </File>
+    <File Include="Fonts/irbadrbold.ttf">
+      <publishTime>12/01/2020 17:42:32</publishTime>
+    </File>
+    <File Include="Fonts/irbadrbold.woff">
+      <publishTime>12/01/2020 17:42:32</publishTime>
+    </File>
+    <File Include="Fonts/irbadrbold.woff2">
+      <publishTime>12/01/2020 17:42:32</publishTime>
+    </File>
+    <File Include="Fonts/irbadrregular.eot">
+      <publishTime>12/01/2020 17:42:32</publishTime>
+    </File>
+    <File Include="Fonts/irbadrregular.svg">
+      <publishTime>12/01/2020 17:42:32</publishTime>
+    </File>
+    <File Include="Fonts/irbadrregular.ttf">
+      <publishTime>12/01/2020 17:42:32</publishTime>
+    </File>
+    <File Include="Fonts/irbadrregular.woff">
+      <publishTime>12/01/2020 17:42:32</publishTime>
+    </File>
+    <File Include="Fonts/irbadrregular.woff2">
+      <publishTime>12/01/2020 17:42:32</publishTime>
+    </File>
+    <File Include="Fonts/irlotusbold.eot">
+      <publishTime>12/01/2020 17:42:31</publishTime>
+    </File>
+    <File Include="Fonts/irlotusbold.svg">
+      <publishTime>12/01/2020 17:42:31</publishTime>
+    </File>
+    <File Include="Fonts/irlotusbold.ttf">
+      <publishTime>12/01/2020 17:42:30</publishTime>
+    </File>
+    <File Include="Fonts/irlotusbold.woff">
+      <publishTime>12/01/2020 17:42:30</publishTime>
+    </File>
+    <File Include="Fonts/irlotusbold.woff2">
+      <publishTime>12/01/2020 17:42:30</publishTime>
+    </File>
+    <File Include="Fonts/irlotusregular.eot">
+      <publishTime>12/01/2020 17:42:30</publishTime>
+    </File>
+    <File Include="Fonts/irlotusregular.svg">
+      <publishTime>12/01/2020 17:42:30</publishTime>
+    </File>
+    <File Include="Fonts/irlotusregular.ttf">
+      <publishTime>12/01/2020 17:42:30</publishTime>
+    </File>
+    <File Include="Fonts/irlotusregular.woff">
+      <publishTime>12/01/2020 17:42:29</publishTime>
+    </File>
+    <File Include="Fonts/irlotusregular.woff2">
+      <publishTime>12/01/2020 17:42:29</publishTime>
+    </File>
+    <File Include="Fonts/irmitrabold.eot">
+      <publishTime>12/01/2020 17:42:29</publishTime>
+    </File>
+    <File Include="Fonts/irmitrabold.svg">
+      <publishTime>12/01/2020 17:42:29</publishTime>
+    </File>
+    <File Include="Fonts/irmitrabold.ttf">
+      <publishTime>12/01/2020 17:42:29</publishTime>
+    </File>
+    <File Include="Fonts/irmitrabold.woff">
+      <publishTime>12/01/2020 17:42:29</publishTime>
+    </File>
+    <File Include="Fonts/irmitrabold.woff2">
+      <publishTime>12/01/2020 17:42:29</publishTime>
+    </File>
+    <File Include="Fonts/irmitraregular.eot">
+      <publishTime>12/01/2020 17:42:28</publishTime>
+    </File>
+    <File Include="Fonts/irmitraregular.svg">
+      <publishTime>12/01/2020 17:42:28</publishTime>
+    </File>
+    <File Include="Fonts/irmitraregular.ttf">
+      <publishTime>12/01/2020 17:42:27</publishTime>
+    </File>
+    <File Include="Fonts/irmitraregular.woff">
+      <publishTime>12/01/2020 17:42:27</publishTime>
+    </File>
+    <File Include="Fonts/irmitraregular.woff2">
+      <publishTime>12/01/2020 17:42:27</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninbold.eot">
+      <publishTime>12/01/2020 17:42:27</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninbold.svg">
+      <publishTime>12/01/2020 17:42:27</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninbold.ttf">
+      <publishTime>12/01/2020 17:42:27</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninbold.woff">
+      <publishTime>12/01/2020 17:42:27</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninbold.woff2">
+      <publishTime>12/01/2020 17:42:27</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninregular.eot">
+      <publishTime>12/01/2020 17:42:26</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninregular.svg">
+      <publishTime>12/01/2020 17:42:26</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninregular.ttf">
+      <publishTime>12/01/2020 17:42:26</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninregular.woff">
+      <publishTime>12/01/2020 17:42:26</publishTime>
+    </File>
+    <File Include="Fonts/irnazaninregular.woff2">
+      <publishTime>12/01/2020 17:42:26</publishTime>
+    </File>
+    <File Include="Fonts/irterafikbold.eot">
+      <publishTime>12/01/2020 17:42:26</publishTime>
+    </File>
+    <File Include="Fonts/irterafikbold.svg">
+      <publishTime>12/01/2020 17:42:26</publishTime>
+    </File>
+    <File Include="Fonts/irterafikbold.ttf">
+      <publishTime>12/01/2020 17:42:26</publishTime>
+    </File>
+    <File Include="Fonts/irterafikbold.woff">
+      <publishTime>12/01/2020 17:42:25</publishTime>
+    </File>
+    <File Include="Fonts/irterafikbold.woff2">
+      <publishTime>12/01/2020 17:42:25</publishTime>
+    </File>
+    <File Include="Fonts/irterafikregular.eot">
+      <publishTime>12/01/2020 17:42:24</publishTime>
+    </File>
+    <File Include="Fonts/irterafikregular.svg">
+      <publishTime>12/01/2020 17:42:24</publishTime>
+    </File>
+    <File Include="Fonts/irterafikregular.ttf">
+      <publishTime>12/01/2020 17:42:24</publishTime>
+    </File>
+    <File Include="Fonts/irterafikregular.woff">
+      <publishTime>12/01/2020 17:42:24</publishTime>
+    </File>
+    <File Include="Fonts/irterafikregular.woff2">
+      <publishTime>12/01/2020 17:42:24</publishTime>
+    </File>
+    <File Include="Fonts/irtitrregular.eot">
+      <publishTime>12/01/2020 17:42:24</publishTime>
+    </File>
+    <File Include="Fonts/irtitrregular.svg">
+      <publishTime>12/01/2020 17:42:23</publishTime>
+    </File>
+    <File Include="Fonts/irtitrregular.ttf">
+      <publishTime>12/01/2020 17:42:23</publishTime>
+    </File>
+    <File Include="Fonts/irtitrregular.woff">
+      <publishTime>12/01/2020 17:42:23</publishTime>
+    </File>
+    <File Include="Fonts/irtitrregular.woff2">
+      <publishTime>12/01/2020 17:42:23</publishTime>
+    </File>
+    <File Include="Fonts/iryekanbold.eot">
+      <publishTime>12/01/2020 17:42:23</publishTime>
+    </File>
+    <File Include="Fonts/iryekanbold.svg">
+      <publishTime>12/01/2020 17:42:23</publishTime>
+    </File>
+    <File Include="Fonts/iryekanbold.ttf">
+      <publishTime>12/01/2020 17:42:23</publishTime>
+    </File>
+    <File Include="Fonts/iryekanbold.woff">
+      <publishTime>12/01/2020 17:42:23</publishTime>
+    </File>
+    <File Include="Fonts/iryekanbold.woff2">
+      <publishTime>12/01/2020 17:42:22</publishTime>
+    </File>
+    <File Include="Fonts/iryekanregular.eot">
+      <publishTime>12/01/2020 17:42:22</publishTime>
+    </File>
+    <File Include="Fonts/iryekanregular.svg">
+      <publishTime>12/01/2020 17:42:21</publishTime>
+    </File>
+    <File Include="Fonts/iryekanregular.ttf">
+      <publishTime>12/01/2020 17:42:21</publishTime>
+    </File>
+    <File Include="Fonts/iryekanregular.woff">
+      <publishTime>12/01/2020 17:42:21</publishTime>
+    </File>
+    <File Include="Fonts/iryekanregular.woff2">
+      <publishTime>12/01/2020 17:42:21</publishTime>
     </File>
     <File Include="Fonts/Mj_ExtenderX4SuperFit.eot">
       <publishTime>08/31/2020 10:28:02</publishTime>
@@ -844,19 +1042,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/31/2020 10:51:36</publishTime>
     </File>
     <File Include="Management/AccessDefinition.aspx">
-      <publishTime>08/31/2020 12:51:15</publishTime>
+      <publishTime>12/02/2020 08:19:43</publishTime>
     </File>
     <File Include="Management/Accounting.aspx">
       <publishTime>08/31/2020 12:51:16</publishTime>
     </File>
     <File Include="Management/ActCat1.aspx">
-      <publishTime>08/31/2020 12:51:24</publishTime>
+      <publishTime>12/02/2020 08:25:40</publishTime>
     </File>
     <File Include="Management/ActCat2.aspx">
-      <publishTime>08/31/2020 12:51:16</publishTime>
+      <publishTime>12/02/2020 08:21:01</publishTime>
     </File>
     <File Include="Management/ActsEntry.aspx">
-      <publishTime>08/31/2020 12:51:16</publishTime>
+      <publishTime>12/02/2020 08:25:40</publishTime>
     </File>
     <File Include="Management/App_LocalResources/ClientEntry.aspx.resx">
       <publishTime>06/15/2020 12:52:33</publishTime>
@@ -865,13 +1063,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/29/2020 17:56:52</publishTime>
     </File>
     <File Include="Management/CaseDocs.aspx">
-      <publishTime>08/31/2020 12:51:16</publishTime>
+      <publishTime>12/02/2020 08:25:40</publishTime>
     </File>
     <File Include="Management/CaseDocsEntry.aspx">
       <publishTime>08/31/2020 12:51:16</publishTime>
     </File>
     <File Include="Management/CaseEntry.aspx">
-      <publishTime>10/20/2020 15:02:02</publishTime>
+      <publishTime>12/02/2020 08:24:40</publishTime>
     </File>
     <File Include="Management/CaseInAGlance.aspx">
       <publishTime>09/01/2020 10:46:28</publishTime>
@@ -880,7 +1078,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/30/2020 19:22:07</publishTime>
     </File>
     <File Include="Management/Chat.aspx">
-      <publishTime>09/15/2020 16:40:10</publishTime>
+      <publishTime>12/02/2020 08:25:13</publishTime>
     </File>
     <File Include="Management/ClientEntry.aspx">
       <publishTime>08/31/2020 12:51:16</publishTime>
@@ -889,7 +1087,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/31/2020 12:51:16</publishTime>
     </File>
     <File Include="Management/ContacsOut.aspx">
-      <publishTime>08/31/2020 12:51:16</publishTime>
+      <publishTime>12/02/2020 08:32:46</publishTime>
     </File>
     <File Include="Management/Contract.aspx">
       <publishTime>08/31/2020 12:51:16</publishTime>
@@ -937,67 +1135,67 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/15/2020 14:21:15</publishTime>
     </File>
     <File Include="Management/Holidays.aspx">
-      <publishTime>08/31/2020 12:51:16</publishTime>
+      <publishTime>12/02/2020 08:34:29</publishTime>
     </File>
     <File Include="Management/iisstart.aspx">
-      <publishTime>09/26/2020 11:50:24</publishTime>
+      <publishTime>12/02/2020 08:45:51</publishTime>
     </File>
     <File Include="Management/Images/BackGround.jpg">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/BackGroundAuthentication.jpg">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/CSS/Site.css">
-      <publishTime>02/29/2636 23:37:04</publishTime>
+      <publishTime>10/12/2014 23:37:04</publishTime>
     </File>
     <File Include="Management/Images/Email/Footer%28BackGround%29-New.png">
-      <publishTime>02/29/2636 23:36:56</publishTime>
+      <publishTime>10/12/2014 23:36:56</publishTime>
     </File>
     <File Include="Management/Images/Email/Header%28BackGround%29-New.png">
-      <publishTime>02/29/2636 23:36:56</publishTime>
+      <publishTime>10/12/2014 23:36:56</publishTime>
     </File>
     <File Include="Management/Images/Error.jpg">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/Footer%28Print%29.png">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/Footer.png">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/HTML.jpg">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/Logo%28BorhanShahr%29.png">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/MenuHeader.png">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/PDF.jpg">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/PointUp.png">
       <publishTime>08/22/2020 17:38:42</publishTime>
     </File>
     <File Include="Management/Images/Print%28Header%29.png">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/search.png">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/SecureImage.jpg">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/shadow_bg.jpg">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/Title.jpg">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/Images/Word.jpg">
-      <publishTime>03/22/0622 00:00:00</publishTime>
+      <publishTime>10/12/2014 23:37:00</publishTime>
     </File>
     <File Include="Management/KeywordEntry.aspx">
       <publishTime>08/31/2020 12:51:16</publishTime>
@@ -1006,19 +1204,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/03/2020 09:16:41</publishTime>
     </File>
     <File Include="Management/LinksEntry.aspx">
-      <publishTime>08/31/2020 12:51:16</publishTime>
+      <publishTime>12/02/2020 08:47:02</publishTime>
     </File>
     <File Include="Management/Login.aspx">
       <publishTime>10/21/2020 11:27:58</publishTime>
     </File>
     <File Include="Management/Management.Master">
-      <publishTime>10/21/2020 12:01:28</publishTime>
+      <publishTime>12/01/2020 17:53:07</publishTime>
     </File>
     <File Include="Management/ManagementEntry.aspx">
       <publishTime>08/31/2020 12:51:17</publishTime>
     </File>
     <File Include="Management/MessageManagement.aspx">
-      <publishTime>08/31/2020 12:51:17</publishTime>
+      <publishTime>12/02/2020 08:56:57</publishTime>
     </File>
     <File Include="Management/Monitoring.aspx">
       <publishTime>09/15/2020 08:15:58</publishTime>
@@ -1036,7 +1234,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/31/2020 12:51:17</publishTime>
     </File>
     <File Include="Management/ReportOut.aspx">
-      <publishTime>09/01/2020 10:13:47</publishTime>
+      <publishTime>12/02/2020 08:50:27</publishTime>
     </File>
     <File Include="Management/Reports.aspx">
       <publishTime>09/01/2020 10:11:14</publishTime>
@@ -1054,7 +1252,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/31/2020 12:51:17</publishTime>
     </File>
     <File Include="Management/StaffEntry.aspx">
-      <publishTime>09/30/2020 09:54:07</publishTime>
+      <publishTime>12/02/2020 08:56:56</publishTime>
     </File>
     <File Include="Management/TablesAndFields.aspx">
       <publishTime>08/31/2020 12:51:17</publishTime>
@@ -1072,7 +1270,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/31/2020 12:51:17</publishTime>
     </File>
     <File Include="Management/WeeklyPlan.aspx">
-      <publishTime>09/30/2020 14:55:12</publishTime>
+      <publishTime>12/01/2020 17:59:11</publishTime>
     </File>
     <File Include="Management/WorkEntry.aspx">
       <publishTime>08/31/2020 12:51:17</publishTime>
@@ -1084,7 +1282,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/14/2020 19:09:35</publishTime>
     </File>
     <File Include="Management/WorkForOne.aspx">
-      <publishTime>10/21/2020 13:22:40</publishTime>
+      <publishTime>12/02/2020 08:56:57</publishTime>
     </File>
     <File Include="Management/WorkPlan.aspx">
       <publishTime>08/31/2020 12:51:17</publishTime>
@@ -1489,7 +1687,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/07/2020 12:07:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/14/2020 12:47:13</publishTime>
+      <publishTime>12/02/2020 08:57:19</publishTime>
     </File>
   </ItemGroup>
 </Project>

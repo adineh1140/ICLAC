@@ -27,7 +27,10 @@
         <asp:ListItem>1410</asp:ListItem>
     </asp:DropDownList>
     <asp:Button ID="btnYear" Text="OK" runat="server" /><br />
-    <asp:GridView ID="gvHolidays" runat="server" AutoGenerateColumns="False" CellPadding="4" GridLines="Horizontal" Height="101px" Width="425px" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px">
+    <asp:GridView ID="gvHolidays" runat="server" AutoGenerateColumns="False"
+        CellPadding="4" GridLines="Horizontal" Height="101px" 
+        Width="425px" BackColor="White" BorderColor="#336666" 
+        CssClass ="grid" AllowPaging ="true"  BorderStyle="Double" BorderWidth="3px">
         <Columns>
             <asp:BoundField DataField="ID" HeaderText="ردیف" />
             <asp:BoundField DataField="day" HeaderText="تاریخ">

@@ -5035,45 +5035,9 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ActsEntry._fuAct">
-<summary>
-fuAct control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ActsEntry._btnNew">
-<summary>
-btnNew control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:ICLAC.ActsEntry._btnSave">
 <summary>
 btnSave control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ActsEntry._lblSaveOK">
-<summary>
-lblSaveOK control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ActsEntry._lblErr">
-<summary>
-lblErr control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -7810,24 +7774,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ICLAC.Holidays._gvHolidays">
 <summary>
 gvHolidays control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.iisstart._lblName">
-<summary>
-lblName control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.iisstart._lblFamily">
-<summary>
-lblFamily control.
 </summary>
 <remarks>
 Auto-generated field.

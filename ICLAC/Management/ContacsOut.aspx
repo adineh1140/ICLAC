@@ -16,7 +16,10 @@
                     <asp:TextBox ID="txtNoSearch" CssClass="form-control" runat="server"></asp:TextBox>
                     <asp:Button ID="btnNoSearch" CssClass="form-control" BackColor="LightGreen" runat="server" Text="جستجو" />
                     <h6>
-                        <asp:GridView ID="gvContacts" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
+                        <asp:GridView ID="gvContacts" runat="server" 
+                            AutoGenerateColumns="False" CellPadding="4" 
+                            ForeColor="#333333" GridLines="None" CssClass ="grid"
+                            AllowPaging ="true" PageSize ="20" Width="100%">
                             <AlternatingRowStyle BackColor="White" />
                             <Columns>
                                 <asp:BoundField DataField="ID" HeaderText="ID" />

@@ -30,7 +30,8 @@
             </asp:GridView>
             <span style="font-size: large"><span style="background-color: #00CC99">مشاهده ی قسمت های تعریف شده برای این کاربر</span><asp:Label ID="lblID" runat="server" Visible="False" Style="background-color: #00CC99"></asp:Label>
             </span>
-            <asp:GridView ID="gvWorks" runat="server" AutoGenerateColumns="False" CellPadding="4" Font-Size="X-Small" ForeColor="#333333" GridLines="None"   Width ="100%">
+            <asp:GridView ID="gvWorks" runat="server" AutoGenerateColumns="False"
+                CellPadding="4" CssClass ="grid " ForeColor="#333333" GridLines="None"   Width ="100%">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:BoundField DataField="ID" HeaderText="ID" />

@@ -228,7 +228,7 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <div class="noPrint" style="text-align: right">
+                    <div class="noPrint" style="text-align: right;font-family:IRLotus">
                         <a href="leavedcasesreport.aspx"><span class="glyphicon glyphicon-file"></span>پرونده بلاتکلیف <span class="badge" style="background-color: red">
                             <asp:Label ID="lblLeavedCases" runat="server"></asp:Label></span></a><br />
                         <a href="iisstart.aspx"><span class="glyphicon glyphicon-briefcase"></span>کار انجام نیافته <span class="badge" style="background-color: red">
@@ -277,7 +277,7 @@
 
                     <div class="col-md-12 " style="background-color: aliceblue">
                         <div class="bottom" style="background-color: bisque">
-                            <h4 style="text-align: center">تمام حقوق مادی و معنوی این سایت متعلق به مرکز بین المللی داوری و حقوقی ایران و چین است</h4>
+                            <label style="text-align: center">تمام حقوق مادی و معنوی این سایت متعلق به مرکز بین المللی داوری و حقوقی ایران و چین است</label>
                             <div class="col">
                                 <ul style="text-align: right">
                                     <li><a href="https://resultcase.adliran.ir/ResultCase/CaseListForLawyer">اطلاع رسانی برای وکلا</a></li>
