@@ -7,7 +7,9 @@
     <div class="row">
         <div class="col-md-6 columns"  style ="background-color:aquamarine">
             <label for="gvcat1" runat="server">برای ویرایش یا حذف یک عنوان، ابتدا آن را از لیس زیر انتخاب نمایید.</label>
-            <asp:GridView ID="gvCat1" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
+            <asp:GridView ID="gvCat1" runat="server" AutoGenerateColumns="False"
+                CellPadding="4" ForeColor="#333333" 
+                CssClass ="grid" GridLines="None" Width="100%">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:BoundField DataField="ID" HeaderText="ردیف">

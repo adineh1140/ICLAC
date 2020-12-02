@@ -5035,45 +5035,9 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ActsEntry._fuAct">
-<summary>
-fuAct control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ActsEntry._btnNew">
-<summary>
-btnNew control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:ICLAC.ActsEntry._btnSave">
 <summary>
 btnSave control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ActsEntry._lblSaveOK">
-<summary>
-lblSaveOK control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.ActsEntry._lblErr">
-<summary>
-lblErr control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -7699,9 +7663,27 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.ForTest._btnTest">
+<member name="F:ICLAC.ForTest._TXT">
 <summary>
-btnTest control.
+TXT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.ForTest._LBL">
+<summary>
+LBL control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ICLAC.ForTest._BTN">
+<summary>
+BTN control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -7792,24 +7774,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ICLAC.Holidays._gvHolidays">
 <summary>
 gvHolidays control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.iisstart._lblName">
-<summary>
-lblName control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.iisstart._lblFamily">
-<summary>
-lblFamily control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -10672,105 +10636,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ICLAC.Site._cphCarousel">
 <summary>
 cphCarousel control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._Image1">
-<summary>
-Image1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._image7">
-<summary>
-image7 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._image2">
-<summary>
-image2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._image3">
-<summary>
-image3 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._image4">
-<summary>
-image4 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._image5">
-<summary>
-image5 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._image6">
-<summary>
-image6 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._image8">
-<summary>
-image8 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._image9">
-<summary>
-image9 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._lblTitle">
-<summary>
-lblTitle control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Site._lblSubTitle">
-<summary>
-lblSubTitle control.
 </summary>
 <remarks>
 Auto-generated field.

@@ -14,24 +14,12 @@ Public Class Site
             Next
             Page.MetaKeywords = strKeys
             Page.MetaDescription = strKeys
-            Dim strDate As String = Sami.PersianDate(Today)
-            lblToday.Text = Format(Today, "yyyy/MM/dd") & Sami.GetDayOfWeekEN(Today)
-            lblToday.Text &= "  " & Sami.PersianDate(Today) & Sami.GetDayOfWeekFA(Today)
-            'DS = Sami.GetDataSet("SELECT count(id) FROM tbllogins WHERE logdate ='" & strDate & "'")
-            'lblVisitToday.Text &= DS.Tables(0).Rows(0).Item(0)
-            'DS = Sami.GetDataSet("SELECT count(ID) FROM tbllogins WHERE logdate LIKE'%" & Mid(strDate, 5, 4) & "%'")
-            'lblVisitMonth.Text &= DS.Tables(0).Rows(0).Item(0)
-            'DS = Sami.GetDataSet("SELECT count(id) FROM tbllogins")
-            'lblAllVisits.Text &= DS.Tables(0).Rows(0).Item(0)
-        Else
-            Dim cookie As New HttpCookie("CultureInfo")
-            cookie.Value = "fa"
-            Response.Cookies.Add(cookie)
-            Thread.CurrentThread.CurrentCulture = New CultureInfo("fa")
-            Thread.CurrentThread.CurrentUICulture = New CultureInfo("fa")
-        End If
-        'SetNodes()
 
+            Dim Cal As New GregorianCalendar
+            lblToday.Text = "امروز:" & Sami.PersianDate(Today) & Sami.GetDayOfWeekFA(Today)
+
+            lblToday.Text &= Cal.GetYear(Today) & "/" & Cal.GetMonth(Today) & "/" & Cal.GetDayOfMonth(Today)
+        End If
     End Sub
     Protected Sub btnSearch_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnSearch.Click
         Process.Start("http://www.google.com/search?domains=iranchinalaw.com&oe=UTF-8&ie=UTF-8&hl=fa&q=" + txtSearch.Text + "&sitesearch=iranchinalaw.com")

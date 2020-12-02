@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class ActsEntry
-    
+
     '''<summary>
     '''ddlCountries control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class ActsEntry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlCountries As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlTypes control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class ActsEntry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlTypes As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlCat1 control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class ActsEntry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlCat1 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlCat2 control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class ActsEntry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlCat2 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''gvActs control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class ActsEntry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gvActs As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''txtDate control.
     '''</summary>
@@ -65,8 +65,8 @@ Partial Public Class ActsEntry
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtDate As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtDate As Global.System.Web.UI.HtmlControls.HtmlInputText
+
     '''<summary>
     '''txtTitle control.
     '''</summary>
@@ -74,8 +74,8 @@ Partial Public Class ActsEntry
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtTitle As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtTitle As Global.System.Web.UI.HtmlControls.HtmlInputText
+
     '''<summary>
     '''txtText control.
     '''</summary>
@@ -83,26 +83,8 @@ Partial Public Class ActsEntry
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtText As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''fuAct control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents fuAct As Global.System.Web.UI.WebControls.FileUpload
-    
-    '''<summary>
-    '''btnNew control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnNew As Global.System.Web.UI.WebControls.Button
-    
+    Protected WithEvents txtText As Global.System.Web.UI.HtmlControls.HtmlTextArea
+
     '''<summary>
     '''btnSave control.
     '''</summary>
@@ -110,23 +92,5 @@ Partial Public Class ActsEntry
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSave As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
-    '''lblSaveOK control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblSaveOK As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''lblErr control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblErr As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents btnSave As Global.System.Web.UI.HtmlControls.HtmlInputSubmit
 End Class

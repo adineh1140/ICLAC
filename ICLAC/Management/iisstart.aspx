@@ -7,10 +7,6 @@
     <div class="row">
         <div class="col-sm-12 ">
 
-            <h3 style="text-align: center">
-                <asp:Label ID="lblName" runat="server" Text="lblName"></asp:Label>
-                <asp:Label ID="lblFamily" runat="server" Text="lblFamily"></asp:Label>
-            </h3>
             <h6 style="text-align: center">آخرین ورود به سایت
             <asp:Label ID="lblLastLogDate" runat="server" Text="lblLastLogDate"></asp:Label>
                 ساعت
@@ -34,7 +30,10 @@
                 <asp:LinkButton ID="lbShowWorks" runat="server" Visible="False">مشاهده کارهای انجام نیافته</asp:LinkButton>
                 </h4>
                 <h6>
-                    <asp:GridView ID="gvWorks" runat="server" CellPadding="2" ForeColor="Black" GridLines="None" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" Width="100%">
+                    <asp:GridView ID="gvWorks" runat="server" CellPadding="2"
+                        ForeColor="Black" GridLines="None" AutoGenerateColumns="False"
+                        BackColor="LightGoldenrodYellow" BorderColor="Tan" 
+                        CssClass ="grid " BorderWidth="1px" Width="100%">
                         <AlternatingRowStyle BackColor="PaleGoldenrod" />
                         <Columns>
                             <asp:BoundField DataField="id" HeaderText="ردیف">

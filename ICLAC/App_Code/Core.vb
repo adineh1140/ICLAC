@@ -126,22 +126,18 @@ Public Class Core 'کلاس جامع براي تمام توابع و متغير 
     End Function
 
     Public Function PersianDate(ByVal MyDate As Date) As String
-        Try
-            Dim Result As String
-            Dim Month() As String = {"", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"}
-            'Dim Persian As New Globalization.PersianCalendar
-            'Dim Persian As Globalization.Calendar = System.Globalization.CultureInfo.InstalledUICulture.Calendar
-            Dim Persian As New PersianCalendar
-            Result = (Persian.GetYear(MyDate).ToString + "/" + Month(Persian.GetMonth(MyDate)) + "/")
-            If Len(Persian.GetDayOfMonth(MyDate).ToString) = 1 Then
-                Result &= "0"
-            End If
-            Result &= Persian.GetDayOfMonth(MyDate)
-            Return Result
+        Dim Result As String
+        Dim Month() As String = {"", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"}
+        'Dim Persian As New Globalization.PersianCalendar
+        'Dim Persian As Globalization.Calendar = System.Globalization.CultureInfo.InstalledUICulture.Calendar
+        Dim Persian As New PersianCalendar
+        Result = (Persian.GetYear(MyDate).ToString + "/" + Month(Persian.GetMonth(MyDate)) + "/")
+        If Len(Persian.GetDayOfMonth(MyDate).ToString) = 1 Then
+            Result &= "0"
+        End If
+        Result &= Persian.GetDayOfMonth(MyDate)
+        Return Result
 
-        Catch ex As Exception
-            Return ""
-        End Try
     End Function
     Public Function GetDayOfWeekFA(ByVal MyDate As Date) As String
         Try

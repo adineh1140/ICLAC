@@ -5,5 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphTitle" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
-    <asp:Button ID="btnTest" runat ="server" Text ="برو" />
+    <input type ="text" runat ="server" id="TXT" />
+    <asp:Label ID="LBL" runat ="server" ></asp:Label>
+
+    <input id="BTN" type ="button" runat ="server" onserverclick ="RunCode" />
 </asp:Content>

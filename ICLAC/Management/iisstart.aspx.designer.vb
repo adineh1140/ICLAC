@@ -14,24 +14,6 @@ Option Explicit On
 Partial Public Class iisstart
 
     '''<summary>
-    '''lblName control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblName As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''lblFamily control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblFamily As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''lblLastLogDate control.
     '''</summary>
     '''<remarks>

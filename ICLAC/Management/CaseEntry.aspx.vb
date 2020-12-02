@@ -110,6 +110,11 @@
             strSQL &= "',description = '" & txtDescription.Text
             strSQL &= "',terminated ="
             If chkTerminated.Checked = True Then
+                Dim strX As String
+                strX = ("UPDATE tblworks SET done=1,donedate='" &
+                    Sami.PersianDate(Today) & "',donetime='" & Format(TimeOfDay, "hh:mm") & "',result ='به دلیل مختومه شدن پرونده این کار خاتمه یافت'" &
+                                  " WHERE caseid=" & intID)
+                Sami.ExecuteQuery(strX)
                 strSQL &= "1"
             Else
                 strSQL &= "0"

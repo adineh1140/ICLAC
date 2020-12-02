@@ -6,20 +6,49 @@
 <head runat="server">
     <title>مرکز بین المللی داوری و حقوقی ایران و چین</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="<%$ Resources: resource, Direction %>" rel="stylesheet" />
-    <link href="Content/bootstrap-rtl.css" rel="stylesheet" />
+    <%--    <link href="<%$ Resources: resource, Direction %>" rel="stylesheet" />--%>
+    <webopt:BundleReference runat="server" Path="Content/" />
 
-    <script src="Scripts/jquery-3.5.1.min.js"></script>
-    <script src="Scripts/modal.js"></script>
-    <script src="Scripts/popper.min.js"></script>
-    <script src="Scripts/bootstrap.bundle.min.js"></script>
-    <script src="Scripts/tooltip.js"></script>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <script src="Scripts/bootstrap.min.js"></script>
-
-
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <link href="Content/bootstrap-rtl.css" rel="stylesheet" />
+    <script src="Scripts/modernizr-2.8.3.js"></script>
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="cphHead" runat="server">
     </asp:ContentPlaceHolder>
+    <style media="screen">
+        .noPrint {
+            display: block;
+        }
+
+        .yesPrint {
+            display: block !important;
+        }
+    </style>
+
+    <style media="print">
+        .noPrint {
+            display: none;
+        }
+
+        .yesPrint {
+            display: block !important;
+        }
+    </style>
+
     <style>
+        body {
+            margin: 20mm 20mm 20mm 20mm;
+        }
+
+        label {
+            font-size: x-large;
+            line-height: 50;
+        }
+
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
             width: 100%;
@@ -30,7 +59,7 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" style="background-color: azure" class="w3-round-xxlarge ">
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -51,7 +80,8 @@
             </Scripts>
         </asp:ScriptManager>
         <div class="container">
-            <div class="row">
+
+            <div class="row noPrint">
                 <div class="col-md-12 column">
                     <nav class="navbar navbar-inverse navbar-fixed-top ">
                         <div class="container-fluid">
@@ -61,7 +91,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand" href="http://www.iranchinalaw.com"></a>
+                                <a class="navbar-brand" href="index.aspx"><span class="glyphicon glyphicon-home"></span></a>
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <h5>
@@ -73,7 +103,7 @@
 
                                         <li>
                                             <asp:HyperLink Text="تماس با ما" ID="hplContactUs" NavigateUrl="~/ContactUs.aspx" runat="server" meta:resourcekey="lblMnuContactUsResource1" /></li>
-<%--                                        <li>
+                                        <%--                                        <li>
                                             <asp:HyperLink NavigateUrl="publications.aspx" Text="انتشارات" ID="hplPublications" runat="server" meta:resourcekey="hplPublicationsResource1" /></li>--%>
                                         <li>
                                             <asp:HyperLink NavigateUrl="about.aspx" Text="مختصری در باره مرکز" ID="hplMnuAboutSELF" runat="server" meta:resourcekey="hplMnuAboutSELFResource1" /></li>
@@ -98,10 +128,10 @@
 
                 </div>
             </div>
-            <div class="row">
+            <div class="row noPrint ">
                 <div class="col">
                     <asp:ContentPlaceHolder ID="cphCarousel" runat="server">
-                        <div class="row" style="text-align: center">
+                        <%--                        <div class="row" style="text-align: center">
                             <div class="col-md-12 column">
                                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -189,13 +219,9 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <%-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span></a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span></a>--%>
                                 </div>
                             </div>
-                        </div>
+                        </div>--%>
                     </asp:ContentPlaceHolder>
                 </div>
             </div>
@@ -205,16 +231,10 @@
                     <img src="Images/Logo.png" class="img-responsive" />
                 </div>
                 <div class="col-md-8" style="text-align: center">
-                    <h1><b>
-                        <asp:Label Text="مرکز بین المللی داوری و حقوقی ایران و چین" ID="lblTitle" runat="server" meta:resourcekey="lblTitleResource1" />
-                    </b>
-                    </h1>
-                    <h3>
-                        <asp:Label Text="ارائه دهنده ی تمام خدمات حقوقی" ID="lblSubTitle" runat="server" meta:resourcekey="lblSubTitleResource1" /><br />
-                    </h3>
+                    <h1>مرکز بین المللی داوری و حقوقی ایران و چین</h1>
+                    <h3>ارائه دهنده ی تمام خدمات حقوقی</h3>
                     <h5>
-                        <asp:Label ID="lblToday" runat="server"></asp:Label>
-                    </h5>
+                        <asp:Label ID="lblToday" runat="server"></asp:Label></h5>
                 </div>
                 <div class="col-md-2" style="text-align: left">
                     <br />
@@ -229,7 +249,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 column">
-                    <h2 style="text-align: center">
+                    <h2 style="text-align: center; background-color: aquamarine;" class="w3-round-xxlarge ">
                         <asp:ContentPlaceHolder ID="cphTitle" runat="server">
                         </asp:ContentPlaceHolder>
                     </h2>
@@ -241,7 +261,7 @@
                     </asp:ContentPlaceHolder>
                 </div>
             </div>
-            <div class="row" style="background-color: #e6e6e6;">
+            <div class="row w3-round-xxlarge " style="background-color: #e6e6e6;">
                 <div class="col-md-4 column">
                     <h4>
                         <asp:Label ID="lbl1" Text="Address:" runat="server" meta:resourcekey="lbl1Resource1"></asp:Label>
@@ -315,7 +335,7 @@
                             <li>
                                 <asp:HyperLink ID="hplFooterLitigation" NavigateUrl="claims.aspx" Text="امور دعاوی" runat="server" meta:resourcekey="hplFooterLitigationResource1" />
                             </li>
-<%--                            <li>
+                            <%--                            <li>
                                 <asp:HyperLink ID="hplFooterInfoPackage" NavigateUrl="infopackage.aspx" Text="بسته اطلاعاتی راه اندازی تجارت بین الملل" runat="server" meta:resourcekey="hplFooterInfoPackageResource1" />--%>
                             </li>
                             <li>
@@ -338,12 +358,16 @@
                         <ul>
                             <li>
                                 <asp:HyperLink ID="hplFooterJudicialPower" NavigateUrl="http://adliran.ir" Target="_blank" Text="قوه قضاییه" runat="server" meta:resourcekey="hplFooterJPResource1" /><br />
+
                             </li>
                             <li>
                                 <asp:HyperLink ID="hplFooterVokala" NavigateUrl="http://iranbar.com" Text="کانون وکلای دادگستری" Target="_blank" runat="server" meta:resourcekey="hplFooterVokalaResource1" />
                             </li>
                         </ul>
                     </h6>
+                    <a href="#"><span class="fa fa-instagram" style="font-size: 30px; color: red"></span></a>
+                    <a href="#"><span class="fa fa-facebook" style="font-size: 30px"; ></span></a>
+                    <a href="#"><span class="fa fa-linkedin" style="font-size: 30px"></span></a>
                 </div>
             </div>
         </div>

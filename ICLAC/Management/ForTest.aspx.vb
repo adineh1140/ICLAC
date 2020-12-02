@@ -11,5 +11,7 @@ Public Class ForTest
         Session("id") = 1
     End Sub
 
-
+    Protected Sub RunCode()
+        LBL.Text = Chr(Asc(TXT.Value))
+    End Sub
 End Class

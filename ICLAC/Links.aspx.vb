@@ -11,6 +11,7 @@
     End Sub
     Protected Sub SetLinks(ByVal intID As Integer)
         DS = Core.GetDataSet("SELECT * FROM tbllinks WHERE typeid =" & intID)
+
         gvLinks.DataSource = DS.Tables(0)
         gvLinks.DataBind()
     End Sub
@@ -57,5 +58,10 @@
     Protected Sub lbtn12_Click(sender As Object, e As EventArgs) Handles lbtn12.Click
         SetLinks(12)
         lblTitle.Text = lbtn12.Text
+    End Sub
+
+    Private Sub gvLinks_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles gvLinks.PageIndexChanging
+        gvLinks.PageIndex = e.NewPageIndex
+        gvLinks.DataBind()
     End Sub
 End Class

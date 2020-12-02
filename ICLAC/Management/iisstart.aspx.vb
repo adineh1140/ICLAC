@@ -33,9 +33,7 @@
         CooperationRequestsChek()
 
         DS = XX.GetDataSet("Select * FROM tblstaff WHERE ID = " & Session("ID"))
-        lblName.Text = DS.Tables(0).Rows(0).Item("FirstName")
-        lblFamily.Text = DS.Tables(0).Rows(0).Item("LastName")
-        Session.Add("Reporter", lblName.Text & " " & lblFamily.Text)
+        Session.Add("Reporter", XX.UserFullName(Session("id")))
         If IsDBNull(DS.Tables(0).Rows(0).Item("LastLogDate")) = False Then
             lblLastLogDate.Text = DS.Tables(0).Rows(0).Item("LastLogDate")
             lblLastLogTime.Text = DS.Tables(0).Rows(0).Item("LastLogTime")

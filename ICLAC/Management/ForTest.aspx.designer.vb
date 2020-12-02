@@ -14,11 +14,29 @@ Option Explicit On
 Partial Public Class ForTest
 
     '''<summary>
-    '''btnTest control.
+    '''TXT control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnTest As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents TXT As Global.System.Web.UI.HtmlControls.HtmlInputText
+
+    '''<summary>
+    '''LBL control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LBL As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BTN control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BTN As Global.System.Web.UI.HtmlControls.HtmlInputButton
 End Class

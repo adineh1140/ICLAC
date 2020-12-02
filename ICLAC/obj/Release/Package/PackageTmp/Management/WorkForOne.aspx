@@ -1,7 +1,75 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Management/Management.Master" CodeBehind="WorkForOne.aspx.vb" Inherits="ICLAC.WorkForOne" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 23px;
+        }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 15px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 20px;
+        }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+    </style>
+
+    <script >
+        function handleClick(cb) {
+            display("Clicked, new value = " + cb.checked);
+        }
+    </script>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="cphTitle" runat="server">
     کارها یا رویدادهای یک پرونده
 </asp:Content>
@@ -57,31 +125,35 @@
         </div>
         <div class=" col-md-6">
             <asp:Panel ID="pnlDetails" runat="server" Visible="false">
-                <label for="txtdonedate">تاریخ انجام کار:</label><span class=" fa-star"  style="background-color: red"></span>
-                <input id="txtDoneDate" type="text" maxlength="10" name ="txtDoneDate" value ="<%=Request.Form("txtDoneDate") %>" autocomplete ="off"  class="form-control " required />
+                <label for="txtdonedate">تاریخ انجام کار:</label><span class="glyphicon glyphicon-calendar" style="background-color: red"></span>
+                <input id="txtDoneDate" type="text" maxlength="10" name="txtDoneDate" value="<%=Request.Form("txtDoneDate") %>" autocomplete="off" class="form-control " required />
 
-                <label for="txtdonetime" runat="server">ساعت (یک یا مجموعه ای از ساعات مثل 8 11 15)</label><span class=" fa-star" style="background-color: red"></span>
-                <input type="text" id="txtDoneTime" class="form-control" runat="server" maxlength="50" autocomplete ="off"  required />
+                <label for="txtdonetime" runat="server">ساعت (یک یا مجموعه ای از ساعات مثل 8 11 15)</label><span class="glyphicon glyphicon-time" style="background-color: red"></span>
+                <input type="text" id="txtDoneTime" class="form-control" runat="server" maxlength="50" autocomplete="off" required />
 
-                <label for="txttitle" runat="server">عنوان کار</label><span class=" fa-star" style="background-color: red"></span>
+                <label for="txttitle" runat="server">عنوان کار</label><span class="glyphicon glyphicon-header  " style="background-color: red"></span>
                 <input id="txtTitle" type="text" class="form-control " runat="server" required />
 
                 <label for="txtdescription" runat="server">توضیحات(500 کاراکتر)</label>
                 <textarea id="txtDescription" class="form-control " runat="server" maxlength="500" rows="2"></textarea>
 
-                <asp:CheckBox ID="chkisDone" runat ="server" Text ="آیا این کار خاتمه یافته است؟" AutoPostBack ="true"  />
+                <asp:CheckBox ID="chkisDone" runat="server" Text="آیا این کار خاتمه یافته است؟" AutoPostBack="true" />
                 <br />
                 <asp:Panel ID="pnlWorkEnd" runat="server" Visible="false" BackColor="#99ccff">
                     <label for="txtResult" runat="server">نتیجه ی اقدام</label><span runat="server" style="background-color: red">*</span>
                     <textarea id="txtResult" runat="server" rows="3" class="form-control"></textarea>
                 </asp:Panel>
-
-                <asp:CheckBox id="chkAttach" runat="server" Text ="آیا این کار، ضمیمه دارد؟" AutoPostBack ="true" /> <br />
+                ضمیمه دارد؟
+                
+                <label class="switch">
+                    <input id="Attach" type="checkbox" runat="server" onserverchange="AttachCheckedChanged" onclick='handleClick(this);'><span class="slider round"></span></label><br />
                 <asp:Panel ID="pnlAttach" Visible="false" BackColor="#99ccff" runat="server">
-                    <input type="file" id="fuFile" runat="server"  /><br />
+                    <input type="file" id="fuFile" runat="server" /><br />
                 </asp:Panel>
 
-                <input type="checkbox" id="chkSMS" runat="server" />اس ام اس به موکل بفرستد؟<br />
+                اس ام اس به موکل بفرستد؟
+                <label class="switch">
+                    <input type="checkbox" id="chkSMS" runat="server" /><span class="slider round"></span></label>
 
                 <input type="submit" id="btnSave" runat="server" onserverclick="WorkForOneSave" class="form-control" style="background-color: LightBlue" value="ثبت " />
 
@@ -105,7 +177,7 @@
             , highlightSelectedDay: false
             , sync: true
             , gotoToday: true
-            
+
         }
     </script>
 

@@ -77,7 +77,9 @@
                 <asp:Label ID="lblTitle" runat="server" meta:resourcekey="lblTitleResource1"></asp:Label>
             </h2>
             <h5>
-                <asp:GridView ID="gvLinks" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" meta:resourcekey="gvLinksResource1">
+                <asp:GridView ID="gvLinks" runat="server" AutoGenerateColumns="False" BackColor="White"
+                    BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3"
+                    GridLines="Horizontal" meta:resourcekey="gvLinksResource1" AllowPaging ="true" PageSize ="15">
                     <AlternatingRowStyle BackColor="#F7F7F7" />
                     <Columns>
                         <asp:BoundField DataField="Title" HeaderText="عنوان" meta:resourcekey="BoundFieldResource1">
