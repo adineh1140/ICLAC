@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphTitle" runat="server">
-    کارها یا رویدادهای یک پرونده
+    کارها یا رویدادهای خارج از پرونده ها
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
     <div class="row">

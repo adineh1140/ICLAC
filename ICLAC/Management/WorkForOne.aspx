@@ -1,68 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Management/Management.Master" CodeBehind="WorkForOne.aspx.vb" Inherits="ICLAC.WorkForOne" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
-    <style>
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 23px;
-        }
-
-            .switch input {
-                opacity: 0;
-                width: 0;
-                height: 0;
-            }
-
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-
-            .slider:before {
-                position: absolute;
-                content: "";
-                height: 15px;
-                width: 26px;
-                left: 4px;
-                bottom: 4px;
-                background-color: white;
-                -webkit-transition: .4s;
-                transition: .4s;
-            }
-
-        input:checked + .slider {
-            background-color: #2196F3;
-        }
-
-        input:focus + .slider {
-            box-shadow: 0 0 1px #2196F3;
-        }
-
-        input:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
-        }
-
-        /* Rounded sliders */
-        .slider.round {
-            border-radius: 20px;
-        }
-
-            .slider.round:before {
-                border-radius: 50%;
-            }
-    </style>
-
     <script >
         function handleClick(cb) {
             display("Clicked, new value = " + cb.checked);
@@ -140,7 +78,7 @@
                 <label for="txtdescription" runat="server">توضیحات(500 کاراکتر)</label>
                 <textarea id="txtDescription" class="form-control " runat="server" maxlength="500" rows="2"></textarea>
 
-                <asp:CheckBox ID="chkisDone" runat="server" Text="آیا این کار خاتمه یافته است؟" AutoPostBack="true" />
+                <asp:CheckBox ID="chkisDone" runat="server"  Text="آیا این کار خاتمه یافته است؟" AutoPostBack="true" />
                 <br />
                 <asp:Panel ID="pnlWorkEnd" runat="server" Visible="false" BackColor="#99ccff">
                     <label for="txtResult" runat="server">نتیجه ی اقدام</label><span runat="server" style="background-color: red">*</span>
@@ -155,8 +93,7 @@
                 </asp:Panel>
 
                 اس ام اس به موکل بفرستد؟
-                <label class="switch">
-                    <input type="checkbox" id="chkSMS" runat="server" /><span class="slider round"></span></label>
+                    <input type="checkbox" id="chkSMS" runat="server" /><span class="slider round"></span>
 
                 <input type="submit" id="btnSave" runat="server" onserverclick="WorkForOneSave" class="form-control" style="background-color: LightBlue" value="ثبت " />
 

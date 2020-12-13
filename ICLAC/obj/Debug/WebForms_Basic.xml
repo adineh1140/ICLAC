@@ -9193,36 +9193,27 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.Reports._txtFromDate">
+<member name="F:ICLAC.Reports._txtFrom">
 <summary>
-txtFromDate control.
+txtFrom control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.Reports._txtToDate">
+<member name="F:ICLAC.Reports._txtTo">
 <summary>
-txtToDate control.
+txtTo control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ICLAC.Reports._lblErr">
+<member name="F:ICLAC.Reports._btnReport">
 <summary>
-lblErr control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.Reports._btnGoToReport">
-<summary>
-btnGoToReport control.
+btnReport control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -9511,33 +9502,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ICLAC.Settings._lblErr">
 <summary>
 lblErr control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.SQL._txtSQL">
-<summary>
-txtSQL control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.SQL._btnRun">
-<summary>
-btnRun control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ICLAC.SQL._gvOut">
-<summary>
-gvOut control.
 </summary>
 <remarks>
 Auto-generated field.

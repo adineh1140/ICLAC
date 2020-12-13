@@ -329,7 +329,6 @@
     <Content Include="Management\Selection.aspx" />
     <Content Include="Management\SendSMS.aspx" />
     <Content Include="Management\Settings.aspx" />
-    <Content Include="Management\SQL.aspx" />
     <Content Include="Management\TablesAndFields.aspx" />
     <Content Include="Management\tmpEmailEntry.aspx" />
     <Content Include="Management\VisitAsAClient.aspx" />
@@ -421,6 +420,7 @@
     <Content Include="Fonts\irbadrbold.woff" />
     <Content Include="Fonts\irbadrbold.ttf" />
     <Content Include="Fonts\irbadrbold.eot" />
+    <Content Include="App_Code\GlyphIcon.cshtml" />
     <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
@@ -1022,13 +1022,6 @@
     </Compile>
     <Compile Include="Management\Settings.aspx.vb">
       <DependentUpon>Settings.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Management\SQL.aspx.designer.vb">
-      <DependentUpon>SQL.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Management\SQL.aspx.vb">
-      <DependentUpon>SQL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Management\TablesAndFields.aspx.designer.vb">

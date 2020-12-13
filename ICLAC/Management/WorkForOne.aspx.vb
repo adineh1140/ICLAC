@@ -104,10 +104,6 @@ Public Class WorkForOne
         gvWorks.DataBind()
         'lblSaveOK.Visible = False
     End Sub
-    Protected Sub chkisDone_CheckedChanged(sender As Object, e As EventArgs) Handles chkisDone.CheckedChanged
-        pnlWorkEnd.Visible = chkisDone.Checked
-        If txtResult.Value = "" Then txtResult.Value = "انجام شد."
-    End Sub
     Protected Sub AttachCheckedChanged(sender As Object, e As EventArgs)
         pnlAttach.Visible = Attach.Checked
     End Sub
@@ -256,5 +252,11 @@ Public Class WorkForOne
                 pnlDetails.Visible = False
                 pnlEdit.Visible = True
         End Select
+    End Sub
+
+    Private Sub chkisDone_CheckedChanged(sender As Object, e As EventArgs) Handles chkisDone.CheckedChanged
+        pnlWorkEnd.Visible = chkisDone.Checked
+        If txtResult.Value = "" Then txtResult.Value = "انجام شد."
+
     End Sub
 End Class

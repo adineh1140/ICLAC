@@ -16,11 +16,11 @@
             Response.Redirect("iisstart.aspx")
         End If
 
-        If txtToDate.Text = "" Then txtToDate.Text = Sami.PersianDate(Today)
+        If txtTo.Value = "" Then txtTo.Value = Sami.PersianDate(Today)
     End Sub
 
-    Protected Sub btnGoToReport_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnGoToReport.Click
-        If Trim(txtFromDate.Text) <> "" Or Trim(txtToDate.Text <> "") Then
+    Protected Sub GoToReport(ByVal sender As Object, ByVal e As EventArgs)
+        If Trim(txtFrom.Value) <> "" Or Trim(txtTo.Value <> "") Then
 
         End If
         Dim strSQL As String = ""
@@ -28,87 +28,92 @@
         Select Case ddlTitle.SelectedValue
             Case 100
                 If Session("id") <> 1 Then
-                    lblErr.Text = "تنها ادمین می تواند این گزارش را تهیه کند"
-                    lblErr.Visible = True
+                    Sami.ShowAllert("توجه", "تنها ادمین می تواند این گزارش را تهیه کند")
                     Exit Sub
                 End If
                 strSQL = "SELECT Clientid,email,cellphone,message,senddate,done,replierid,replydate,replytext FROM tblmessages"
                 strTitle = "گزارش بی قید و شرط همه ی پیام ها"
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " WHERE senddate >= '" & txtFromDate.Text
-                    strSQL &= "' AND senddate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " WHERE senddate >= '" & txtFrom.Value
+                    strSQL &= "' AND senddate <= '" & txtTo.Value & "'"
                 End If
             Case 101
                 If Session("id") <> 1 Then
-                    lblErr.Text = "تنها ادمین می تواند این گزارش را تهیه کند"
-                    lblErr.Visible = True
+                    Sami.ShowAllert("توجه", "تنها ادمین می تواند این گزارش را تهیه کند")
                     Exit Sub
                 End If
                 strSQL = "SELECT Clientid,email,cellphone,message,senddate,done,replierid,replydate,replytext FROM tblmessages WHERE done = 1"
                 strTitle = "گزارش پیام های جواب داده شده"
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND senddate >= '" & txtFromDate.Text
-                    strSQL &= "' AND senddate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND senddate >= '" & txtFrom.Value
+                    strSQL &= "' AND senddate <= '" & txtTo.Value & "'"
                 End If
             Case 102
                 If Session("id") <> 1 Then
-                    lblErr.Text = "تنها ادمین می تواند این گزارش را تهیه کند"
-                    lblErr.Visible = True
+                    Sami.ShowAllert("توجه", "تنها ادمین می تواند این گزارش را تهیه کند")
                     Exit Sub
                 End If
                 strSQL = "SELECT Clientid,email,cellphone,message,senddate FROM tblmessages WHERE done = 0"
                 strTitle = "گزارش پیام های بی جواب"
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND senddate >= '" & txtFromDate.Text
-                    strSQL &= "' AND senddate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND senddate >= '" & txtFrom.Value
+                    strSQL &= "' AND senddate <= '" & txtTo.Value & "'"
                 End If
             Case 200
                 strSQL = "SELECT id, caseid,parties,title,done,donedate,donetime FROM vwworks WHERE lawyerid =" & Session("id")
                 strTitle = "گزارش کارها"
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND donedate >= '" & txtFromDate.Text
-                    strSQL &= "' AND donedate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND donedate >= '" & txtFrom.Value
+                    strSQL &= "' AND donedate <= '" & txtTo.Value & "'"
                 End If
                 strSQL &= " ORDER BY donedate"
             Case 201
                 strSQL = "SELECT caseid,parties,title,donedate, donetime FROM vwworks WHERE lawyerid =" & Session("id") & " AND done = 1 "
                 strTitle = "گزارش کارهای انجام یافته"
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND donedate >= '" & txtFromDate.Text
-                    strSQL &= "' AND donedate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND donedate >= '" & txtFrom.Value
+                    strSQL &= "' AND donedate <= '" & txtTo.Value & "'"
                 End If
                 strSQL &= " AND lawyerid =" & Session("id") & " ORDER BY donedate"
             Case 202
                 strSQL = "SELECT caseid,parties,title,donedate,donetime FROM vwworks WHERE done = 0 AND lawyerid =" & Session("id")
                 strTitle = "گزارش کارهای انجام نیافته"
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND donedate >= '" & txtFromDate.Text
-                    strSQL &= "' AND donedate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND donedate >= '" & txtFrom.Value
+                    strSQL &= "' AND donedate <= '" & txtTo.Value & "'"
                 End If
                 strSQL &= " AND lawyerid =" & Session("id") & " ORDER BY donedate"
+            Case 203
+                strSQL = "SELECT caseid,stafffullname,title,donedate,donetime FROM vwworks WHERE done =0 AND caseid > 0"
+                strTitle = "یادآوری دفتر"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND donedate >= '" & txtFrom.Value
+                    strSQL &= "' AND donedate <= '" & txtTo.Value & "'"
+                End If
+                strSQL &= " ORDER BY donedate"
             Case 300
                 strSQL = "SELECT lastname,firstname,tellhome,tellbusiness,cellphone,faxno,email1,regdate FROM tblclients"
                 strTitle = "گزارش موکلین"
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " WHERE regdate >= '" & txtFromDate.Text
-                    strSQL &= "' AND regdate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " WHERE regdate >= '" & txtFrom.Value
+                    strSQL &= "' AND regdate <= '" & txtTo.Value & "'"
                 End If
                 strSQL &= " ORDER BY Lastname,firstname"
             Case 400
                 strSQL = "SELECT id,lastname,firstname,stafffullname,courtname,courtbranch,courtcaseid,terminated FROM vwcases"
                 strTitle = "گزارش پرونده ها"
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND regdate >= '" & txtFromDate.Text
-                    strSQL &= "' AND regdate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND regdate >= '" & txtFrom.Value
+                    strSQL &= "' AND regdate <= '" & txtTo.Value & "'"
                 End If
                 strSQL &= " ORDER BY id"
             Case 401
                 strSQL = "SELECT id,parties,stafffullname,courtname,courtbranch,courtcaseid,result FROM vwcases WHERE terminated = 1 "
                 strTitle = "گزارش پرونده های خاتمه یافته"
 
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND regdate >= '" & txtFromDate.Text
-                    strSQL &= "' AND regdate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND regdate >= '" & txtFrom.Value
+                    strSQL &= "' AND regdate <= '" & txtTo.Value & "'"
                 End If
                 strSQL &= " ORDER BY id"
 
@@ -116,36 +121,27 @@
                 strSQL = "SELECT id,parties,stafffullname,courtname,courtbranch,courtcaseid FROM vwcases WHERE terminated = 0 "
                 strTitle = "گزارش پرونده های جاری"
 
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND regdate >= '" & txtFromDate.Text
-                    strSQL &= "' AND regdate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND regdate >= '" & txtFrom.Value
+                    strSQL &= "' AND regdate <= '" & txtTo.Value & "'"
                 End If
                 strSQL &= " ORDER BY id"
             Case 403
                 strSQL = "SELECT id,parties,stafffullname,courtname,courtbranch,courtcaseid FROM vwcases WHERE lawyerid =" & Session("id") & " AND terminated = 0 AND id NOT IN (SELECT caseid  FROM vwWorks WHERE done = 0) "
                 strTitle = "گزارش پرونده های بلاتکلیف"
 
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND regdate >= '" & txtFromDate.Text
-                    strSQL &= "' AND regdate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " AND regdate >= '" & txtFrom.Value
+                    strSQL &= "' AND regdate <= '" & txtTo.Value & "'"
                 End If
-            Case 404
-                strSQL = "SELECT id,ClientFullname,stafffullname,courtname + ' شعبه ' +courtbranch as Court,courtcaseid FROM vwcases WHERE terminated = 0"
-                strTitle = "فهرست پرونده های جاری و تحت پیگیری تا کنون"
-
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " AND regdate >= '" & txtFromDate.Text
-                    strSQL &= "' AND regdate <= '" & txtToDate.Text & "'"
-                End If
-                strSQL &= " ORDER BY id"
             Case 700
                 strSQL = "SELECT (Lastname + ' ' + firstname) AS fullname ,hometell,worktell,cellphone,fax,description FROM tblcontacts ORDER BY fullname"
                 strTitle = "دفترچه تلفن"
             Case 800
                 strSQL = "SELECT * FROM tblsms "
-                If txtFromDate.Text <> "" Then
-                    strSQL &= " WHERE senddate >= '" & txtFromDate.Text
-                    strSQL &= "' AND senddate <= '" & txtToDate.Text & "'"
+                If txtFrom.Value <> "" Then
+                    strSQL &= " WHERE senddate >= '" & txtFrom.Value
+                    strSQL &= "' AND senddate <= '" & txtTo.Value & "'"
                 End If
                 strSQL &= " ORDER BY senddate,id"
                 strTitle = "گزارش پیامک های ارسالی از مرکز"

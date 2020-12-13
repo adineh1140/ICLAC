@@ -23,24 +23,23 @@
             </asp:HyperLink><br />
             <h5>
                 <asp:GridView ID="gvReport" runat="server" 
-                    CellPadding="3" GridLines="Horizontal"
-                    BackColor="White" BorderColor="#E7E7FF"
-                    BorderStyle="None" BorderWidth="1px" Width ="100%"
-                    CssClass ="grid" >
+                    CellPadding="2" GridLines="None"
+                    BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" Width ="100%"
+                    CssClass ="grid" ForeColor="Black" >
+                    <AlternatingRowStyle BackColor="PaleGoldenrod" />
                     <Columns>
                         <asp:BoundField HeaderText="ردیف" Visible="False">
                             <ItemStyle Width="2%" />
                         </asp:BoundField>
                     </Columns>
-                    <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
-                    <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" BorderColor="Black" BorderStyle="Solid" Font-Size="Small" />
-                    <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
-                    <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
-                    <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
-                    <SortedAscendingCellStyle BackColor="#F4F4FD" />
-                    <SortedAscendingHeaderStyle BackColor="#5A4C9D" />
-                    <SortedDescendingCellStyle BackColor="#D8D8F0" />
-                    <SortedDescendingHeaderStyle BackColor="#3E3277" />
+                    <FooterStyle BackColor="Tan" />
+                    <HeaderStyle BackColor="Tan" Font-Bold="True" BorderColor="Black" BorderStyle="Solid" Font-Size="Larger" />
+                    <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+                    <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+                    <SortedAscendingCellStyle BackColor="#FAFAE7" />
+                    <SortedAscendingHeaderStyle BackColor="#DAC09E" />
+                    <SortedDescendingCellStyle BackColor="#E1DB9C" />
+                    <SortedDescendingHeaderStyle BackColor="#C2A47B" />
                 </asp:GridView>
             </h5>
         </div>

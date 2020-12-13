@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Reports
-    
+
     '''<summary>
     '''ddlTitle control.
     '''</summary>
@@ -21,40 +21,31 @@ Partial Public Class Reports
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlTitle As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
-    '''txtFromDate control.
+    '''txtFrom control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtFromDate As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtFrom As Global.System.Web.UI.HtmlControls.HtmlInputText
+
     '''<summary>
-    '''txtToDate control.
+    '''txtTo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtToDate As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtTo As Global.System.Web.UI.HtmlControls.HtmlInputText
+
     '''<summary>
-    '''lblErr control.
+    '''btnReport control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblErr As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''btnGoToReport control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnGoToReport As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnReport As Global.System.Web.UI.HtmlControls.HtmlInputButton
 End Class
